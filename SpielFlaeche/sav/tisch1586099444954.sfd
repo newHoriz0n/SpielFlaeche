@@ -1,0 +1,5 @@
+*,zw,Eisenzähler,100,495,423,50,155,55,0,255,255,255,13,gfx/wuerfel/braun.png
+*,zw,Holzzähler,100,572,419,50,0,155,100,255,255,255,9,gfx/wuerfel/gruen.png
+*,zw,Eisenzähler,100,539,475,50,155,55,0,255,255,255,1,gfx/wuerfel/braun.png
+*,zw,Steinzähler,100,651,483,50,200,200,200,0,0,0,10,gfx/wuerfel/grau.png
+*,zw,Goldzähler,100,502,461,50,255,230,0,0,0,0,10,gfx/wuerfel/gelb.png

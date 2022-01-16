@@ -1,0 +1,28 @@
+Rundenablauf:
+
+Entweder: Regulärer Zug oder im aktuellen Hafen warten und Waren neu Würfeln
+
+Regulärer Zug:
+1. Würfeln
+2. Handeln
+3. Flotte aufstocken
+
+Warten:
+Kostet: 1 Geld pro Schiff
+
+Handeln:
+- Aktuell angezeigte Ware zu angezeigtem Preis kaufen / verkaufen
+- Kaufen: Max. beliebtheit
+- Verkaufen: Beliebig viele
+- Wenn Anzahl verkauft > Beliebtheit: Beliebtheit ++ (3 wenn vorher unbekannt)
+- Neue Ware + Preis erwürfeln -> nicht die selbe Farbe!
+
+
+Flotte aufstocken:
+- nur im Hafen
+
+Karavelle:	ab 3	10
+Fregatte:	ab 3	15
+Handelsschiff:	ab 4	25
+Linienschiff:	ab 5	35
+

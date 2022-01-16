@@ -1,0 +1,135 @@
+Siedler II Brettspiel Regeln
+--------------------------------
+==================================
+
+Spielmaterial:
+--------------
+1 Brett
+25 Gold
+25 Holz
+25 Stein
+25 Eisen
+2 Würfel
+
+Pro Spieler:
+30 Einheiten
+10 Wachstuben
+10 Türme
+10 Festungen
+1 HW
+3x2 Feldherren
+
+
+
+Startmaterial der Spieler:
+-------------------------
+10 H 
+5 S
+3 E
+1 H
+1 T
+1 W
+10 Leute
+
+
+Ressorcenvorkommen:
+====================
+2 Spieler:
+-----------
+25 Frei
+15 Wasser
+10 Wald
+7 Eisenerz
+7 Steinbruch
+2 Golderz
+
+
+
+Ablauf:
+==================
+1. Runde:
+----------
+- Auswürfeln wer anfängt
+- Wer anfängt darf in 1. Runde nix produzieren
+- ab da im Uhrzeigersinn
+
+Produktionsphase:
+-------------------
+1. Produzieren / Handeln
+	- Überall wo eigenes Gebäude steht 1 Ware pro Feld einsammeln aber nur wenn Verbindung zum HQ besteht
+	- Einheit produzieren kosten 1 Eisen !!! ACHTUNG !!! Es dürfen nur in diesem Rundenabschnitt Einheiten produziert werden!
+	- Gegen 3 beliebige Waren kann 1 Ware gekauft werden (beliebig oft)
+
+Entwicklungsphase:
+------------------
+2. Bauen / Abreißen
+	- So viel wie man will bis Resourcen leer
+	- Aufrüsten nur wenn Gebäude vor Runde schon gebaut war
+	- Abreißen bringt keine Resourcen zurück aber Einheiten gehen ins HQ auch ohne Verbindung
+3. Entdecken
+	- Unbekannte Felder in Nachbarschaft zu eigenem Gebiet auswürfeln
+4. Besetzen 
+	- Umverteilung von Einheiten nur innerhalb verbundener Gebiete
+	- Neu aufs Spielfeld nur wenn Verbindung mit Hauptquartier
+
+Kampfphase
+--------------
+6. Angreifen
+	- Angriff nur auf banachbartes Feld (auf Geb. oder Feldherr)
+	- Angriff nur von Gebäude aus mit mindestens zwei Einheiten auch wenn diese in dieser Runde gebaut wurden
+	- Verteidiger kann während Kampf aus umliegenden Feldern beliebig Einheiten auf angegriffenes Feld ziehen sofern deren Ursprungsfelder danach noch besetzt sind. Einheiten von Feldherren nur wenn Feldherr auf angegriffenem Feld
+	- Ablauf:
+		- Angreifer zieht Einheit von angreifendem Feld auf angegriffenes Feld
+		- A und V würfeln
+		- Wer verliert muss Einheit entfernen - bei Gleichstand nochmal
+		- A entscheidet ob er nochmal angreift ...
+		- A übernimmt Gebäude wenn V keine Einheiten mehr auf verteidigendem Feld
+	- Gewinnt Verteidiger müssen direkt nach Kampf Einheiten wieder so aufgeteilt werden, dass jedes Gebäude min 1 und max entsprechend 
+	- Beliebig viele Angriffe pro Runde von Gebäuden aus mit min 2 Einheiten + nicht erst erobert
+
+5. Feldherren bewegen
+	- max. 1 Feld pro Runde
+
+Erholungssphase
+-----------------
+7. Besetzen / Abreißen
+	- Umverteilung von Einheiten nur innerhalb verbundener Gebiete
+	- Neu aufs Feld nur wenn Verbindung mit Hauptquartier
+8. Feldherren bewegen wenn nicht gekämpft
+
+Kosten:
+------
+Wachstube:	3H
+Turm:		5H 3S
+Festung:	7H 5S 3E
+Einheit:	1E
+Feldherr:	5G
+
+Feldherr:
+-----------
+Muss mit min. 1 Einheit erstellt werden
+Startet auf HQ Feld
+Kann nur mit Einheiten bestückt werden, die direkt aus Eisen produziert werden, wenn auf Feld mit eigenem Gebäude
+Kann nix produzieren
+Max. 1 Feld pro Runde bewegen auch in Runde in der er erstellt wird
+Bewegung auf feindliches Feld = Kampf = Bewegung
+Max. 1 Kampf pro Runde
+Nach Eroberung eines geg. Gebäudes muss dieses durch Einheit von Feldherr besetzt werden
+Kann nicht auf Feld mit geg. Gebäude stehen bleiben
+Wird aufgelöst wenn keine Einheiten mehr
+
+
+Bauen:
+-------
+Nur auf freiem Feld direkt neben vor der Runde eigenem bereits bebauten Feld 
+Direkt bei Bau muss Gebäude mit mindestens 1 Einheit besetzt werden.
+Nachrüsten durch Bezahlen des Restbetrags möglich
+
+Produktion:
+-------------
+Pro eigenem Feld mit Anschluss an HQ durch eigene Gebäude 1 des jew. Typs
+
+Kampf:
+---------
+Immer erst gegen Feldherr wenn auf Feld auch Gebäude steht
+

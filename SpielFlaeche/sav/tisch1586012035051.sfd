@@ -1,0 +1,9 @@
+*,b,Karibik Brett,lib/Projekte/Karibik/Bretter/Brett_200_status_mehr.gif,1160,700
+*,s,Silber,3202,915,50,50,25,25,lib/Objekte/Geld/silber.gif
+*,k,Karavelle,3177,1130,150,220,lib/Projekte/Karibik/Karten/Karavelle.png,lib/Projekte/Karibik/Karten/Rueckseite.png,true
+*,s,Chip Rot,2010,1761,50,50,25,25,gfx/chips/rot.gif
+*,s,Chip Gelb,1998,1811,50,50,25,25,gfx/chips/gelb.gif
+*,zw,Würfel weiß,6,1642,1551,50,255,255,255,0,0,0,1,gfx/wuerfel/weiss.png
+*,zw,Würfel weiß,6,1508,888,50,255,255,255,0,0,0,1,gfx/wuerfel/weiss.png
+*,zw,Würfel weiß,6,2362,1107,50,255,255,255,0,0,0,1,gfx/wuerfel/weiss.png
+*,s,Silber,3433,1599,50,50,25,25,lib/Objekte/Geld/silber.gif

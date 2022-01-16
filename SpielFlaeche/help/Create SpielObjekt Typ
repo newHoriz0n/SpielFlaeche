@@ -1,0 +1,12 @@
+TODOs zum anlegen eines neuen SpielObjektTyps
+
+1. Klasse anlegen
+1.1. Konstruktor anlegen
+1.2. Copy - Kontruktor anlegen
+1.3. Add Unimplemented Methods
+1.4. drawSpielObjekt
+2. Lade Tisch aus Datei: in public Tisch(List<String[]> tischInfos): Neues Dummy Objekt erstellen
+3. Lade DummyObjekte aus Library: in Tisch: private void loadObjekte(): Objekt aus objekt.txt laden
+4. Platziere Objekte aus Spielset: in Tisch: public void platziere(SpielSet set, Vektor2D position)
+5. Platziere Objekte: in Tisch: public void platziere(SpielObjekt o, Vektor2D position)
+6. DummyObjekte in objekte.txt anlegen

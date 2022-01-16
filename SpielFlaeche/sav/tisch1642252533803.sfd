@@ -1,0 +1,8 @@
+*,b,Karibik Brett,lib/Projekte/Karibik/Bretter/Brett_200_status_mehr.gif,1160,708
+*,k,Karavelle,960,508,150,220,lib/Projekte/Karibik/Karten/Karavelle.png,lib/Projekte/Karibik/Karten/Rueckseite.png,true
+*,k,Fregatte,1160,508,150,220,lib/Projekte/Karibik/Karten/Fregatte.png,lib/Projekte/Karibik/Karten/Rueckseite.png,true
+*,k,Handelsschiff,1360,508,150,220,lib/Projekte/Karibik/Karten/Handelsschiff.png,lib/Projekte/Karibik/Karten/Rueckseite.png,true
+*,k,Linienschiff,1560,508,150,220,lib/Projekte/Karibik/Karten/Linienschiff.png,lib/Projekte/Karibik/Karten/Rueckseite.png,true
+*,s,Chip Rot,1947,1651,50,50,25,25,gfx/chips/rot.gif
+*,s,Chip Gelb,1947,1714,50,50,25,25,gfx/chips/gelb.gif
+*,bw,Waren Würfel,6,5,1814,1699,50,lib\Objekte\Wuerfel\6gedecktefarbenwuerfel\orange.gif,lib\Objekte\Wuerfel\6gedecktefarbenwuerfel\schwarz.gif,lib\Objekte\Wuerfel\6gedecktefarbenwuerfel\grau.gif,lib\Objekte\Wuerfel\6gedecktefarbenwuerfel\braun.gif,lib\Objekte\Wuerfel\6gedecktefarbenwuerfel\lila.gif,lib\Objekte\Wuerfel\6gedecktefarbenwuerfel\cyan.gif,

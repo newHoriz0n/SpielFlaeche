@@ -1,0 +1,65 @@
+*,b,Spielbrett,lib/Projekte/SiedlerII/bretter/Waben_56.gif,1160,700
+*,s,Wachstube Blau,1303,2034,80,80,40,40,lib/Projekte/SiedlerII/gebaeude/w_b.png
+*,s,Turm Blau,1431,1786,80,80,40,40,lib/Projekte/SiedlerII/gebaeude/t_b.png
+*,s,Hauptquartier Blau,1570,2034,80,80,40,40,lib/Projekte/SiedlerII/gebaeude/h_b.png
+*,s,Wachstube Rot,2514,1782,80,80,40,40,lib/Projekte/SiedlerII/gebaeude/w_r.png
+*,s,Turm Rot,2655,2023,80,80,40,40,lib/Projekte/SiedlerII/gebaeude/t_r.png
+*,s,Hauptquartier Rot,2794,1797,80,80,40,40,lib/Projekte/SiedlerII/gebaeude/h_r.png
+*,s,Chip Blau,1296,2115,50,50,25,25,gfx/chips/blau.gif
+*,s,Chip Blau,1429,1873,50,50,25,25,gfx/chips/blau.gif
+*,s,Chip Blau,1570,2126,50,50,25,25,gfx/chips/blau.gif
+*,s,Chip Blau,1018,1936,50,50,25,25,gfx/chips/blau.gif
+*,s,Chip Blau,1012,2004,50,50,25,25,gfx/chips/blau.gif
+*,s,Chip Blau,1009,2069,50,50,25,25,gfx/chips/blau.gif
+*,s,Chip Blau,1005,2134,50,50,25,25,gfx/chips/blau.gif
+*,s,Chip Blau,959,1958,50,50,25,25,gfx/chips/blau.gif
+*,s,Chip Blau,951,2021,50,50,25,25,gfx/chips/blau.gif
+*,s,Chip Blau,951,2086,50,50,25,25,gfx/chips/blau.gif
+*,s,Chip Rot,2790,1884,50,50,25,25,gfx/chips/rot.gif
+*,s,Chip Rot,2512,1876,50,50,25,25,gfx/chips/rot.gif
+*,s,Chip Rot,2653,2119,50,50,25,25,gfx/chips/rot.gif
+*,s,Chip Rot,3170,1889,50,50,25,25,gfx/chips/rot.gif
+*,s,Chip Rot,3170,1954,50,50,25,25,gfx/chips/rot.gif
+*,s,Chip Rot,3168,2030,50,50,25,25,gfx/chips/rot.gif
+*,s,Chip Rot,3168,2095,50,50,25,25,gfx/chips/rot.gif
+*,s,Chip Rot,3231,1919,50,50,25,25,gfx/chips/rot.gif
+*,s,Chip Rot,3231,1986,50,50,25,25,gfx/chips/rot.gif
+*,s,Chip Rot,3229,2054,50,50,25,25,gfx/chips/rot.gif
+*,s,Chip Grün,831,1954,50,50,25,25,gfx/chips/gruen.gif
+*,s,Chip Grün,823,2019,50,50,25,25,gfx/chips/gruen.gif
+*,s,Chip Grün,827,2084,50,50,25,25,gfx/chips/gruen.gif
+*,s,Chip Grün,831,2147,50,50,25,25,gfx/chips/gruen.gif
+*,s,Chip Grün,829,2210,50,50,25,25,gfx/chips/gruen.gif
+*,s,Chip Grün,764,1950,50,50,25,25,gfx/chips/gruen.gif
+*,s,Chip Grün,751,2023,50,50,25,25,gfx/chips/gruen.gif
+*,s,Chip Grün,753,2084,50,50,25,25,gfx/chips/gruen.gif
+*,s,Chip Grün,755,2147,50,50,25,25,gfx/chips/gruen.gif
+*,s,Chip Grün,762,2210,50,50,25,25,gfx/chips/gruen.gif
+*,s,Chip Grün,3370,1882,50,50,25,25,gfx/chips/gruen.gif
+*,s,Chip Grün,3379,1947,50,50,25,25,gfx/chips/gruen.gif
+*,s,Chip Grün,3392,2015,50,50,25,25,gfx/chips/gruen.gif
+*,s,Chip Grün,3394,2084,50,50,25,25,gfx/chips/gruen.gif
+*,s,Chip Grün,3381,2147,50,50,25,25,gfx/chips/gruen.gif
+*,s,Chip Grün,3431,1869,50,50,25,25,gfx/chips/gruen.gif
+*,s,Chip Grün,3442,1934,50,50,25,25,gfx/chips/gruen.gif
+*,s,Chip Grün,3453,2004,50,50,25,25,gfx/chips/gruen.gif
+*,s,Holz,3457,2089,50,50,25,25,gfx/chips/gruen.gif
+*,s,Chip Grün,3449,2156,50,50,25,25,gfx/chips/gruen.gif
+*,s,Stein,642,1971,50,50,25,25,gfx/chips/grau.gif
+*,s,Chip Grau,644,2034,50,50,25,25,gfx/chips/grau.gif
+*,s,Stein,646,2106,50,50,25,25,gfx/chips/grau.gif
+*,s,Stein,646,2176,50,50,25,25,gfx/chips/grau.gif
+*,s,Stein,646,2243,50,50,25,25,gfx/chips/grau.gif
+*,s,Stein,3538,1854,50,50,25,25,gfx/chips/grau.gif
+*,s,Stein,3540,1921,50,50,25,25,gfx/chips/grau.gif
+*,s,Stein,3551,1993,50,50,25,25,gfx/chips/grau.gif
+*,s,Stein,3557,2063,50,50,25,25,gfx/chips/grau.gif
+*,s,Stein,3557,2128,50,50,25,25,gfx/chips/grau.gif
+*,s,Chip Braun,557,1965,50,50,25,25,gfx/chips/braun.gif
+*,s,Chip Braun,559,2039,50,50,25,25,gfx/chips/braun.gif
+*,s,Chip Braun,566,2113,50,50,25,25,gfx/chips/braun.gif
+*,s,Chip Braun,3644,1854,50,50,25,25,gfx/chips/braun.gif
+*,s,Chip Braun,3644,1921,50,50,25,25,gfx/chips/braun.gif
+*,s,Chip Braun,3644,1978,50,50,25,25,gfx/chips/braun.gif
+*,zw,Würfel rot,6,2038,2036,50,255,0,0,255,255,255,1,gfx/wuerfel/rot.png
+*,zw,Würfel blau,6,1964,2036,50,0,0,255,255,255,255,1,gfx/wuerfel/blau.png

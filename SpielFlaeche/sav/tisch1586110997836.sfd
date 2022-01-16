@@ -1,0 +1,151 @@
+*,k,Eisenerz,1251,879,216,248,lib/Projekte/SiedlerII/felder/braun.png,lib/Projekte/SiedlerII/felder/schwarz.png,true
+*,k,Eisenerz,1558,1431,216,248,lib/Projekte/SiedlerII/felder/braun.png,lib/Projekte/SiedlerII/felder/schwarz.png,true
+*,k,Steinbruch,1352,1057,216,248,lib/Projekte/SiedlerII/felder/grau.png,lib/Projekte/SiedlerII/felder/schwarz.png,true
+*,k,Wald,1565,1061,216,248,lib/Projekte/SiedlerII/felder/gruen.png,lib/Projekte/SiedlerII/felder/schwarz.png,true
+*,k,Wald,1141,1055,216,248,lib/Projekte/SiedlerII/felder/gruen.png,lib/Projekte/SiedlerII/felder/schwarz.png,true
+*,k,Frei,924,1789,216,248,lib/Projekte/SiedlerII/felder/weiss.png,lib/Projekte/SiedlerII/felder/schwarz.png,true
+*,k,Golderz,502,1412,216,248,lib/Projekte/SiedlerII/felder/gelb.png,lib/Projekte/SiedlerII/felder/schwarz.png,true
+*,k,Eisenerz,1662,1247,216,248,lib/Projekte/SiedlerII/felder/braun.png,lib/Projekte/SiedlerII/felder/schwarz.png,true
+*,k,Eisenerz,397,1232,216,248,lib/Projekte/SiedlerII/felder/braun.png,lib/Projekte/SiedlerII/felder/schwarz.png,true
+*,k,Steinbruch,292,1049,216,248,lib/Projekte/SiedlerII/felder/grau.png,lib/Projekte/SiedlerII/felder/schwarz.png,true
+*,k,Wald,1457,874,216,248,lib/Projekte/SiedlerII/felder/gruen.png,lib/Projekte/SiedlerII/felder/schwarz.png,true
+*,k,Wald,187,1232,216,248,lib/Projekte/SiedlerII/felder/gruen.png,lib/Projekte/SiedlerII/felder/schwarz.png,true
+*,s,Turm Rot,406,1236,80,80,40,40,lib/Projekte/SiedlerII/gebaeude/t_r.png
+*,s,Hauptquartier Rot,192,1244,80,80,40,40,lib/Projekte/SiedlerII/gebaeude/h_r.png
+*,s,Einheit Rot,175,1309,50,50,25,25,gfx/chips/rot.gif
+*,s,Einheit Rot,406,1310,50,50,25,25,gfx/chips/rot.gif
+*,k,Eisenerz,398,867,216,248,lib/Projekte/SiedlerII/felder/braun.png,lib/Projekte/SiedlerII/felder/schwarz.png,true
+*,k,Wald,505,1055,216,248,lib/Projekte/SiedlerII/felder/gruen.png,lib/Projekte/SiedlerII/felder/schwarz.png,true
+*,k,Frei,86,1418,216,248,lib/Projekte/SiedlerII/felder/weiss.png,lib/Projekte/SiedlerII/felder/schwarz.png,true
+*,k,Frei,-23,1236,216,248,lib/Projekte/SiedlerII/felder/weiss.png,lib/Projekte/SiedlerII/felder/schwarz.png,true
+*,k,Frei,78,1049,216,248,lib/Projekte/SiedlerII/felder/weiss.png,lib/Projekte/SiedlerII/felder/schwarz.png,true
+*,k,Frei,186,866,216,248,lib/Projekte/SiedlerII/felder/weiss.png,lib/Projekte/SiedlerII/felder/schwarz.png,true
+*,k,Wald,1356,684,216,248,lib/Projekte/SiedlerII/felder/gruen.png,lib/Projekte/SiedlerII/felder/schwarz.png,true
+*,k,Frei,1567,696,216,248,lib/Projekte/SiedlerII/felder/weiss.png,lib/Projekte/SiedlerII/felder/schwarz.png,true
+*,k,Frei,1669,876,216,248,lib/Projekte/SiedlerII/felder/weiss.png,lib/Projekte/SiedlerII/felder/schwarz.png,true
+*,k,Frei,1453,1242,216,248,lib/Projekte/SiedlerII/felder/weiss.png,lib/Projekte/SiedlerII/felder/schwarz.png,true
+*,k,Frei,1247,1240,216,248,lib/Projekte/SiedlerII/felder/weiss.png,lib/Projekte/SiedlerII/felder/schwarz.png,true
+*,k,Wasser,1037,873,216,248,lib/Projekte/SiedlerII/felder/blau.png,lib/Projekte/SiedlerII/felder/schwarz.png,true
+*,k,Wasser,1146,692,216,248,lib/Projekte/SiedlerII/felder/blau.png,lib/Projekte/SiedlerII/felder/schwarz.png,true
+*,s,Wachstube Rot,396,857,80,80,40,40,lib/Projekte/SiedlerII/gebaeude/w_r.png
+*,s,Wachstube Rot,507,1050,80,80,40,40,lib/Projekte/SiedlerII/gebaeude/w_r.png
+*,s,Wachstube Rot,505,1408,80,80,40,40,lib/Projekte/SiedlerII/gebaeude/w_r.png
+*,s,Einheit Rot,517,1120,50,50,25,25,gfx/chips/rot.gif
+*,k,Wasser,506,684,216,248,lib/Projekte/SiedlerII/felder/blau.png,lib/Projekte/SiedlerII/felder/schwarz.png,true
+*,k,Steinbruch,610,872,216,248,lib/Projekte/SiedlerII/felder/grau.png,lib/Projekte/SiedlerII/felder/schwarz.png,true
+*,k,Eisenerz,604,1598,216,248,lib/Projekte/SiedlerII/felder/braun.png,lib/Projekte/SiedlerII/felder/schwarz.png,true
+*,k,Wasser,714,1059,216,248,lib/Projekte/SiedlerII/felder/blau.png,lib/Projekte/SiedlerII/felder/schwarz.png,true
+*,s,Wachstube Blau,1563,1041,80,80,40,40,lib/Projekte/SiedlerII/gebaeude/w_b.png
+*,s,Einheit Blau,1555,1117,50,50,25,25,gfx/chips/blau.gif
+*,k,Wasser,712,1418,216,248,lib/Projekte/SiedlerII/felder/blau.png,lib/Projekte/SiedlerII/felder/schwarz.png,true
+*,k,Frei,1249,507,216,248,lib/Projekte/SiedlerII/felder/weiss.png,lib/Projekte/SiedlerII/felder/schwarz.png,true
+*,k,Eisenerz,1767,1058,216,248,lib/Projekte/SiedlerII/felder/braun.png,lib/Projekte/SiedlerII/felder/schwarz.png,true
+*,k,Wasser,1034,1237,216,248,lib/Projekte/SiedlerII/felder/blau.png,lib/Projekte/SiedlerII/felder/schwarz.png,true
+*,k,Golderz,929,1056,216,248,lib/Projekte/SiedlerII/felder/gelb.png,lib/Projekte/SiedlerII/felder/schwarz.png,true
+*,k,Wasser,717,688,216,248,lib/Projekte/SiedlerII/felder/blau.png,lib/Projekte/SiedlerII/felder/schwarz.png,true
+*,k,Steinbruch,825,874,216,248,lib/Projekte/SiedlerII/felder/grau.png,lib/Projekte/SiedlerII/felder/schwarz.png,true
+*,k,Wasser,1463,506,216,248,lib/Projekte/SiedlerII/felder/blau.png,lib/Projekte/SiedlerII/felder/schwarz.png,true
+*,k,Frei,289,684,216,248,lib/Projekte/SiedlerII/felder/weiss.png,lib/Projekte/SiedlerII/felder/schwarz.png,true
+*,k,Frei,1873,1247,216,248,lib/Projekte/SiedlerII/felder/weiss.png,lib/Projekte/SiedlerII/felder/schwarz.png,true
+*,k,Frei,1766,1433,216,248,lib/Projekte/SiedlerII/felder/weiss.png,lib/Projekte/SiedlerII/felder/schwarz.png,true
+*,k,Wald,819,1235,216,248,lib/Projekte/SiedlerII/felder/gruen.png,lib/Projekte/SiedlerII/felder/schwarz.png,true
+*,s,Wachstube Rot,816,1230,80,80,40,40,lib/Projekte/SiedlerII/gebaeude/w_r.png
+*,k,Frei,1347,1429,216,248,lib/Projekte/SiedlerII/felder/weiss.png,lib/Projekte/SiedlerII/felder/schwarz.png,true
+*,s,Einheit Rot,598,1657,50,50,25,25,gfx/chips/rot.gif
+*,s,Wachstube Rot,616,1575,80,80,40,40,lib/Projekte/SiedlerII/gebaeude/w_r.png
+*,k,Wasser,708,1784,216,248,lib/Projekte/SiedlerII/felder/blau.png,lib/Projekte/SiedlerII/felder/schwarz.png,true
+*,k,Steinbruch,498,1783,216,248,lib/Projekte/SiedlerII/felder/grau.png,lib/Projekte/SiedlerII/felder/schwarz.png,true
+*,k,Steinbruch,818,1604,216,248,lib/Projekte/SiedlerII/felder/grau.png,lib/Projekte/SiedlerII/felder/schwarz.png,true
+*,s,Einheit Rot,456,915,50,50,25,25,gfx/chips/rot.gif
+*,k,Frei,1244,1615,216,248,lib/Projekte/SiedlerII/felder/weiss.png,lib/Projekte/SiedlerII/felder/schwarz.png,true
+*,k,Wasser,1350,1797,216,248,lib/Projekte/SiedlerII/felder/blau.png,lib/Projekte/SiedlerII/felder/schwarz.png,true
+*,k,Wasser,1557,1795,216,248,lib/Projekte/SiedlerII/felder/blau.png,lib/Projekte/SiedlerII/felder/schwarz.png,true
+*,k,Wasser,294,1415,216,248,lib/Projekte/SiedlerII/felder/blau.png,lib/Projekte/SiedlerII/felder/schwarz.png,true
+*,k,Frei,1031,1604,216,248,lib/Projekte/SiedlerII/felder/weiss.png,lib/Projekte/SiedlerII/felder/schwarz.png,true
+*,k,Frei,609,1236,216,248,lib/Projekte/SiedlerII/felder/weiss.png,lib/Projekte/SiedlerII/felder/schwarz.png,true
+*,k,Frei,1133,1793,216,248,lib/Projekte/SiedlerII/felder/weiss.png,lib/Projekte/SiedlerII/felder/schwarz.png,true
+*,s,Wachstube Rot,609,1230,80,80,40,40,lib/Projekte/SiedlerII/gebaeude/w_r.png
+*,k,Wasser,401,1595,216,248,lib/Projekte/SiedlerII/felder/blau.png,lib/Projekte/SiedlerII/felder/schwarz.png,true
+*,s,Einheit Rot,507,1481,50,50,25,25,gfx/chips/rot.gif
+*,k,Frei,930,691,216,248,lib/Projekte/SiedlerII/felder/weiss.png,lib/Projekte/SiedlerII/felder/schwarz.png,true
+*,s,Einheit Rot,620,1306,50,50,25,25,gfx/chips/rot.gif
+*,k,Wasser,926,1419,216,248,lib/Projekte/SiedlerII/felder/blau.png,lib/Projekte/SiedlerII/felder/schwarz.png,true
+*,s,Einheit Rot,883,1273,50,50,25,25,gfx/chips/rot.gif
+*,s,Turm Rot,934,1033,80,80,40,40,lib/Projekte/SiedlerII/gebaeude/t_r.png
+*,s,Holz,801,2072,50,50,25,25,gfx/chips/gruen.gif
+*,k,Steinbruch,1290,229,216,248,lib/Projekte/SiedlerII/felder/grau.png,lib/Projekte/SiedlerII/felder/schwarz.png,false
+*,k,Frei,1109,195,216,248,lib/Projekte/SiedlerII/felder/weiss.png,lib/Projekte/SiedlerII/felder/schwarz.png,false
+*,k,Frei,1277,244,216,248,lib/Projekte/SiedlerII/felder/weiss.png,lib/Projekte/SiedlerII/felder/schwarz.png,false
+*,k,Frei,1131,224,216,248,lib/Projekte/SiedlerII/felder/weiss.png,lib/Projekte/SiedlerII/felder/schwarz.png,false
+*,k,Frei,1293,216,216,248,lib/Projekte/SiedlerII/felder/weiss.png,lib/Projekte/SiedlerII/felder/schwarz.png,false
+*,k,Frei,1277,215,216,248,lib/Projekte/SiedlerII/felder/weiss.png,lib/Projekte/SiedlerII/felder/schwarz.png,false
+*,k,Wald,1185,195,216,248,lib/Projekte/SiedlerII/felder/gruen.png,lib/Projekte/SiedlerII/felder/schwarz.png,false
+*,k,Wasser,1196,204,216,248,lib/Projekte/SiedlerII/felder/blau.png,lib/Projekte/SiedlerII/felder/schwarz.png,false
+*,k,Frei,1138,1425,216,248,lib/Projekte/SiedlerII/felder/weiss.png,lib/Projekte/SiedlerII/felder/schwarz.png,true
+*,zw,Eisenzähler,100,760,2170,50,155,55,0,255,255,255,3,gfx/wuerfel/braun.png
+*,zw,Eisenzähler,100,1174,2134,50,155,55,0,255,255,255,4,gfx/wuerfel/braun.png
+*,s,Einheit Blau,1198,2041,50,50,25,25,gfx/chips/blau.gif
+*,s,Chip Blau,1245,2070,50,50,25,25,gfx/chips/blau.gif
+*,s,Wachstube Blau,1440,2059,80,80,40,40,lib/Projekte/SiedlerII/gebaeude/w_b.png
+*,s,Wachstube Blau,1509,2070,80,80,40,40,lib/Projekte/SiedlerII/gebaeude/w_b.png
+*,s,Einheit Blau,1229,2017,50,50,25,25,gfx/chips/blau.gif
+*,s,Einheit Blau,1281,2028,50,50,25,25,gfx/chips/blau.gif
+*,s,Einheit Rot,932,1115,50,50,25,25,gfx/chips/rot.gif
+*,s,Einheit Rot,904,2042,50,50,25,25,gfx/chips/rot.gif
+*,s,Einheit Rot,943,2022,50,50,25,25,gfx/chips/rot.gif
+*,s,Einheit Blau,1265,2097,50,50,25,25,gfx/chips/blau.gif
+*,s,Einheit Rot,929,2070,50,50,25,25,gfx/chips/rot.gif
+*,s,Wachstube Blau,1541,2122,80,80,40,40,lib/Projekte/SiedlerII/gebaeude/w_b.png
+*,s,Wachstube Rot,687,1982,80,80,40,40,lib/Projekte/SiedlerII/gebaeude/w_r.png
+*,s,Einheit Blau,1349,1119,50,50,25,25,gfx/chips/blau.gif
+*,s,Einheit Rot,956,2050,50,50,25,25,gfx/chips/rot.gif
+*,s,Einheit Blau,1237,2041,50,50,25,25,gfx/chips/blau.gif
+*,s,Wachstube Blau,1620,2141,80,80,40,40,lib/Projekte/SiedlerII/gebaeude/w_b.png
+*,s,Einheit Blau,1289,2061,50,50,25,25,gfx/chips/blau.gif
+*,s,Einheit Rot,943,2061,50,50,25,25,gfx/chips/rot.gif
+*,s,Einheit Blau,1230,2056,50,50,25,25,gfx/chips/blau.gif
+*,s,Wachstube Rot,772,1986,80,80,40,40,lib/Projekte/SiedlerII/gebaeude/w_r.png
+*,s,Einheit Blau,1766,1117,50,50,25,25,gfx/chips/blau.gif
+*,s,Wachstube Blau,1760,1037,80,80,40,40,lib/Projekte/SiedlerII/gebaeude/w_b.png
+*,s,Einheit Blau,1206,2036,50,50,25,25,gfx/chips/blau.gif
+*,s,Einheit Blau,1289,2055,50,50,25,25,gfx/chips/blau.gif
+*,s,Turm Blau,1356,1041,80,80,40,40,lib/Projekte/SiedlerII/gebaeude/t_b.png
+*,s,Wachstube Blau,1678,2106,80,80,40,40,lib/Projekte/SiedlerII/gebaeude/w_b.png
+*,k,Wald,1449,1619,216,248,lib/Projekte/SiedlerII/felder/gruen.png,lib/Projekte/SiedlerII/felder/schwarz.png,true
+*,k,Wald,1669,1617,216,248,lib/Projekte/SiedlerII/felder/gruen.png,lib/Projekte/SiedlerII/felder/schwarz.png,true
+*,s,Einheit Rot,996,2066,50,50,25,25,gfx/chips/rot.gif
+*,s,Einheit Rot,1661,1306,50,50,25,25,gfx/chips/rot.gif
+*,s,Wachstube Rot,1658,1232,80,80,40,40,lib/Projekte/SiedlerII/gebaeude/w_r.png
+*,s,Einheit Blau,1288,2069,50,50,25,25,gfx/chips/blau.gif
+*,s,Einheit Blau,1259,2009,50,50,25,25,gfx/chips/blau.gif
+*,s,Einheit Rot,992,2008,50,50,25,25,gfx/chips/rot.gif
+*,s,Einheit Rot,996,2102,50,50,25,25,gfx/chips/rot.gif
+*,zw,Würfel rot,6,1007,1935,50,255,0,0,255,255,255,5,gfx/wuerfel/rot.png
+*,s,Eisen,1563,1437,50,50,25,25,gfx/chips/braun.gif
+*,s,Eisen,1514,1492,50,50,25,25,gfx/chips/braun.gif
+*,s,Eisen,1587,1492,50,50,25,25,gfx/chips/braun.gif
+*,s,Chip Braun,1599,1281,50,50,25,25,gfx/chips/braun.gif
+*,s,Chip Braun,1714,1286,50,50,25,25,gfx/chips/braun.gif
+*,zw,Steinzähler,100,-533,1626,50,200,200,200,0,0,0,39,gfx/wuerfel/grau.png
+*,s,Einheit Blau,1253,2053,50,50,25,25,gfx/chips/blau.gif
+*,s,Turm Blau,1581,2108,80,80,40,40,lib/Projekte/SiedlerII/gebaeude/t_b.png
+*,s,Turm Rot,1232,848,80,80,40,40,lib/Projekte/SiedlerII/gebaeude/t_r.png
+*,s,Einheit Rot,989,2108,50,50,25,25,gfx/chips/rot.gif
+*,s,Chip Rot,1009,2062,50,50,25,25,gfx/chips/rot.gif
+*,s,Einheit Rot,1019,2091,50,50,25,25,gfx/chips/rot.gif
+*,s,Einheit Rot,1247,932,50,50,25,25,gfx/chips/rot.gif
+*,zw,Holzzähler,100,2358,1037,50,0,155,100,255,255,255,32,gfx/wuerfel/gruen.png
+*,zw,Steinzähler,100,2361,1099,50,200,200,200,0,0,0,12,gfx/wuerfel/grau.png
+*,zw,Würfel blau,6,1070,1939,50,0,0,255,255,255,255,3,gfx/wuerfel/blau.png
+*,s,Festung Rot,719,2028,80,80,40,40,lib/Projekte/SiedlerII/gebaeude/f_r.png
+*,s,Wachstube Blau,1501,2152,80,80,40,40,lib/Projekte/SiedlerII/gebaeude/w_b.png
+*,s,Festung Blau,1149,1055,80,80,40,40,lib/Projekte/SiedlerII/gebaeude/f_b.png
+*,s,Einheit Blau,1152,1132,50,50,25,25,gfx/chips/blau.gif
+*,zw,Holzzähler,100,-535,1570,50,0,155,100,255,255,255,52,gfx/wuerfel/gruen.png
+*,zw,Goldzähler,100,-534,1506,50,255,230,0,0,0,0,32,gfx/wuerfel/gelb.png
+*,s,Einheit Rot,981,1090,50,50,25,25,gfx/chips/rot.gif
+*,s,Einheit Rot,1012,1042,50,50,25,25,gfx/chips/rot.gif
+*,s,Einheit Rot,985,972,50,50,25,25,gfx/chips/rot.gif
+*,s,Einheit Blau,1241,2041,50,50,25,25,gfx/chips/blau.gif
+*,s,Hauptquartier Blau,1637,2040,80,80,40,40,lib/Projekte/SiedlerII/gebaeude/h_b.png
+*,s,Einheit Rot,1454,885,50,50,25,25,gfx/chips/rot.gif

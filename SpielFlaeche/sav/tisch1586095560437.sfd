@@ -1,0 +1,12 @@
+*,k,Steinbruch,626,617,216,248,lib/Projekte/SiedlerII/felder/grau.png,lib/Projekte/SiedlerII/felder/schwarz.png,true
+*,k,Wald,732,433,216,248,lib/Projekte/SiedlerII/felder/gruen.png,lib/Projekte/SiedlerII/felder/schwarz.png,true
+*,k,Eisenerz,837,618,216,248,lib/Projekte/SiedlerII/felder/braun.png,lib/Projekte/SiedlerII/felder/schwarz.png,true
+*,k,Frei,946,435,216,248,lib/Projekte/SiedlerII/felder/weiss.png,lib/Projekte/SiedlerII/felder/schwarz.png,false
+*,k,Eisenerz,1055,246,216,248,lib/Projekte/SiedlerII/felder/braun.png,lib/Projekte/SiedlerII/felder/schwarz.png,false
+*,k,Steinbruch,1166,66,216,248,lib/Projekte/SiedlerII/felder/grau.png,lib/Projekte/SiedlerII/felder/schwarz.png,false
+*,k,Eisenerz,1380,64,216,248,lib/Projekte/SiedlerII/felder/braun.png,lib/Projekte/SiedlerII/felder/schwarz.png,false
+*,k,Golderz,1595,68,216,248,lib/Projekte/SiedlerII/felder/gelb.png,lib/Projekte/SiedlerII/felder/schwarz.png,false
+*,k,Golderz,1811,71,216,248,lib/Projekte/SiedlerII/felder/gelb.png,lib/Projekte/SiedlerII/felder/schwarz.png,false
+*,k,Steinbruch,2026,71,216,248,lib/Projekte/SiedlerII/felder/grau.png,lib/Projekte/SiedlerII/felder/schwarz.png,true
+*,k,Wald,2135,-111,216,248,lib/Projekte/SiedlerII/felder/gruen.png,lib/Projekte/SiedlerII/felder/schwarz.png,true
+*,k,Eisenerz,2240,71,216,248,lib/Projekte/SiedlerII/felder/braun.png,lib/Projekte/SiedlerII/felder/schwarz.png,true

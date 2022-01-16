@@ -1,0 +1,5 @@
+*,kt,Testkarte,318,58,150,220,Vorne,Hinten,true
+*,kt,Testkarte,63,-72,150,220,Vorne,Hinten,true
+*,kt,Testkarte,103,-108,150,220,Vorne,Hinten,true
+*,s,Chip Weiﬂ,127,-35,50,50,25,25,gfx/chips/weiss.gif
+*,s,Chip Orange,81,278,50,50,25,25,gfx/chips/orange.gif

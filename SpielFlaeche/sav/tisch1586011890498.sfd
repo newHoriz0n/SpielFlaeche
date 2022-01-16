@@ -1,0 +1,85 @@
+*,b,Karibik Brett,lib/Projekte/Karibik/Bretter/Brett_200_status.gif,1160,700
+*,bw,6-GedecktFarben Würfel,6,2,1510,886,50,lib\Objekte\Wuerfel\6gedecktefarbenwuerfel\orange.gif,lib\Objekte\Wuerfel\6gedecktefarbenwuerfel\grau.gif,lib\Objekte\Wuerfel\6gedecktefarbenwuerfel\schwarz.gif,lib\Objekte\Wuerfel\6gedecktefarbenwuerfel\braun.gif,lib\Objekte\Wuerfel\6gedecktefarbenwuerfel\lila.gif,lib\Objekte\Wuerfel\6gedecktefarbenwuerfel\cyan.gif,
+*,bw,6-GedecktFarben Würfel,6,4,1580,2348,50,lib\Objekte\Wuerfel\6gedecktefarbenwuerfel\orange.gif,lib\Objekte\Wuerfel\6gedecktefarbenwuerfel\grau.gif,lib\Objekte\Wuerfel\6gedecktefarbenwuerfel\schwarz.gif,lib\Objekte\Wuerfel\6gedecktefarbenwuerfel\braun.gif,lib\Objekte\Wuerfel\6gedecktefarbenwuerfel\lila.gif,lib\Objekte\Wuerfel\6gedecktefarbenwuerfel\cyan.gif,
+*,zw,Würfel weiß,6,1450,886,50,255,255,255,0,0,0,6,gfx/wuerfel/weiss.png
+*,k,Karavelle,3150,1246,150,220,lib/Projekte/Karibik/Karten/Karavelle.png,lib/Projekte/Karibik/Karten/Rueckseite.png,true
+*,s,Chip Cyan,3663,1488,50,50,25,25,gfx/chips/cyan.gif
+*,bw,6-GedecktFarben Würfel,6,6,2750,882,50,lib\Objekte\Wuerfel\6gedecktefarbenwuerfel\orange.gif,lib\Objekte\Wuerfel\6gedecktefarbenwuerfel\grau.gif,lib\Objekte\Wuerfel\6gedecktefarbenwuerfel\schwarz.gif,lib\Objekte\Wuerfel\6gedecktefarbenwuerfel\braun.gif,lib\Objekte\Wuerfel\6gedecktefarbenwuerfel\lila.gif,lib\Objekte\Wuerfel\6gedecktefarbenwuerfel\cyan.gif,
+*,s,Kupfer,981,1554,50,50,25,25,lib/Objekte/Geld/kupfer.gif
+*,s,Kupfer,1035,1534,50,50,25,25,lib/Objekte/Geld/kupfer.gif
+*,s,Chip Cyan,3631,1424,50,50,25,25,gfx/chips/cyan.gif
+*,s,Chip Cyan,3687,1432,50,50,25,25,gfx/chips/cyan.gif
+*,s,Chip Braun,4341,1484,50,50,25,25,gfx/chips/braun.gif
+*,s,Chip Braun,4351,1480,50,50,25,25,gfx/chips/braun.gif
+*,s,Gold,3123,1494,50,50,25,25,lib/Objekte/Geld/gold.gif
+*,zw,Würfel weiß,6,2813,882,50,255,255,255,0,0,0,1,gfx/wuerfel/weiss.png
+*,zw,Würfel weiß,6,1519,2352,50,255,255,255,0,0,0,5,gfx/wuerfel/weiss.png
+*,bw,6-GedecktFarben Würfel,6,5,2628,2236,50,lib\Objekte\Wuerfel\6gedecktefarbenwuerfel\orange.gif,lib\Objekte\Wuerfel\6gedecktefarbenwuerfel\grau.gif,lib\Objekte\Wuerfel\6gedecktefarbenwuerfel\schwarz.gif,lib\Objekte\Wuerfel\6gedecktefarbenwuerfel\braun.gif,lib\Objekte\Wuerfel\6gedecktefarbenwuerfel\lila.gif,lib\Objekte\Wuerfel\6gedecktefarbenwuerfel\cyan.gif,
+*,zw,Würfel weiß,6,2688,2234,50,255,255,255,0,0,0,3,gfx/wuerfel/weiss.png
+*,bw,6-GedecktFarben Würfel,6,2,2226,1894,50,lib\Objekte\Wuerfel\6gedecktefarbenwuerfel\orange.gif,lib\Objekte\Wuerfel\6gedecktefarbenwuerfel\grau.gif,lib\Objekte\Wuerfel\6gedecktefarbenwuerfel\schwarz.gif,lib\Objekte\Wuerfel\6gedecktefarbenwuerfel\braun.gif,lib\Objekte\Wuerfel\6gedecktefarbenwuerfel\lila.gif,lib\Objekte\Wuerfel\6gedecktefarbenwuerfel\cyan.gif,
+*,s,Kupfer,1027,1588,50,50,25,25,lib/Objekte/Geld/kupfer.gif
+*,s,Kupfer,3341,1598,50,50,25,25,lib/Objekte/Geld/kupfer.gif
+*,k,Fregatte,3310,1246,150,220,lib/Projekte/Karibik/Karten/Fregatte.png,lib/Projekte/Karibik/Karten/Rueckseite.png,true
+*,s,Chip Cyan,3647,1436,50,50,25,25,gfx/chips/cyan.gif
+*,s,Chip Cyan,3685,1474,50,50,25,25,gfx/chips/cyan.gif
+*,s,Silber,3295,1464,50,50,25,25,lib/Objekte/Geld/silber.gif
+*,s,Kupfer,3450,1644,50,50,25,25,lib/Objekte/Geld/kupfer.gif
+*,zw,Würfel weiß,6,2166,1894,50,255,255,255,0,0,0,6,gfx/wuerfel/weiss.png
+*,s,Chip Cyan,3695,1518,50,50,25,25,gfx/chips/cyan.gif
+*,k,Karavelle,921,1978,150,220,lib/Projekte/Karibik/Karten/Karavelle.png,lib/Projekte/Karibik/Karten/Rueckseite.png,true
+*,k,Fregatte,3158,1950,150,220,lib/Projekte/Karibik/Karten/Fregatte.png,lib/Projekte/Karibik/Karten/Rueckseite.png,true
+*,s,Chip Orange,3848,1567,50,50,25,25,gfx/chips/orange.gif
+*,s,Kupfer,3421,1648,50,50,25,25,lib/Objekte/Geld/kupfer.gif
+*,s,Chip Schwarz,3625,1646,50,50,25,25,gfx/chips/schwarz.gif
+*,s,Chip Schwarz,3731,1684,50,50,25,25,gfx/chips/schwarz.gif
+*,s,Silber,3403,747,50,50,25,25,lib/Objekte/Geld/silber.gif
+*,s,Silber,3413,798,50,50,25,25,lib/Objekte/Geld/silber.gif
+*,s,Chip Gelb,2979,2374,50,50,25,25,gfx/chips/gelb.gif
+*,s,Chip Rot,3029,2375,50,50,25,25,gfx/chips/rot.gif
+*,zw,Würfel rot,6,2167,1952,50,255,0,0,255,255,255,1,gfx/wuerfel/rot.png
+*,s,Chip Gelb,2903,2563,50,50,25,25,gfx/chips/gelb.gif
+*,zw,Würfel gelb,6,3116,1796,50,255,230,0,0,0,0,2,gfx/wuerfel/gelb.png
+*,k,Karavelle,920,2034,150,220,lib/Projekte/Karibik/Karten/Karavelle.png,lib/Projekte/Karibik/Karten/Rueckseite.png,true
+*,s,Chip Grau,3940,1472,50,50,25,25,gfx/chips/grau.gif
+*,s,Silber,3457,758,50,50,25,25,lib/Objekte/Geld/silber.gif
+*,zw,Würfel gelb,6,2109,1896,50,255,230,0,0,0,0,2,gfx/wuerfel/gelb.png
+*,s,Silber,3299,1504,50,50,25,25,lib/Objekte/Geld/silber.gif
+*,s,Chip Cyan,3731,1524,50,50,25,25,gfx/chips/cyan.gif
+*,s,Kupfer,3422,1588,50,50,25,25,lib/Objekte/Geld/kupfer.gif
+*,s,Chip Braun,4373,1504,50,50,25,25,gfx/chips/braun.gif
+*,s,Chip Braun,4333,1510,50,50,25,25,gfx/chips/braun.gif
+*,s,Chip Braun,4389,1472,50,50,25,25,gfx/chips/braun.gif
+*,s,Silber,3464,814,50,50,25,25,lib/Objekte/Geld/silber.gif
+*,s,Silber,3355,778,50,50,25,25,lib/Objekte/Geld/silber.gif
+*,s,Kupfer,3460,1596,50,50,25,25,lib/Objekte/Geld/kupfer.gif
+*,s,Kupfer,3121,2314,50,50,25,25,lib/Objekte/Geld/kupfer.gif
+*,s,Kupfer,3126,2374,50,50,25,25,lib/Objekte/Geld/kupfer.gif
+*,s,Chip Schwarz,3673,1664,50,50,25,25,gfx/chips/schwarz.gif
+*,s,Chip Gelb,1612,889,50,50,25,25,gfx/chips/gelb.gif
+*,s,Chip Orange,3853,1602,50,50,25,25,gfx/chips/orange.gif
+*,s,Silber,3223,2188,50,50,25,25,lib/Objekte/Geld/silber.gif
+*,s,Kupfer,3132,2428,50,50,25,25,lib/Objekte/Geld/kupfer.gif
+*,s,Chip Lila,4074,1638,50,50,25,25,gfx/chips/lila.gif
+*,s,Chip Lila,4131,1664,50,50,25,25,gfx/chips/lila.gif
+*,s,Chip Lila,4125,1612,50,50,25,25,gfx/chips/lila.gif
+*,s,Silber,3511,788,50,50,25,25,lib/Objekte/Geld/silber.gif
+*,s,Silber,3513,828,50,50,25,25,lib/Objekte/Geld/silber.gif
+*,s,Silber,3565,809,50,50,25,25,lib/Objekte/Geld/silber.gif
+*,s,Kupfer,3467,1526,50,50,25,25,lib/Objekte/Geld/kupfer.gif
+*,s,Kupfer,3406,1559,50,50,25,25,lib/Objekte/Geld/kupfer.gif
+*,s,Kupfer,3449,1526,50,50,25,25,lib/Objekte/Geld/kupfer.gif
+*,s,Kupfer,3482,1560,50,50,25,25,lib/Objekte/Geld/kupfer.gif
+*,s,Kupfer,3371,1652,50,50,25,25,lib/Objekte/Geld/kupfer.gif
+*,s,Kupfer,3393,1622,50,50,25,25,lib/Objekte/Geld/kupfer.gif
+*,s,Chip Orange,3373,2320,50,50,25,25,gfx/chips/orange.gif
+*,s,Chip Grau,3969,1519,50,50,25,25,gfx/chips/grau.gif
+*,s,Chip Grau,3992,1461,50,50,25,25,gfx/chips/grau.gif
+*,s,Chip Schwarz,3680,1712,50,50,25,25,gfx/chips/schwarz.gif
+*,zw,Würfel rot,6,3114,1397,50,255,0,0,255,255,255,2,gfx/wuerfel/rot.png
+*,k,Fregatte,815,2294,150,220,lib/Projekte/Karibik/Karten/Fregatte.png,lib/Projekte/Karibik/Karten/Rueckseite.png,true
+*,k,Fregatte,985,2304,150,220,lib/Projekte/Karibik/Karten/Fregatte.png,lib/Projekte/Karibik/Karten/Rueckseite.png,true
+*,zw,Würfel weiß,6,882,1663,50,255,255,255,0,0,0,4,gfx/wuerfel/weiss.png
+*,k,Fregatte,897,2343,150,220,lib/Projekte/Karibik/Karten/Fregatte.png,lib/Projekte/Karibik/Karten/Rueckseite.png,true
+*,s,Chip Rot,2654,891,50,50,25,25,gfx/chips/rot.gif
+*,s,Chip Rot,2907,2380,50,50,25,25,gfx/chips/rot.gif
+*,s,Chip Cyan,3725,1481,50,50,25,25,gfx/chips/cyan.gif
