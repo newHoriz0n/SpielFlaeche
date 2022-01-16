@@ -1,36 +1,3 @@
-#,Schach,s,Turm schwarz,-250,-250,70,70,35,35,gfx/schach/turm_b.png
-#,Schach,s,Springer schwarz,-179,-250,70,70,35,35,gfx/schach/springer_b.png
-#,Schach,s,Läufer schwarz,-108,-250,70,70,35,35,gfx/schach/laeufer_b.png
-#,Schach,s,Dame schwarz,-37,-250,70,70,35,35,gfx/schach/dame_b.png
-#,Schach,s,König schwarz,34,-250,70,70,35,35,gfx/schach/koenig_b.png
-#,Schach,s,Läufer schwarz,106,-250,70,70,35,35,gfx/schach/laeufer_b.png
-#,Schach,s,Springer schwarz,178,-250,70,70,35,35,gfx/schach/springer_b.png
-#,Schach,s,Turm schwarz,250,-250,70,70,35,35,gfx/schach/turm_b.png
-#,Schach,s,Bauer schwarz,-250,-179,70,70,35,35,gfx/schach/bauer_b.png
-#,Schach,s,Bauer schwarz,-179,-179,70,70,35,35,gfx/schach/bauer_b.png
-#,Schach,s,Bauer schwarz,-108,-179,70,70,35,35,gfx/schach/bauer_b.png
-#,Schach,s,Bauer schwarz,-37,-179,70,70,35,35,gfx/schach/bauer_b.png
-#,Schach,s,Bauer schwarz,34,-179,70,70,35,35,gfx/schach/bauer_b.png
-#,Schach,s,Bauer schwarz,106,-179,70,70,35,35,gfx/schach/bauer_b.png
-#,Schach,s,Bauer schwarz,178,-179,70,70,35,35,gfx/schach/bauer_b.png
-#,Schach,s,Bauer schwarz,250,-179,70,70,35,35,gfx/schach/bauer_b.png
-#,Schach,s,Turm weiß,-250,250,70,70,35,35,gfx/schach/turm_w.png
-#,Schach,s,Springer weiß,-179,250,70,70,35,35,gfx/schach/springer_w.png
-#,Schach,s,Läufer weiß,-108,250,70,70,35,35,gfx/schach/laeufer_w.png
-#,Schach,s,Dame weiß,-37,250,70,70,35,35,gfx/schach/dame_w.png
-#,Schach,s,König weiß,34,250,70,70,35,35,gfx/schach/koenig_w.png
-#,Schach,s,Läufer weiß,106,250,70,70,35,35,gfx/schach/laeufer_w.png
-#,Schach,s,Springer weiß,178,250,70,70,35,35,gfx/schach/springer_w.png
-#,Schach,s,Turm weiß,250,250,70,70,35,35,gfx/schach/turm_w.png
-#,Schach,s,Bauer weiß,-250,179,70,70,35,35,gfx/schach/bauer_w.png
-#,Schach,s,Bauer weiß,-179,179,70,70,35,35,gfx/schach/bauer_w.png
-#,Schach,s,Bauer weiß,-108,179,70,70,35,35,gfx/schach/bauer_w.png
-#,Schach,s,Bauer weiß,-37,179,70,70,35,35,gfx/schach/bauer_w.png
-#,Schach,s,Bauer weiß,34,179,70,70,35,35,gfx/schach/bauer_w.png
-#,Schach,s,Bauer weiß,106,179,70,70,35,35,gfx/schach/bauer_w.png
-#,Schach,s,Bauer weiß,178,179,70,70,35,35,gfx/schach/bauer_w.png
-#,Schach,s,Bauer weiß,250,179,70,70,35,35,gfx/schach/bauer_w.png
-#,Schach,b,Schachbrett,-323,-323,gfx/schach/schachbrett.jpg
 #,Würfel,zw,Würfel weiß,6,0,0,255,255,255,0,0,0,gfx/wuerfel/weiss.png
 #,Würfel,zw,Würfel rot,6,80,0,255,0,0,255,255,255,gfx/wuerfel/rot.png
 #,Würfel,zw,Würfel grün,6,160,0,0,150,100,255,255,255,gfx/wuerfel/gruen.png
@@ -52,8 +19,6 @@
 #,Chips,c,Chip Braun,gfx/chips/braun.gif
 #,Bretter,b,Wabenbrett,-323,-323,gfx/bretter/Waben_56.gif
 #,Bretter,b,DreiecksWabenbrett,-323,-323,gfx/bretter/Dreiecke_6x56.gif
-#,SpacePirate,b,Spielbrett,-323,-323,lib/Projekte/SpacePirates/brett/brett.gif
-#,SpacePirate,s,Station Stationwerft,100,100,80,80,40,40,lib/Projekte/SpacePirates/gebaude/stationswerft.gif
 #,Ringe,s,Ring Schwarz,100,100,102,102,51,51,gfx/ringe/schwarz.gif
 #,Ringe,s,Ring Weiß,100,100,102,102,51,51,gfx/ringe/weiss.gif
 #,Ringe,s,Ring Grau,100,100,102,102,51,51,gfx/ringe/grau.gif
@@ -64,99 +29,13 @@
 #,Ringe,s,Ring Gelb,100,100,102,102,51,51,gfx/ringe/gelb.gif
 #,Ringe,s,Ring Grün,100,100,102,102,51,51,gfx/ringe/gruen.gif
 #,Ringe,s,Ring Cyan,100,100,102,102,51,51,gfx/ringe/cyan.gif
-#,SiedlerII,s,Wachstube Blau,100,1000,80,80,40,40,lib/Projekte/SiedlerII/gebaeude/w_b.png
-#,SiedlerII,s,Turm Blau,100,1100,80,80,40,40,lib/Projekte/SiedlerII/gebaeude/t_b.png
-#,SiedlerII,s,Festung Blau,0,0,80,80,40,40,lib/Projekte/SiedlerII/gebaeude/f_b.png
-#,SiedlerII,s,Hauptquartier Blau,100,1300,80,80,40,40,lib/Projekte/SiedlerII/gebaeude/h_b.png
-#,SiedlerII,s,Feldherr 1 Blau,100,1400,80,80,40,40,lib/Projekte/SiedlerII/gebaeude/1_b.png
-#,SiedlerII,s,Feldherr 2 Blau,100,1500,80,80,40,40,lib/Projekte/SiedlerII/gebaeude/2_b.png
-#,SiedlerII,s,Feldherr 3 Blau,100,1600,80,80,40,40,lib/Projekte/SiedlerII/gebaeude/3_b.png
-#,SiedlerII,s,Wachstube Rot,2200,1000,80,80,40,40,lib/Projekte/SiedlerII/gebaeude/w_r.png
-#,SiedlerII,s,Turm Rot,2200,1100,80,80,40,40,lib/Projekte/SiedlerII/gebaeude/t_r.png
-#,SiedlerII,s,Festung Rot,0,0,80,80,40,40,lib/Projekte/SiedlerII/gebaeude/f_r.png
-#,SiedlerII,s,Hauptquartier Rot,2200,1300,80,80,40,40,lib/Projekte/SiedlerII/gebaeude/h_r.png
-#,SiedlerII,s,Feldherr 1 Rot,2200,1400,80,80,40,40,lib/Projekte/SiedlerII/gebaeude/1_r.png
-#,SiedlerII,s,Feldherr 2 Rot,2200,1500,80,80,40,40,lib/Projekte/SiedlerII/gebaeude/2_r.png
-#,SiedlerII,s,Feldherr 3 Rot,2200,1600,80,80,40,40,lib/Projekte/SiedlerII/gebaeude/3_r.png
-#,SiedlerII,b,Spielbrett,200,200,lib/Projekte/SiedlerII/bretter/Waben_56.gif
-#,SiedlerII,s,Einheit Blau,0,1000,50,50,25,25,gfx/chips/blau.gif
-#,SiedlerII,s,Einheit Blau,0,1050,50,50,25,25,gfx/chips/blau.gif
-#,SiedlerII,s,Einheit Blau,0,1100,50,50,25,25,gfx/chips/blau.gif
-#,SiedlerII,s,Einheit Blau,0,1150,50,50,25,25,gfx/chips/blau.gif
-#,SiedlerII,s,Einheit Blau,0,1200,50,50,25,25,gfx/chips/blau.gif
-#,SiedlerII,s,Einheit Blau,0,1250,50,50,25,25,gfx/chips/blau.gif
-#,SiedlerII,s,Einheit Blau,0,1300,50,50,25,25,gfx/chips/blau.gif
-#,SiedlerII,s,Einheit Blau,0,1350,50,50,25,25,gfx/chips/blau.gif
-#,SiedlerII,s,Einheit Blau,0,1400,50,50,25,25,gfx/chips/blau.gif
-#,SiedlerII,s,Einheit Blau,0,1450,50,50,25,25,gfx/chips/blau.gif
-#,SiedlerII,s,Einheit Rot,2300,1000,50,50,25,25,gfx/chips/rot.gif
-#,SiedlerII,s,Einheit Rot,2300,1050,50,50,25,25,gfx/chips/rot.gif
-#,SiedlerII,s,Einheit Rot,2300,1100,50,50,25,25,gfx/chips/rot.gif
-#,SiedlerII,s,Einheit Rot,2300,1150,50,50,25,25,gfx/chips/rot.gif
-#,SiedlerII,s,Einheit Rot,2300,1200,50,50,25,25,gfx/chips/rot.gif
-#,SiedlerII,s,Einheit Rot,2300,1250,50,50,25,25,gfx/chips/rot.gif
-#,SiedlerII,s,Einheit Rot,2300,1300,50,50,25,25,gfx/chips/rot.gif
-#,SiedlerII,s,Einheit Rot,2300,1350,50,50,25,25,gfx/chips/rot.gif
-#,SiedlerII,s,Einheit Rot,2300,1400,50,50,25,25,gfx/chips/rot.gif
-#,SiedlerII,s,Einheit Rot,2300,1450,50,50,25,25,gfx/chips/rot.gif
-#,SiedlerII,s,Holz,2400,1000,50,50,25,25,gfx/chips/gruen.gif
-#,SiedlerII,s,Holz,2400,1050,50,50,25,25,gfx/chips/gruen.gif
-#,SiedlerII,s,Holz,2400,1100,50,50,25,25,gfx/chips/gruen.gif
-#,SiedlerII,s,Holz,2400,1150,50,50,25,25,gfx/chips/gruen.gif
-#,SiedlerII,s,Holz,2400,1200,50,50,25,25,gfx/chips/gruen.gif
-#,SiedlerII,s,Holz,2400,1250,50,50,25,25,gfx/chips/gruen.gif
-#,SiedlerII,s,Holz,2400,1300,50,50,25,25,gfx/chips/gruen.gif
-#,SiedlerII,s,Holz,2400,1350,50,50,25,25,gfx/chips/gruen.gif
-#,SiedlerII,s,Holz,2400,1400,50,50,25,25,gfx/chips/gruen.gif
-#,SiedlerII,s,Holz,2400,1450,50,50,25,25,gfx/chips/gruen.gif
-#,SiedlerII,s,Holz,-100,1000,50,50,25,25,gfx/chips/gruen.gif
-#,SiedlerII,s,Holz,-100,1050,50,50,25,25,gfx/chips/gruen.gif
-#,SiedlerII,s,Holz,-100,1100,50,50,25,25,gfx/chips/gruen.gif
-#,SiedlerII,s,Holz,-100,1150,50,50,25,25,gfx/chips/gruen.gif
-#,SiedlerII,s,Holz,-100,1200,50,50,25,25,gfx/chips/gruen.gif
-#,SiedlerII,s,Holz,-100,1250,50,50,25,25,gfx/chips/gruen.gif
-#,SiedlerII,s,Holz,-100,1300,50,50,25,25,gfx/chips/gruen.gif
-#,SiedlerII,s,Holz,-100,1350,50,50,25,25,gfx/chips/gruen.gif
-#,SiedlerII,s,Holz,-100,1400,50,50,25,25,gfx/chips/gruen.gif
-#,SiedlerII,s,Holz,-100,1450,50,50,25,25,gfx/chips/gruen.gif
-#,SiedlerII,s,Stein,-200,1000,50,50,25,25,gfx/chips/grau.gif
-#,SiedlerII,s,Stein,-200,1050,50,50,25,25,gfx/chips/grau.gif
-#,SiedlerII,s,Stein,-200,1100,50,50,25,25,gfx/chips/grau.gif
-#,SiedlerII,s,Stein,-200,1150,50,50,25,25,gfx/chips/grau.gif
-#,SiedlerII,s,Stein,-200,1200,50,50,25,25,gfx/chips/grau.gif
-#,SiedlerII,s,Eisen,-300,1000,50,50,25,25,gfx/chips/braun.gif
-#,SiedlerII,s,Eisen,-300,1050,50,50,25,25,gfx/chips/braun.gif
-#,SiedlerII,s,Eisen,-300,1100,50,50,25,25,gfx/chips/braun.gif
-#,SiedlerII,s,Stein,2500,1000,50,50,25,25,gfx/chips/grau.gif
-#,SiedlerII,s,Stein,2500,1050,50,50,25,25,gfx/chips/grau.gif
-#,SiedlerII,s,Stein,2500,1100,50,50,25,25,gfx/chips/grau.gif
-#,SiedlerII,s,Stein,2500,1150,50,50,25,25,gfx/chips/grau.gif
-#,SiedlerII,s,Stein,2500,1200,50,50,25,25,gfx/chips/grau.gif
-#,SiedlerII,s,Eisen,2600,1000,50,50,25,25,gfx/chips/braun.gif
-#,SiedlerII,s,Eisen,2600,1050,50,50,25,25,gfx/chips/braun.gif
-#,SiedlerII,s,Eisen,2600,1100,50,50,25,25,gfx/chips/braun.gif
-#,SiedlerII,s,Gold,0,0,50,50,25,25,gfx/chips/gelb.gif
-#,SiedlerII,zw,Würfel rot,6,2100,900,255,0,0,255,255,255,gfx/wuerfel/rot.png
-#,SiedlerII,zw,Würfel blau,6,0,900,0,0,255,255,255,255,gfx/wuerfel/blau.png
-#,SiedlerII,k,Frei,0,0,216,248,lib/Projekte/SiedlerII/felder/weiss.png,lib/Projekte/SiedlerII/felder/schwarz.png
-#,SiedlerII,k,Wald,0,0,216,248,lib/Projekte/SiedlerII/felder/gruen.png,lib/Projekte/SiedlerII/felder/schwarz.png
-#,SiedlerII,k,Steinbruch,0,0,216,248,lib/Projekte/SiedlerII/felder/grau.png,lib/Projekte/SiedlerII/felder/schwarz.png
-#,SiedlerII,k,Eisenerz,0,0,216,248,lib/Projekte/SiedlerII/felder/braun.png,lib/Projekte/SiedlerII/felder/schwarz.png
-#,SiedlerII,k,Golderz,0,0,216,248,lib/Projekte/SiedlerII/felder/gelb.png,lib/Projekte/SiedlerII/felder/schwarz.png
-#,SiedlerII,k,Wasser,0,0,216,248,lib/Projekte/SiedlerII/felder/blau.png,lib/Projekte/SiedlerII/felder/schwarz.png
-#,SiedlerII,zw,Holzzähler,100,0,0,0,155,100,255,255,255,gfx/wuerfel/gruen.png
-#,SiedlerII,zw,Steinzähler,100,0,0,200,200,200,0,0,0,gfx/wuerfel/grau.png
-#,SiedlerII,zw,Eisenzähler,100,0,0,155,55,0,255,255,255,gfx/wuerfel/braun.png
-#,SiedlerII,zw,Goldzähler,100,0,0,255,230,0,0,0,0,gfx/wuerfel/gelb.png
-#,Karibik,b,Karibik Brett,200,200,lib/Projekte/Karibik/Bretter/Brett_200_status_mehr.gif
-#,Karibik,k,Karavelle,0,0,150,220,lib/Projekte/Karibik/Karten/Karavelle.png,lib/Projekte/Karibik/Karten/Rueckseite.png
-#,Karibik,k,Fregatte,200,0,150,220,lib/Projekte/Karibik/Karten/Fregatte.png,lib/Projekte/Karibik/Karten/Rueckseite.png
-#,Karibik,k,Handelsschiff,400,0,150,220,lib/Projekte/Karibik/Karten/Handelsschiff.png,lib/Projekte/Karibik/Karten/Rueckseite.png
-#,Karibik,k,Linienschiff,600,0,150,220,lib/Projekte/Karibik/Karten/Linienschiff.png,lib/Projekte/Karibik/Karten/Rueckseite.png
-#,Karibik,bw,Waren Würfel,6,50,lib\Objekte\Wuerfel\6gedecktefarbenwuerfel\orange.gif,lib\Objekte\Wuerfel\6gedecktefarbenwuerfel\schwarz.gif,lib\Objekte\Wuerfel\6gedecktefarbenwuerfel\grau.gif,lib\Objekte\Wuerfel\6gedecktefarbenwuerfel\braun.gif,lib\Objekte\Wuerfel\6gedecktefarbenwuerfel\lila.gif,lib\Objekte\Wuerfel\6gedecktefarbenwuerfel\cyan.gif 
-#,Karibik,s,Chip Rot,987,1143,50,50,25,25,gfx/chips/rot.gif
-#,Karibik,s,Chip Gelb,987,1206,50,50,25,25,gfx/chips/gelb.gif
 #,Münzen,s,Gold,0,0,50,50,25,25,lib/Objekte/Geld/gold.gif
 #,Münzen,s,Silber,0,0,50,50,25,25,lib/Objekte/Geld/silber.gif
 #,Münzen,s,Kupfer,0,0,50,50,25,25,lib/Objekte/Geld/kupfer.gif
 #,Karten,kt,Testkarte,0,0,150,220,Vorne:;2,Hinten:;3;4,false
+#,Waben,k,Weiss,0,0,216,248,lib/Projekte/SiedlerII/felder/weiss.png,lib/Projekte/SiedlerII/felder/schwarz.png
+#,Waben,k,Grün,0,0,216,248,lib/Projekte/SiedlerII/felder/gruen.png,lib/Projekte/SiedlerII/felder/schwarz.png
+#,Waben,k,Grau,0,0,216,248,lib/Projekte/SiedlerII/felder/grau.png,lib/Projekte/SiedlerII/felder/schwarz.png
+#,Waben,k,Braun,0,0,216,248,lib/Projekte/SiedlerII/felder/braun.png,lib/Projekte/SiedlerII/felder/schwarz.png
+#,Waben,k,Gelb,0,0,216,248,lib/Projekte/SiedlerII/felder/gelb.png,lib/Projekte/SiedlerII/felder/schwarz.png
+#,Waben,k,Blau,0,0,216,248,lib/Projekte/SiedlerII/felder/blau.png,lib/Projekte/SiedlerII/felder/schwarz.png

@@ -71,9 +71,18 @@ public class SpielBrett implements Sendbares {
 		return position;
 	}
 
+	public void verschiebe(double offX, double offY) {
+		position.add(offX, offY);
+	}
+
 	@Override
 	public String toSendString() {
 		return "*,b," + name + "," + PBFileReadWriter.createRelPfad(bildURL) + "," + position.getPosXInt() + "," + position.getPosYInt();
 	}
+
+	public SpielBrett getCopy() {
+		return new SpielBrett(getName(), bildURL, position);
+	}
+
 
 }

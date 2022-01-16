@@ -8,7 +8,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import math.Vektor2D;
-import tisch.Tisch;
 import tisch.objekte.SpielObjekt;
 
 public class SpielTextKarte extends SpielKarte {
@@ -19,10 +18,9 @@ public class SpielTextKarte extends SpielKarte {
 	private List<SpielKarteInhalt> inhalteVorne;
 	private List<SpielKarteInhalt> inhalteHinten;
 
-	public SpielTextKarte(String bezeichnung, Vektor2D position, Vektor2D groesse, String textVorne, String textHinten, boolean offen,
-			Tisch spielFlaeche) {
-		
-		super(bezeichnung, position, groesse, offen, spielFlaeche);
+	public SpielTextKarte(String bezeichnung, Vektor2D position, Vektor2D groesse, String textVorne, String textHinten, boolean offen) {
+
+		super(bezeichnung, position, groesse, offen);
 		getKartenInhalte(textVorne, textHinten);
 
 	}
@@ -33,9 +31,9 @@ public class SpielTextKarte extends SpielKarte {
 		getKartenInhalte(k.textVorne, k.textHinten);
 
 	}
-	
+
 	private void getKartenInhalte(String infoVorne, String infoHinten) {
-		
+
 		this.textVorne = infoVorne;
 		this.textHinten = infoHinten;
 
@@ -47,7 +45,7 @@ public class SpielTextKarte extends SpielKarte {
 		String[] hintenInhalte = textHinten.split(separator);
 
 		int offYStandard = 30;
-		
+
 		int offY = offYStandard;
 
 		for (String s : vorneInhalte) {
@@ -55,26 +53,25 @@ public class SpielTextKarte extends SpielKarte {
 			inhalteVorne.add(ski);
 			offY += 30;
 		}
-		
+
 		offY = offYStandard;
 		for (String s : hintenInhalte) {
 			SpielKarteInhalt ski = new SpielKarteInhalt(s, new Vektor2D(20, offY));
 			inhalteHinten.add(ski);
 			offY += 30;
 		}
-		
+
 	}
 
 	@Override
 	public void drawSpielObjekt(Graphics2D g, double rotation) {
-
 
 		AffineTransform at = new AffineTransform();
 		at.translate(position.getPosXInt() - center.getPosXInt(), position.getPosYInt() - center.getPosYInt());
 		at.rotate(-winkel, center.getPosX(), center.getPosY());
 
 		g.transform(at);
-		
+
 		if (offen) {
 			for (SpielKarteInhalt ski : inhalteVorne) {
 				ski.drawSpielKartenInhalt(g);
@@ -114,6 +111,6 @@ public class SpielTextKarte extends SpielKarte {
 	@Override
 	public SpielObjekt getCopy() {
 		return new SpielTextKarte(bezeichnung, new Vektor2D(position.getPosX() + 5, position.getPosY() + 5), new Vektor2D(groesse), textVorne,
-				textHinten, offen, spielFlaeche);
+				textHinten, offen);
 	}
 }

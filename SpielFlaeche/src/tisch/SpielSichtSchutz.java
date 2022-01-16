@@ -22,7 +22,7 @@ public class SpielSichtSchutz {
 
 		this.ecken = new ArrayList<>();
 		for (Vektor2D v : ecken) {
-			this.ecken.add(new SpielSymbol("Ecke", v, new Vektor2D(30, 30), new Vektor2D(15, 15), "", spielFlaeche));
+			this.ecken.add(new SpielSymbol("Ecke", v, new Vektor2D(30, 30), new Vektor2D(15, 15), ""));
 		}
 		this.opacity = 1.0f;
 		this.spielFlaeche = spielFlaeche;

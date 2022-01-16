@@ -11,7 +11,6 @@ import java.util.List;
 import javax.imageio.ImageIO;
 
 import math.Vektor2D;
-import tisch.Tisch;
 import tisch.objekte.SpielObjekt;
 
 /**
@@ -24,9 +23,9 @@ public class SpielBildWuerfel extends SpielWuerfel {
 	private List<String> bildURLs;
 	private List<BufferedImage> bilder;
 
-	public SpielBildWuerfel(String bezeichnung, Vektor2D position, int groesse, Tisch spielFlaeche, int flaechenzahl, List<String> bildURLs,
+	public SpielBildWuerfel(String bezeichnung, Vektor2D position, int groesse, int flaechenzahl, List<String> bildURLs,
 			int aktFlaeche) {
-		super(bezeichnung, position, groesse, spielFlaeche, flaechenzahl, bildURLs.get(0), aktFlaeche);
+		super(bezeichnung, position, groesse, flaechenzahl, bildURLs.get(0), aktFlaeche);
 
 		this.bildURLs = bildURLs;
 		this.bilder = new ArrayList<BufferedImage>();
@@ -43,7 +42,7 @@ public class SpielBildWuerfel extends SpielWuerfel {
 	}
 
 	public SpielBildWuerfel(SpielBildWuerfel w) {
-		super(w.bezeichnung, w.position, w.groesse.getPosXInt(), w.spielFlaeche, w.flaechenZahl, w.getBildURL(), w.aktFlaeche);
+		super(w.bezeichnung, w.position, w.groesse.getPosXInt(), w.flaechenZahl, w.getBildURL(), w.aktFlaeche);
 		this.bildURLs = w.bildURLs;
 		this.bilder = w.bilder;
 	}
@@ -88,7 +87,7 @@ public class SpielBildWuerfel extends SpielWuerfel {
 
 	@Override
 	public SpielObjekt getCopy() {
-		return new SpielBildWuerfel(bezeichnung, new Vektor2D(position.getPosX() + 5, position.getPosY() + 5), groesse.getPosXInt(), spielFlaeche,
+		return new SpielBildWuerfel(bezeichnung, new Vektor2D(position.getPosX() + 5, position.getPosY() + 5), groesse.getPosXInt(),
 				flaechenZahl, bildURLs, aktFlaeche);
 	}
 

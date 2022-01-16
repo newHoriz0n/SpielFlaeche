@@ -5,7 +5,6 @@ import java.awt.Font;
 import java.awt.Graphics2D;
 
 import math.Vektor2D;
-import tisch.Tisch;
 import tisch.objekte.SpielObjekt;
 
 /**
@@ -19,16 +18,16 @@ public class SpielZahlenWuerfel extends SpielWuerfel {
 	private Color augenfarbe;
 	private Font zahlFont = new Font("Arial", Font.BOLD, 24);
 
-	public SpielZahlenWuerfel(String bezeichnung, int flaechenZahl, Vektor2D position, int groesse, Color farbe, Color augenfarbe, Tisch spielFlaeche,
+	public SpielZahlenWuerfel(String bezeichnung, int flaechenZahl, Vektor2D position, int groesse, Color farbe, Color augenfarbe,
 			String bildURL, int aktFlaeche) {
-		super(bezeichnung, position, groesse, spielFlaeche, flaechenZahl, bildURL, aktFlaeche);
+		super(bezeichnung, position, groesse, flaechenZahl, bildURL, aktFlaeche);
 
 		this.farbe = farbe;
 		this.augenfarbe = augenfarbe;
 	}
 
 	public SpielZahlenWuerfel(SpielZahlenWuerfel w) {
-		super(w.bezeichnung, new Vektor2D(w.position), w.groesse.getPosXInt(), w.spielFlaeche, w.flaechenZahl, w.bildURL, w.aktFlaeche);
+		super(w.bezeichnung, new Vektor2D(w.position), w.groesse.getPosXInt(), w.flaechenZahl, w.bildURL, w.aktFlaeche);
 
 		this.farbe = w.farbe;
 		this.augenfarbe = w.augenfarbe;
@@ -74,7 +73,7 @@ public class SpielZahlenWuerfel extends SpielWuerfel {
 	@Override
 	public SpielObjekt getCopy() {
 		return new SpielZahlenWuerfel(bezeichnung, flaechenZahl, new Vektor2D(position.getPosX() + 5, position.getPosY() + 5), groesse.getPosXInt(),
-				farbe, augenfarbe, spielFlaeche, bildURL, aktFlaeche);
+				farbe, augenfarbe, bildURL, aktFlaeche);
 	}
 
 }

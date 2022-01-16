@@ -5,6 +5,8 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 
 import javax.swing.JPanel;
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
 
 import ctrl.CtrlView;
 import ctrl.MausHoerer;
@@ -13,6 +15,7 @@ import exe.menu.Aktion;
 import exe.menu.Menueintrag;
 import exe.menu.PPMenu;
 import math.Vektor2D;
+import model.SpielFlaecheModel;
 import tisch.SpielBrett;
 import tisch.Tisch;
 import tisch.objekte.SpielObjekt;
@@ -22,7 +25,7 @@ import tisch.objekte.SpielObjekt;
  * @author paulb
  *
  */
-public class PSpielFlaecheView extends JPanel implements CtrlView {
+public class PSpielFlaecheView extends JPanel implements CtrlView, ChangeListener {
 
 	/**
 	 * 
@@ -31,6 +34,7 @@ public class PSpielFlaecheView extends JPanel implements CtrlView {
 	private Vektor2D offset; // Verschiebung der Ansicht auf den Tisch +x = nach rechts, +y = runter
 	private double rotation;
 	private double zoom;
+	private SpielFlaecheModel m;
 	private Tisch t;
 
 	private transient PPMenu menu;
@@ -38,9 +42,10 @@ public class PSpielFlaecheView extends JPanel implements CtrlView {
 	private transient MausHoerer mh;
 	private transient TastaturHoerer th;
 
-	public PSpielFlaecheView(Tisch t) {
+	public PSpielFlaecheView(SpielFlaecheModel m) {
 
-		this.t = t;
+		this.m = m;
+		this.t = m.getTisch();
 
 		this.zoom = 1;
 
@@ -58,38 +63,47 @@ public class PSpielFlaecheView extends JPanel implements CtrlView {
 
 		this.menu = new PPMenu(10, 10);
 
-		for (String key : t.getSpielSets().keySet()) {
+		for (String key : m.getSpieleSchrank().getSpielSets().keySet()) {
 			Menueintrag l1 = new Menueintrag(key, "");
-			Menueintrag set = new Menueintrag(t.getSpielSets().get(key).getTitel() + "set", "");
+			
+			Menueintrag set = new Menueintrag(m.getSpieleSchrank().getSpielSets().get(key).getTitel() + "set", "");
 			set.addAktion(new Aktion() {
 
 				@Override
 				public void performAktion() {
-					t.platziere(t.getSpielSets().get(key), getMaus2SpielKoords(getWidth() / 2, getHeight() / 2));
+					t.platziereSpielSet(m.getSpieleSchrank().getSpielSets().get(key));
 				}
 			});
+			
 			l1.addMenuEintrag(set);
-			for (SpielBrett b : t.getSpielSets().get(key).getBretter()) {
+			
+			for (SpielBrett b : m.getSpieleSchrank().getSpielSets().get(key).getBretter()) {
 				if (!l1.containsEintrag(b.getName())) {
 					Menueintrag brett = new Menueintrag(b.getName(), b.getBildURL());
 					brett.addAktion(new Aktion() {
 
 						@Override
 						public void performAktion() {
-							t.platziere(b, getMaus2SpielKoords(getWidth() / 2, getHeight() / 2));
+							
+							SpielBrett sb = b.getCopy();
+							sb.setPosition(getMaus2SpielKoords(getWidth() / 2, getHeight() / 2));
+							t.platziereSpielBrett(sb);
 						}
 					});
 					l1.addMenuEintrag(brett);
 				}
 			}
-			for (SpielObjekt o : t.getSpielSets().get(key).getObjekte()) {
+			
+			for (SpielObjekt o : m.getSpieleSchrank().getSpielSets().get(key).getObjekte()) {
 				if (!l1.containsEintrag(o.getBezeichnung())) {
 					Menueintrag objekt = new Menueintrag(o.getBezeichnung(), o.getBildURL());
 					objekt.addAktion(new Aktion() {
 
 						@Override
 						public void performAktion() {
-							t.platziere(o, getMaus2SpielKoords(mh.getMausPos()));
+							SpielObjekt so = o.getCopy();
+							so.setPosition(getMaus2SpielKoords(mh.getMausPos()));
+							t.platziereSpielObjekt(so);
 						}
 					});
 					l1.addMenuEintrag(objekt);
@@ -99,7 +113,7 @@ public class PSpielFlaecheView extends JPanel implements CtrlView {
 		}
 
 	}
-
+	
 	public void paint(Graphics g) {
 
 		if (offset == null) {
@@ -242,6 +256,11 @@ public class PSpielFlaecheView extends JPanel implements CtrlView {
 		// if (aktButton == 1) {
 		// t.waehleObjekte(firstMausX, firstMausY, lastMausX, lastMausY);
 		// }
+	}
+
+	@Override
+	public void stateChanged(ChangeEvent ce) {
+		repaint();
 	}
 
 }

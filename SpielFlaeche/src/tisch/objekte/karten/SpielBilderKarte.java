@@ -10,7 +10,6 @@ import javax.imageio.ImageIO;
 
 import io.PBFileReadWriter;
 import math.Vektor2D;
-import tisch.Tisch;
 import tisch.objekte.SpielObjekt;
 
 public class SpielBilderKarte extends SpielKarte{
@@ -21,10 +20,9 @@ public class SpielBilderKarte extends SpielKarte{
 	protected String bildURLhinten;
 	protected transient BufferedImage bildHinten;
 	
-	public SpielBilderKarte(String bezeichnung, Vektor2D position, Vektor2D groesse, String bildURLvorne, String bildURLhinten, boolean offen,
-			Tisch spielFlaeche) {
+	public SpielBilderKarte(String bezeichnung, Vektor2D position, Vektor2D groesse, String bildURLvorne, String bildURLhinten, boolean offen) {
 		
-		super(bezeichnung, position, groesse, offen, spielFlaeche);
+		super(bezeichnung, position, groesse, offen);
 		
 		try {
 			bildVorne = ImageIO.read(new File(bildURLvorne));
@@ -136,7 +134,7 @@ public class SpielBilderKarte extends SpielKarte{
 
 	@Override
 	public SpielObjekt getCopy() {
-		return new SpielBilderKarte(bezeichnung, new Vektor2D(position.getPosX() + 5, position.getPosY() + 5), new Vektor2D(groesse), bildURLvorne, bildURLhinten, offen, spielFlaeche);
+		return new SpielBilderKarte(bezeichnung, new Vektor2D(position.getPosX() + 5, position.getPosY() + 5), new Vektor2D(groesse), bildURLvorne, bildURLhinten, offen);
 	}
 	
 }

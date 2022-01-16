@@ -6,16 +6,15 @@ import java.awt.geom.AffineTransform;
 
 import io.PBFileReadWriter;
 import math.Vektor2D;
-import tisch.Tisch;
 
 public class SpielSymbol extends SpielObjekt {
 
-	public SpielSymbol(String bezeichnung, Vektor2D position, Vektor2D groesse, Vektor2D mitte, String bildURL, Tisch spielFlaeche) {
-		super(bezeichnung, position, groesse, mitte, bildURL, spielFlaeche);
+	public SpielSymbol(String bezeichnung, Vektor2D position, Vektor2D groesse, Vektor2D mitte, String bildURL) {
+		super(bezeichnung, position, groesse, mitte, bildURL);
 	}
 
 	public SpielSymbol(SpielObjekt o) {
-		super(o.bezeichnung, o.position, o.groesse, o.center, o.bildURL, o.spielFlaeche);
+		super(o.bezeichnung, o.position, o.groesse, o.center, o.bildURL);
 	}
 
 	@Override
@@ -52,7 +51,7 @@ public class SpielSymbol extends SpielObjekt {
 
 	@Override
 	public SpielObjekt getCopy() {
-		return new SpielSymbol(bezeichnung, new Vektor2D(position.getPosX() + 5, position.getPosY() + 5), new Vektor2D(groesse), new Vektor2D(center), bildURL, spielFlaeche);
+		return new SpielSymbol(bezeichnung, new Vektor2D(position.getPosX() + 5, position.getPosY() + 5), new Vektor2D(groesse), new Vektor2D(center), bildURL);
 	}
 
 }

@@ -1,7 +1,6 @@
 package tisch.objekte.karten;
 
 import math.Vektor2D;
-import tisch.Tisch;
 import tisch.objekte.SpielObjekt;
 
 /**
@@ -13,17 +12,16 @@ public abstract class SpielKarte extends SpielObjekt {
 
 	protected boolean offen;
 
-	public SpielKarte(String bezeichnung, Vektor2D position, Vektor2D groesse, boolean offen,
-			Tisch spielFlaeche) {
+	public SpielKarte(String bezeichnung, Vektor2D position, Vektor2D groesse, boolean offen) {
 
-		super(bezeichnung, position, groesse, new Vektor2D(groesse.getPosX() / 2, groesse.getPosY() / 2), spielFlaeche);
+		super(bezeichnung, position, groesse, new Vektor2D(groesse.getPosX() / 2, groesse.getPosY() / 2));
 
 		this.offen = offen;
 
 	}
 
 	public SpielKarte(SpielKarte s) {
-		super(s.bezeichnung, new Vektor2D(s.position), new Vektor2D(s.groesse), new Vektor2D(s.center), s.spielFlaeche);
+		super(s.bezeichnung, new Vektor2D(s.position), new Vektor2D(s.groesse), new Vektor2D(s.center));
 
 		this.offen = s.offen;
 

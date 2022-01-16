@@ -6,18 +6,26 @@ import java.awt.Polygon;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
 
 import javax.imageio.ImageIO;
+import javax.swing.event.ChangeListener;
 
+import io.PBFileReadWriter;
 import io.Sendbares;
 import math.IDverwaltung;
 import math.Vektor2D;
-import tisch.Tisch;
+import tisch.objekte.karten.SpielBilderKarte;
+import tisch.objekte.karten.SpielTextKarte;
+import tisch.objekte.wuerfel.SpielBildWuerfel;
+import tisch.objekte.wuerfel.SpielZahlenWuerfel;
 
 public abstract class SpielObjekt implements Sendbares {
 
 	private int objektID;
-	
+
 	protected String bezeichnung;
 
 	protected String beschreibung;
@@ -33,19 +41,19 @@ public abstract class SpielObjekt implements Sendbares {
 	protected BufferedImage bild;
 	protected String bildURL;
 
-	protected Tisch spielFlaeche;
+	// ChangeListener
+	protected LinkedList<ChangeListener> listeners;
 
-	public SpielObjekt(String bezeichnung, Vektor2D position, Vektor2D groesse, Vektor2D mitte, Tisch spielFlaeche) {
+	public SpielObjekt(String bezeichnung, Vektor2D position, Vektor2D groesse, Vektor2D mitte) {
 		this.bezeichnung = bezeichnung;
 		this.position = new Vektor2D(position);
 		this.groesse = new Vektor2D(groesse);
 		this.center = new Vektor2D(mitte);
-		this.spielFlaeche = spielFlaeche;
 		this.bildURL = "";
 		this.objektID = IDverwaltung.getNextID();
 	}
 
-	public SpielObjekt(String bezeichnung, Vektor2D position, Vektor2D groesse, Vektor2D mitte, String bildURL, Tisch spielFlaeche) {
+	public SpielObjekt(String bezeichnung, Vektor2D position, Vektor2D groesse, Vektor2D mitte, String bildURL) {
 		this.bezeichnung = bezeichnung;
 		this.position = new Vektor2D(position);
 		this.groesse = new Vektor2D(groesse);
@@ -60,28 +68,32 @@ public abstract class SpielObjekt implements Sendbares {
 				System.out.println("failed to load bild in SpielObjekt");
 			}
 		}
-		this.spielFlaeche = spielFlaeche;
+
 		this.objektID = IDverwaltung.getNextID();
 	}
 
-	public SpielObjekt(SpielObjekt o, Tisch spielFlaeche) {
-		this.bezeichnung = o.bezeichnung;
-		this.beschreibung = o.beschreibung;
-		this.position = new Vektor2D(o.position);
-		this.groesse = new Vektor2D(o.groesse);
-		this.center = new Vektor2D(o.center);
-		this.bildURL = o.bildURL;
-		if (!bildURL.equals("")) {
-			this.bild = null;
-			try {
-				bild = ImageIO.read(new File(bildURL));
-			} catch (IOException e) {
-				System.out.println("failed");
-			}
-		}
-		this.spielFlaeche = spielFlaeche;
-		this.objektID = IDverwaltung.getNextID();
-	}
+	/**
+	 * Copy - Constructor
+	 * @param o
+	 */
+//	public SpielObjekt(SpielObjekt o) {
+//		this.bezeichnung = o.bezeichnung;
+//		this.beschreibung = o.beschreibung;
+//		this.position = new Vektor2D(o.position);
+//		this.groesse = new Vektor2D(o.groesse);
+//		this.center = new Vektor2D(o.center);
+//		this.bildURL = o.bildURL;
+//		if (!bildURL.equals("")) {
+//			this.bild = null;
+//			try {
+//				bild = ImageIO.read(new File(bildURL));
+//			} catch (IOException e) {
+//				System.out.println("failed");
+//			}
+//		}
+//
+//		this.objektID = IDverwaltung.getNextID();
+//	}
 
 	public void drawSpielObjekt(Graphics2D g, double rotation) {
 
@@ -230,35 +242,84 @@ public abstract class SpielObjekt implements Sendbares {
 		}
 		return aenderung;
 	}
-	
+
 	public abstract SpielObjekt getCopy();
 
 	public int getObjektID() {
 		return objektID;
 	}
-	
+
 	public void aktionRechtsKlick() {
 	}
 
 	@Override
 	public abstract String toSendString();
-	
+
 	/**
 	 * 
-	 * @param kompletter empfangener Befehl.
+	 * @param kompletter
+	 *            empfangener Befehl.
 	 */
-	public void handleMoveCommand(String [] infos) {
-		this.position.set( Integer.parseInt(infos[1]), Integer.parseInt(infos[2]));
+	public void handleMoveCommand(String[] infos) {
+		this.position.set(Integer.parseInt(infos[1]), Integer.parseInt(infos[2]));
 	}
-	
+
 	/**
 	 * 
 	 * @param infos
 	 */
-	public void handleRotationCommand(String [] infos) {
+	public void handleRotationCommand(String[] infos) {
 		this.winkel = Double.parseDouble(infos[1]);
 	}
-	
+
 	public abstract void handleCommand(String cmd);
-	
+
+	public void addChangeLister(ChangeListener cl) {
+		this.listeners.add(cl);
+	}
+
+	/**
+	 * SpielObjektFabrik
+	 * @param info
+	 * @return
+	 */
+	public static SpielObjekt getInstanceFromString(String[] info) {
+
+		SpielObjekt o = null;
+
+		if (info[1].equals("s")) {
+			o = new SpielSymbol(info[2], new Vektor2D(Integer.parseInt(info[3]), Integer.parseInt(info[4])),
+					new Vektor2D(Integer.parseInt(info[5]), Integer.parseInt(info[6])),
+					new Vektor2D(Integer.parseInt(info[7]), Integer.parseInt(info[8])), PBFileReadWriter.createAbsPfad(info[9]));
+
+		} else if (info[1].equals("zw")) {
+			o = new SpielZahlenWuerfel(info[2], Integer.parseInt(info[3]), new Vektor2D(Integer.parseInt(info[4]), Integer.parseInt(info[5])),
+					Integer.parseInt(info[6]), new Color(Integer.parseInt(info[7]), Integer.parseInt(info[8]), Integer.parseInt(info[9])),
+					new Color(Integer.parseInt(info[10]), Integer.parseInt(info[11]), Integer.parseInt(info[12])), info[14], 1);
+			((SpielZahlenWuerfel) o).setAktFlaeche(Integer.parseInt(info[13]));
+
+		} else if (info[1].equals("bw")) {
+			List<String> bildURLs = new ArrayList<>();
+			for (int i = 8; i < 8 + Integer.parseInt(info[3]); i++) {
+				bildURLs.add(info[i]);
+			}
+			o = new SpielBildWuerfel(info[2], new Vektor2D(Integer.parseInt(info[5]), Integer.parseInt(info[6])), Integer.parseInt(info[7]),
+					Integer.parseInt(info[3]), bildURLs, 1);
+			((SpielBildWuerfel) o).setAktFlaeche(Integer.parseInt(info[4]));
+
+		} else if (info[1].equals("k")) {
+			o = new SpielBilderKarte(info[2], new Vektor2D(Integer.parseInt(info[3]), Integer.parseInt(info[4])),
+					new Vektor2D(Integer.parseInt(info[5]), Integer.parseInt(info[6])), PBFileReadWriter.createAbsPfad(info[7]),
+					PBFileReadWriter.createAbsPfad(info[8]), Boolean.parseBoolean(info[9]));
+
+		} else if (info[1].equals("kt")) {
+			o = new SpielTextKarte(info[2], new Vektor2D(Integer.parseInt(info[3]), Integer.parseInt(info[4])),
+					new Vektor2D(Integer.parseInt(info[5]), Integer.parseInt(info[6])), info[7], info[8], Boolean.parseBoolean(info[9]));
+
+		}
+		
+		return o;
+
+	}
+
 }

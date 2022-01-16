@@ -2,8 +2,9 @@ package tisch.objekte.wuerfel;
 
 import java.util.Random;
 
+import javax.swing.event.ChangeListener;
+
 import math.Vektor2D;
-import tisch.Tisch;
 import tisch.objekte.SpielObjekt;
 
 /**
@@ -18,8 +19,8 @@ public abstract class SpielWuerfel extends SpielObjekt {
 	protected int aktFlaeche;
 	private Random r = new Random();
 
-	public SpielWuerfel(String bezeichnung, Vektor2D position, int groesse, Tisch spielFlaeche, int flaechenzahl, String bildURL, int aktFlaeche) {
-		super(bezeichnung, position, new Vektor2D(groesse, groesse), new Vektor2D(groesse / 2, groesse / 2), bildURL, spielFlaeche);
+	public SpielWuerfel(String bezeichnung, Vektor2D position, int groesse, int flaechenzahl, String bildURL, int aktFlaeche) {
+		super(bezeichnung, position, new Vektor2D(groesse, groesse), new Vektor2D(groesse / 2, groesse / 2), bildURL);
 		
 		this.flaechenZahl = flaechenzahl;
 		this.aktFlaeche = aktFlaeche;
@@ -48,11 +49,13 @@ public abstract class SpielWuerfel extends SpielObjekt {
 
 		@Override
 		public void run() {
-			for (int i = 0; i < 50; i++) {
+			for (int i = 0; i < 30; i++) {
 				aktFlaeche = r.nextInt(flaechenZahl) + 1;
-				spielFlaeche.updateView();
+				for (ChangeListener cl : listeners) {
+					cl.notify();
+				}
 				try {
-					Thread.sleep(10);
+					Thread.sleep(20);
 				} catch (InterruptedException e) {
 					e.printStackTrace();
 				}

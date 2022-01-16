@@ -11,6 +11,7 @@ import javax.swing.JFrame;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
 import io.PBFileReadWriter;
+import model.SpielFlaecheModel;
 import tisch.Tisch;
 
 /**
@@ -24,20 +25,23 @@ public class FSpielFlaeche extends JFrame {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	private Tisch t = new Tisch();
+	private SpielFlaecheModel m;
 
 	public FSpielFlaeche() {
 
+		Tisch t = new Tisch();
 		try {
-			this.t = loadTisch();
+			t = loadTisch();
 		} catch (FileNotFoundException e1) {
 		}
+		
+		this.m = new SpielFlaecheModel(t);
 
 		setVisible(true);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 
-		PSpielFlaecheView psfv = new PSpielFlaecheView(this.t);
-		this.t.setView(psfv);
+		PSpielFlaecheView psfv = new PSpielFlaecheView(this.m);
+		t.setView(psfv);
 
 		add(psfv);
 
@@ -75,7 +79,7 @@ public class FSpielFlaeche extends JFrame {
 			@Override
 			public void windowClosing(WindowEvent e) {
 				System.out.println("Serialisiere...");
-				t.erzeugeSendeDatei();
+				m.getTisch().erzeugeSendeDatei();
 			}
 
 			@Override
