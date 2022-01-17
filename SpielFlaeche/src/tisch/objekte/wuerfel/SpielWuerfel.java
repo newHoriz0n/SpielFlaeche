@@ -2,6 +2,7 @@ package tisch.objekte.wuerfel;
 
 import java.util.Random;
 
+import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
 import math.Vektor2D;
@@ -9,11 +10,11 @@ import tisch.objekte.SpielObjekt;
 
 /**
  * Abstrakter Würfel mit Randomizer
+ * 
  * @author paulb
  *
  */
 public abstract class SpielWuerfel extends SpielObjekt {
-
 
 	protected int flaechenZahl;
 	protected int aktFlaeche;
@@ -21,12 +22,11 @@ public abstract class SpielWuerfel extends SpielObjekt {
 
 	public SpielWuerfel(String bezeichnung, Vektor2D position, int groesse, int flaechenzahl, String bildURL, int aktFlaeche) {
 		super(bezeichnung, position, new Vektor2D(groesse, groesse), new Vektor2D(groesse / 2, groesse / 2), bildURL);
-		
+
 		this.flaechenZahl = flaechenzahl;
 		this.aktFlaeche = aktFlaeche;
-		
-	}
 
+	}
 
 	@Override
 	public void rotiere(double d) {
@@ -35,7 +35,7 @@ public abstract class SpielWuerfel extends SpielObjekt {
 		aktFlaeche = Math.max(1, aktFlaeche);
 		aktFlaeche = Math.min(flaechenZahl, aktFlaeche);
 	}
-	
+
 	public void setAktFlaeche(int zahl) {
 		this.aktFlaeche = zahl;
 	}
@@ -49,18 +49,19 @@ public abstract class SpielWuerfel extends SpielObjekt {
 
 		@Override
 		public void run() {
-			for (int i = 0; i < 30; i++) {
+			for (int i = 0; i < 15; i++) {
 				aktFlaeche = r.nextInt(flaechenZahl) + 1;
 				for (ChangeListener cl : listeners) {
-					cl.notify();
+					cl.stateChanged(new ChangeEvent(this));
 				}
 				try {
-					Thread.sleep(20);
+					Thread.sleep(70);
 				} catch (InterruptedException e) {
 					e.printStackTrace();
 				}
 			}
 		}
+
 	}
 
 	@Override
@@ -68,10 +69,8 @@ public abstract class SpielWuerfel extends SpielObjekt {
 		wuerfeln();
 	}
 
-
 	@Override
 	public abstract String toSendString();
-	
 
 	@Override
 	public void handleCommand(String cmd) {
@@ -82,15 +81,14 @@ public abstract class SpielWuerfel extends SpielObjekt {
 		case "m":
 			handleMoveCommand(infos);
 			break;
-			
+
 		case "w":
 			handleWuerfelCommand(infos);
 			break;
-			
+
 		}
 
 	}
-
 
 	/**
 	 * 
@@ -99,8 +97,5 @@ public abstract class SpielWuerfel extends SpielObjekt {
 	private void handleWuerfelCommand(String[] infos) {
 		setAktFlaeche(Integer.parseInt(infos[1]));
 	}
-	
-	
-	
-	
+
 }

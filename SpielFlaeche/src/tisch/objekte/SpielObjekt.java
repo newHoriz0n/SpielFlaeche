@@ -51,6 +51,7 @@ public abstract class SpielObjekt implements Sendbares {
 		this.center = new Vektor2D(mitte);
 		this.bildURL = "";
 		this.objektID = IDverwaltung.getNextID();
+		this.listeners = new LinkedList<>();
 	}
 
 	public SpielObjekt(String bezeichnung, Vektor2D position, Vektor2D groesse, Vektor2D mitte, String bildURL) {
@@ -70,6 +71,7 @@ public abstract class SpielObjekt implements Sendbares {
 		}
 
 		this.objektID = IDverwaltung.getNextID();
+		this.listeners = new LinkedList<>();
 	}
 
 	/**

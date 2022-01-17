@@ -258,6 +258,8 @@ public class PSpielFlaecheView extends JPanel implements CtrlView, ChangeListene
 		// }
 	}
 
+	
+	
 	@Override
 	public void stateChanged(ChangeEvent ce) {
 		repaint();

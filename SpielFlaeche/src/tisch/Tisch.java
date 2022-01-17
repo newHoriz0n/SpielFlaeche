@@ -12,6 +12,7 @@ import lib.SpielSet;
 import math.Vektor2D;
 import tisch.objekte.SpielObjekt;
 import tisch.objekte.SpielSymbol;
+import tisch.objekte.wuerfel.SpielWuerfel;
 
 /**
  * 
@@ -110,6 +111,9 @@ public class Tisch {
 
 	public void platziereSpielObjekt(SpielObjekt o) {
 		spielObjekte.add(o);
+		if(o instanceof SpielWuerfel) {
+			o.addChangeLister(view);
+		}
 	}
 
 	public void platziereSpielSichtSchutz(SpielSichtSchutz s) {
