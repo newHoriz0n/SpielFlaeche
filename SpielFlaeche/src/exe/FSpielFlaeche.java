@@ -10,6 +10,7 @@ import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
+import ctrl.HoererManager;
 import io.PBFileReadWriter;
 import model.SpielFlaecheModel;
 import tisch.Tisch;
@@ -40,12 +41,15 @@ public class FSpielFlaeche extends JFrame {
 		setVisible(true);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 
+		
 		PSpielFlaecheView psfv = new PSpielFlaecheView(this.m);
+		HoererManager hm = new HoererManager(psfv, t);
+		psfv.setHoererManager(hm);
+		
 		t.setView(psfv);
 
 		add(psfv);
-
-		addKeyListener(psfv.getTastaturHoerer());
+		addKeyListener(hm);
 
 		pack();
 		setExtendedState(MAXIMIZED_BOTH);

@@ -76,26 +76,27 @@ public abstract class SpielObjekt implements Sendbares {
 
 	/**
 	 * Copy - Constructor
+	 * 
 	 * @param o
 	 */
-//	public SpielObjekt(SpielObjekt o) {
-//		this.bezeichnung = o.bezeichnung;
-//		this.beschreibung = o.beschreibung;
-//		this.position = new Vektor2D(o.position);
-//		this.groesse = new Vektor2D(o.groesse);
-//		this.center = new Vektor2D(o.center);
-//		this.bildURL = o.bildURL;
-//		if (!bildURL.equals("")) {
-//			this.bild = null;
-//			try {
-//				bild = ImageIO.read(new File(bildURL));
-//			} catch (IOException e) {
-//				System.out.println("failed");
-//			}
-//		}
-//
-//		this.objektID = IDverwaltung.getNextID();
-//	}
+	// public SpielObjekt(SpielObjekt o) {
+	// this.bezeichnung = o.bezeichnung;
+	// this.beschreibung = o.beschreibung;
+	// this.position = new Vektor2D(o.position);
+	// this.groesse = new Vektor2D(o.groesse);
+	// this.center = new Vektor2D(o.center);
+	// this.bildURL = o.bildURL;
+	// if (!bildURL.equals("")) {
+	// this.bild = null;
+	// try {
+	// bild = ImageIO.read(new File(bildURL));
+	// } catch (IOException e) {
+	// System.out.println("failed");
+	// }
+	// }
+	//
+	// this.objektID = IDverwaltung.getNextID();
+	// }
 
 	public void drawSpielObjekt(Graphics2D g, double rotation) {
 
@@ -108,8 +109,13 @@ public abstract class SpielObjekt implements Sendbares {
 		}
 		int[][] polygon = calcPolygon();
 		g.drawPolygon(polygon[0], polygon[1], 4);
+
 	}
 
+	/**
+	 * 
+	 * @return polygon des Objektes, [0]: xs, [1]: ys
+	 */
 	protected int[][] calcPolygon() {
 
 		int[] xs = new int[4];
@@ -150,8 +156,42 @@ public abstract class SpielObjekt implements Sendbares {
 	 * @param lastMausY
 	 * @return
 	 */
-	public boolean checkRahmenAuswahl(int firstMausX, int firstMausY, int lastMausX, int lastMausY) {
+	public boolean checkRahmenAuswahl(int minXRahmen, int minYRahmen, int maxXRahmen, int maxYRahmen) {
+
+		int[][] polygon = calcPolygon();
+
+		// Umrahmendes Rechteck des Objektes
+
+		int minXObjekt = Integer.MAX_VALUE;
+		int minYObjekt = Integer.MAX_VALUE;
+		int maxXObjekt = Integer.MIN_VALUE;
+		int maxYObjekt = Integer.MIN_VALUE;
+
+		for (Integer x : polygon[0]) {
+			if (x < minXObjekt) {
+				minXObjekt = x;
+			}
+			if (x > maxXObjekt) {
+				maxXObjekt = x;
+			}
+		}
+
+		for (Integer y : polygon[1]) {
+			if (y < minYObjekt) {
+				minYObjekt = y;
+			}
+			if (y > maxYObjekt) {
+				maxYObjekt = y;
+			}
+		}
+
+		if(minXRahmen < minXObjekt && maxXRahmen > maxXObjekt && minYRahmen < minYObjekt && maxYRahmen > maxYObjekt) {
+			return true;
+		}
+		
 		return false;
+		
+		
 	}
 
 	public void setAusgewaehlt(boolean b) {
@@ -282,6 +322,7 @@ public abstract class SpielObjekt implements Sendbares {
 
 	/**
 	 * SpielObjektFabrik
+	 * 
 	 * @param info
 	 * @return
 	 */
@@ -319,7 +360,7 @@ public abstract class SpielObjekt implements Sendbares {
 					new Vektor2D(Integer.parseInt(info[5]), Integer.parseInt(info[6])), info[7], info[8], Boolean.parseBoolean(info[9]));
 
 		}
-		
+
 		return o;
 
 	}

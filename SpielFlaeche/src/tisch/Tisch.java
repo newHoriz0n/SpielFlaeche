@@ -1,11 +1,13 @@
 package tisch;
 
+import java.awt.Color;
 import java.awt.Graphics2D;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import ctrl.TischController;
 import exe.PSpielFlaecheView;
 import io.PBFileReadWriter;
 import lib.SpielSet;
@@ -21,13 +23,14 @@ import tisch.objekte.wuerfel.SpielWuerfel;
  *
  *         Enthält alles, was auf einem Spieltisch liegt...
  */
-public class Tisch {
+public class Tisch implements TischController {
 
 	private List<SpielBrett> spielbretter;
 	private List<SpielObjekt> spielObjekte;
 	private List<SpielSichtSchutz> spielSichtSchutze;
 	// private ListIterator<SpielObjekt> spielObjekteIterator;
 
+	private int [] auswahlrahmen;	// xmin xmax ymin ymax
 	private SpielObjekt ausgewahltesObjekt;
 	private List<SpielObjekt> ausgewaehlteObjekte;
 
@@ -42,6 +45,7 @@ public class Tisch {
 		this.spielObjekte = new ArrayList<>();
 		this.spielSichtSchutze = new ArrayList<>();
 		this.ausgewaehlteObjekte = new ArrayList<>();
+		this.auswahlrahmen = new int [4];
 
 		// List<Vektor2D> ecken = new ArrayList<>();
 		// ecken.add(new Vektor2D(100, 100));
@@ -99,7 +103,7 @@ public class Tisch {
 			platziereSpielObjekt(o);
 		}
 
-		for (SpielBrett b : set.getBretter()) {			
+		for (SpielBrett b : set.getBretter()) {
 			platziereSpielBrett(b);
 		}
 
@@ -111,7 +115,7 @@ public class Tisch {
 
 	public void platziereSpielObjekt(SpielObjekt o) {
 		spielObjekte.add(o);
-		if(o instanceof SpielWuerfel) {
+		if (o instanceof SpielWuerfel) {
 			o.addChangeLister(view);
 		}
 	}
@@ -135,14 +139,40 @@ public class Tisch {
 		for (SpielSichtSchutz s : spielSichtSchutze) {
 			s.drawSpielObjekt(g, bildRotation);
 		}
+		
+		// Auswahlrahmen
+//		g.setColor(Color.BLACK);
+//		g.drawRect(auswahlrahmen[0], auswahlrahmen[2], auswahlrahmen[1] - auswahlrahmen[0], auswahlrahmen[3] - auswahlrahmen[2]);
 	}
 
 	public void waehleObjekte(int firstMausX, int firstMausY, int lastMausX, int lastMausY) {
 
 		ausgewaehlteObjekte.clear();
+		
+		// Auswahlrahmen
+		
+		int minXRahmen = firstMausX;
+		int minYRahmen = firstMausY;
+		int maxXRahmen = lastMausX;
+		int maxYRahmen = lastMausY;
+		
+		if(firstMausX > lastMausX) {
+			minXRahmen = lastMausX;
+			maxXRahmen = firstMausX;
+		}
+		if(firstMausY > lastMausY) {
+			minYRahmen = lastMausY;
+			maxYRahmen = firstMausY;
+		}
+		
+		auswahlrahmen[0] = minXRahmen;
+		auswahlrahmen[1] = maxXRahmen;
+		auswahlrahmen[2] = minYRahmen;
+		auswahlrahmen[3] = maxYRahmen;
+		
 		for (int i = 0; i < spielObjekte.size(); i++) {
 
-			if (spielObjekte.get(i).checkRahmenAuswahl(firstMausX, firstMausY, lastMausX, lastMausY)) {
+			if (spielObjekte.get(i).checkRahmenAuswahl(minXRahmen, minYRahmen, maxXRahmen, maxYRahmen)) {
 				spielObjekte.get(i).setAusgewaehlt(true);
 				ausgewaehlteObjekte.add(spielObjekte.get(i));
 			} else {
@@ -207,6 +237,9 @@ public class Tisch {
 		if (ausgewahltesObjekt != null) {
 			ausgewahltesObjekt.verschiebe(offX, offY);
 		}
+
+		// TODO: Verschiebe mehrere Objekte gleichzeitig
+
 		// for (SpielObjekt s : ausgewaehlteObjekte) {
 		// s.verschiebe(offX, offY);
 		// }
@@ -360,6 +393,46 @@ public class Tisch {
 				spielObjekte.add(neu);
 			}
 			objektAuswaehlen(neu);
+		}
+	}
+
+	//////////////////////////
+	// Controller Functions
+	//////////////////////////
+
+	@Override
+	public void verschiebeAusgewaelteObjekte(double offX, double offY) {
+		verschiebeObjekt(offX, offY);
+	}
+
+	@Override
+	public void handleMausPress(int button, Vektor2D spielMausKoords) {
+
+		if (button == 1) {
+			// t.waehleObjekte(spielMausKoords.getPosX(), spielMausKoords.getPosY());
+			waehleObjekt(spielMausKoords.getPosX(), spielMausKoords.getPosY());
+		} else if (button == 3) {
+			aktionRechtsKlick(spielMausKoords.getPosX(), spielMausKoords.getPosY());
+			// t.aktionRechtsKlickMultiSelect(spielMausKoords.getPosX(),
+			// spielMausKoords.getPosY());
+		}
+
+	}
+
+	@Override
+	public void handleMausRad(int wheelRotation) {
+		rotiere(wheelRotation);
+	}
+
+	@Override
+	public boolean hatAusgewaehltesObjekt() {
+		return (getAusgewaehltesObjekt() != null || getAusgewaehlteObjekte().size() > 0);
+	}
+
+	@Override
+	public void handleAuswahlRahmen(int aktButton, Vektor2D firstMaus, Vektor2D lastMaus) {
+		if (Math.abs(firstMaus.getPosX() - lastMaus.getPosX()) > 10 && Math.abs(firstMaus.getPosY() - lastMaus.getPosY()) > 10) {
+			// waehleObjekte(firstMaus.getPosXInt(), firstMaus.getPosYInt(), lastMaus.getPosXInt(), lastMaus.getPosYInt());
 		}
 	}
 

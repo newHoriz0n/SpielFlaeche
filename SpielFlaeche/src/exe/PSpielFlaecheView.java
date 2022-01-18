@@ -8,9 +8,8 @@ import javax.swing.JPanel;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
-import ctrl.CtrlView;
-import ctrl.MausHoerer;
-import ctrl.TastaturHoerer;
+import ctrl.ViewController;
+import ctrl.HoererManager;
 import exe.menu.Aktion;
 import exe.menu.Menueintrag;
 import exe.menu.PPMenu;
@@ -25,7 +24,7 @@ import tisch.objekte.SpielObjekt;
  * @author paulb
  *
  */
-public class PSpielFlaecheView extends JPanel implements CtrlView, ChangeListener {
+public class PSpielFlaecheView extends JPanel implements ViewController, ChangeListener {
 
 	/**
 	 * 
@@ -39,8 +38,7 @@ public class PSpielFlaecheView extends JPanel implements CtrlView, ChangeListene
 
 	private transient PPMenu menu;
 
-	private transient MausHoerer mh;
-	private transient TastaturHoerer th;
+	private transient HoererManager hm;
 
 	public PSpielFlaecheView(SpielFlaecheModel m) {
 
@@ -49,17 +47,11 @@ public class PSpielFlaecheView extends JPanel implements CtrlView, ChangeListene
 
 		this.zoom = 1;
 
-		createMenu();
-
-		this.mh = new MausHoerer(this);
-		this.th = new TastaturHoerer(this);
-		addMouseListener(mh);
-		addMouseMotionListener(mh);
-		addMouseWheelListener(mh);
+		createObjektMenu();
 
 	}
 
-	private void createMenu() {
+	private void createObjektMenu() {
 
 		this.menu = new PPMenu(10, 10);
 
@@ -86,7 +78,7 @@ public class PSpielFlaecheView extends JPanel implements CtrlView, ChangeListene
 						public void performAktion() {
 							
 							SpielBrett sb = b.getCopy();
-							sb.setPosition(getMaus2SpielKoords(getWidth() / 2, getHeight() / 2));
+							sb.setPosition(getSpielKoordsVonMaus(getWidth() / 2, getHeight() / 2));
 							t.platziereSpielBrett(sb);
 						}
 					});
@@ -102,7 +94,7 @@ public class PSpielFlaecheView extends JPanel implements CtrlView, ChangeListene
 						@Override
 						public void performAktion() {
 							SpielObjekt so = o.getCopy();
-							so.setPosition(getMaus2SpielKoords(mh.getMausPos()));
+							so.setPosition(getSpielKoordsVonMaus(hm.getMausPos().getPosXInt(),hm.getMausPos().getPosYInt() ));
 							t.platziereSpielObjekt(so);
 						}
 					});
@@ -112,6 +104,14 @@ public class PSpielFlaecheView extends JPanel implements CtrlView, ChangeListene
 			menu.addMenuEintrag(l1);
 		}
 
+	}
+	
+	public void setHoererManager(HoererManager hm) {
+		this.hm = hm;
+		
+		addMouseListener(hm);
+		addMouseMotionListener(hm);
+		addMouseWheelListener(hm);
 	}
 	
 	public void paint(Graphics g) {
@@ -160,109 +160,48 @@ public class PSpielFlaecheView extends JPanel implements CtrlView, ChangeListene
 		repaint();
 	}
 
-	@Override
-	public void verschiebeObjekt(double offX, double offY) {
-
-		double newOffX = offX * Math.cos(rotation) + offY * Math.sin(rotation);
-		double newOffY = offY * Math.cos(rotation) - offX * Math.sin(rotation);
-
-		t.verschiebeObjekt(newOffX / zoom, newOffY / zoom);
-		repaint();
-	}
 
 	@Override
-	public void mausDruck(int button, double x, double y) {
-
-		Vektor2D spielMausKoords = getMaus2SpielKoords(x, y);
-
-		if (!menu.checkKlick((int) x, (int) y)) {
-			if (button == 1) {
-				// t.waehleObjekte(spielMausKoords.getPosX(), spielMausKoords.getPosY());
-				t.waehleObjekt(spielMausKoords.getPosX(), spielMausKoords.getPosY());
-			} else if (button == 3) {
-				t.aktionRechtsKlick(spielMausKoords.getPosX(), spielMausKoords.getPosY());
-				// t.aktionRechtsKlickMultiSelect(spielMausKoords.getPosX(),
-				// spielMausKoords.getPosY());
-			}
-		}
-
-		repaint();
+	public boolean checkViewControllerPress(int button, int mausX, int mausY) {
+		return menu.checkKlick(mausX, mausY);
 	}
+
 
 	@Override
-	public void mausRadBewegung(int wheelRotation) {
-		if (th.isTasteGedrueckt(17)) {
-			zoom -= wheelRotation * 0.05;
-			zoom = Math.max(0.1, zoom);
-			zoom = Math.min(10, zoom);
-		} else {
-			if (t.getAusgewaehltesObjekt() != null || t.getAusgewaehlteObjekte().size() > 0) {
-				t.rotiere(wheelRotation);
-			} else {
-				dreheAnsicht((double) wheelRotation * Math.PI / 16);
-			}
-		}
-		repaint();
-	}
-
-	private Vektor2D getMaus2SpielKoords(double x, double y) {
+	public Vektor2D getSpielKoordsVonMaus(int mausX, int mausY) {
 		double drehpunktX = ((getWidth() / 2) - offset.getPosX());
 		double drehpunktY = ((getHeight() / 2) - offset.getPosY());
 
-		double dx = (x - (getWidth() / 2)) / zoom;
-		double dy = (y - (getHeight() / 2)) / zoom;
+		double dx = (mausX - (getWidth() / 2)) / zoom;
+		double dy = (mausY - (getHeight() / 2)) / zoom;
 
 		return new Vektor2D(drehpunktX + (dx * Math.cos(rotation) + dy * Math.sin(rotation)),
 				drehpunktY + (dy * Math.cos(rotation) - dx * Math.sin(rotation)));
 	}
-
-	protected Vektor2D getMaus2SpielKoords(Vektor2D mausPos) {
-		return getMaus2SpielKoords(mausPos.getPosX(), mausPos.getPosY());
-	}
-
-	public TastaturHoerer getTastaturHoerer() {
-		return th;
-	}
-
-	@Override
-	public void mausBewegung(int x, int y) {
-		if (t.checkMouseOver(getMaus2SpielKoords(x, y))) {
-			repaint();
-		}
-	}
-
-	@Override
-	public void handleTastenRelease(int keyCode) {
-
-		System.out.println(keyCode);
-
-		if (keyCode == 127) {
-			t.entferneObjekt();
-		} else if (keyCode == 33) {
-			t.ObjektNachOben();
-		} else if (keyCode == 34) {
-			t.ObjektNachUnten();
-		} else if (keyCode == 83) {
-			t.ObjekteMischen();
-		} else if (keyCode == 67) {
-			t.kopiereObjekt();
-		}
-
-		repaint();
-	}
-
-	@Override
-	public void handleMouseRelease(int firstMausX, int firstMausY, int lastMausX, int lastMausY, int aktButton) {
-		// if (aktButton == 1) {
-		// t.waehleObjekte(firstMausX, firstMausY, lastMausX, lastMausY);
-		// }
-	}
-
-	
 	
 	@Override
 	public void stateChanged(ChangeEvent ce) {
 		repaint();
+	}
+
+	public double getViewRotation() {
+		return rotation;
+	}
+
+	public double getViewZoom() {
+		return zoom;
+	}
+	
+	@Override
+	public void repaintView() {
+		repaint();
+	}
+
+	@Override
+	public void setZoom(double zoom) {
+		this.zoom = zoom;
+		this.zoom = Math.max(0.1, zoom);
+		this.zoom = Math.min(10, zoom);
 	}
 
 }
