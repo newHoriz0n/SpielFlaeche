@@ -1,6 +1,7 @@
 package exe;
 
 import java.awt.Color;
+import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 
@@ -10,6 +11,7 @@ import javax.swing.event.ChangeListener;
 
 import ctrl.ViewController;
 import ctrl.HoererManager;
+import ctrl.TischControl;
 import exe.menu.Aktion;
 import exe.menu.Menueintrag;
 import exe.menu.PPMenu;
@@ -141,7 +143,22 @@ public class PSpielFlaecheView extends JPanel implements ViewController, ChangeL
 		g2d.translate(-offset.getPosX() * zoom, -offset.getPosY() * zoom);
 		g2d.rotate(-rotation, getWidth() / 2, getHeight() / 2);
 		menu.drawPPMenu(g2d);
+		
+		// TISCH CTRLS
+		drawTischControls(g2d);
 
+	}
+
+	private void drawTischControls(Graphics2D g2d) {
+		g2d.setFont(new Font("Arial", Font.PLAIN, 14));
+		g2d.setColor(Color.BLACK);
+		int offY = getHeight() - 30;
+		int lineHeight = 20;
+		for (TischControl c : t.getCurrentTischControls()) {
+			g2d.drawString(c.getTaste() + ":", 20, offY);
+			g2d.drawString(c.getBeschreibung(), 70, offY);
+			offY -= lineHeight;
+		}
 	}
 
 	@Override

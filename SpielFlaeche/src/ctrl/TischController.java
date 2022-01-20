@@ -1,10 +1,11 @@
 package ctrl;
 
+import java.awt.event.KeyEvent;
+
 import math.Vektor2D;
 
 public interface TischController {
 
-	public void verschiebeAusgewaelteObjekte(double offX, double offY);
 
 	public boolean checkMouseOver(Vektor2D spielkoords);
 
@@ -12,18 +13,12 @@ public interface TischController {
 
 	public void handleMausRad(int wheelRotation);
 
+	public void handleLeftMouseDrag(double offX, double offY, Vektor2D firstMaus, Vektor2D lastMaus);
+
 	public boolean hatAusgewaehltesObjekt();
 
-	public void entferneObjekt();
+	public void handleMausRelease(int aktButton, Vektor2D firstMaus, Vektor2D lastMaus );
 
-	public void ObjektNachOben();
-
-	public void ObjektNachUnten();
-
-	public void ObjekteMischen();
-
-	public void kopiereObjekt();
-
-	public void handleAuswahlRahmen(int aktButton, Vektor2D firstMaus, Vektor2D lastMaus );
+	public void handleTischKeyControls(KeyEvent arg0);
 
 }

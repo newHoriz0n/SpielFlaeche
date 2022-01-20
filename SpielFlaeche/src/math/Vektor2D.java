@@ -47,14 +47,16 @@ public class Vektor2D implements Serializable {
 		return (int) posY;
 	}
 
-	public void add(double x, double y) {
+	public Vektor2D add(double x, double y) {
 		posX += x;
 		posY += y;
+		return this;
 	}
 
-	public void add(Vektor2D add) {
+	public Vektor2D add(Vektor2D add) {
 		posX += add.posX;
 		posY += add.posY;
+		return this;
 	}
 
 	public void scale(double d) {

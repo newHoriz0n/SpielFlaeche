@@ -2,11 +2,16 @@ package tisch;
 
 import java.awt.Color;
 import java.awt.Graphics2D;
+import java.awt.event.KeyEvent;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.List;
 
+import ctrl.TischControl;
+import ctrl.TischControlAction;
+import ctrl.TischControlStatus;
 import ctrl.TischController;
 import exe.PSpielFlaecheView;
 import io.PBFileReadWriter;
@@ -30,11 +35,15 @@ public class Tisch implements TischController {
 	private List<SpielSichtSchutz> spielSichtSchutze;
 	// private ListIterator<SpielObjekt> spielObjekteIterator;
 
-	private int [] auswahlrahmen;	// xmin xmax ymin ymax
+	private int[] auswahlrahmen; // xmin xmax ymin ymax
 	private SpielObjekt ausgewahltesObjekt;
 	private List<SpielObjekt> ausgewaehlteObjekte;
 
 	private PSpielFlaecheView view;
+
+	private TischControlStatus status = TischControlStatus.AUSWAHL_EINZEL;
+	private HashMap<TischControlStatus, List<TischControl>> tischCtrls = loadTischControls();
+	private boolean ignoreMouseRelease;
 
 	/**
 	 * Erstelle leeren Tisch
@@ -45,7 +54,6 @@ public class Tisch implements TischController {
 		this.spielObjekte = new ArrayList<>();
 		this.spielSichtSchutze = new ArrayList<>();
 		this.ausgewaehlteObjekte = new ArrayList<>();
-		this.auswahlrahmen = new int [4];
 
 		// List<Vektor2D> ecken = new ArrayList<>();
 		// ecken.add(new Vektor2D(100, 100));
@@ -88,6 +96,118 @@ public class Tisch implements TischController {
 		}
 
 		System.out.println("Laden aus Datei abgeschlossen!");
+
+	}
+
+	private HashMap<TischControlStatus, List<TischControl>> loadTischControls() {
+		HashMap<TischControlStatus, List<TischControl>> ctrls = new HashMap<>();
+
+		// FREE
+		List<TischControl> tcsFree = new ArrayList<>();
+
+		ctrls.put(TischControlStatus.FREE, tcsFree);
+
+		// AUSWAHL_EINZEL
+		List<TischControl> tcsAuswahlEinzel = new ArrayList<>();
+		// Löschen
+		TischControl delO = new TischControl("Entf", 127, "Entferne Objekt");
+		delO.setControlAction(new TischControlAction() {
+			@Override
+			public void performAction() {
+				entferneObjekt(ausgewahltesObjekt);
+			}
+		});
+		tcsAuswahlEinzel.add(delO);
+		// Kopieren
+		TischControl copyO = new TischControl("C", 67, "Kopiere Objekt");
+		copyO.setControlAction(new TischControlAction() {
+			@Override
+			public void performAction() {
+				SpielObjekt o = kopiereObjekt(ausgewahltesObjekt);
+				ausgewahltesObjekt.setAusgewaehlt(false);
+				ausgewahltesObjekt = o;
+				ausgewahltesObjekt.setAusgewaehlt(true);
+			}
+		});
+		tcsAuswahlEinzel.add(copyO);
+
+		/*
+		 * else if (arg0.getKeyCode() == 33) { tc.ObjektNachOben(); } else if
+		 * (arg0.getKeyCode() == 34) { tc.ObjektNachUnten(); } else if
+		 * (arg0.getKeyCode() == 83) { tc.ObjekteMischen();
+		 * 
+		 */
+
+		ctrls.put(TischControlStatus.AUSWAHL_EINZEL, tcsAuswahlEinzel);
+
+		// AUSWAHL MEHRERE
+		List<TischControl> tcsAuswahlMehrere = new ArrayList<>();
+		// Bündeln
+		TischControl stackOs = new TischControl("B", 66, "Objekte stapeln");
+		stackOs.setControlAction(new TischControlAction() {
+			@Override
+			public void performAction() {
+				objekteStapeln();
+			}
+		});
+		tcsAuswahlMehrere.add(stackOs);
+
+		// Mischen
+		TischControl shuffleOs = new TischControl("S", 83, "Objekte mischen");
+		shuffleOs.setControlAction(new TischControlAction() {
+			@Override
+			public void performAction() {
+				objekteMischen();
+			}
+		});
+		tcsAuswahlMehrere.add(shuffleOs);
+
+		// Rechtsklick AKtion auf alle
+		TischControl rightOnOs = new TischControl("R", 82, "Rechtsklick auf Objekte");
+		rightOnOs.setControlAction(new TischControlAction() {
+			@Override
+			public void performAction() {
+				for (SpielObjekt o : ausgewaehlteObjekte) {
+					o.aktionRechtsKlick();
+				}
+			}
+		});
+		tcsAuswahlMehrere.add(rightOnOs);
+
+		// Copy All
+		TischControl copyOs = new TischControl("C", 67, "Kopiere Objekte");
+		copyOs.setControlAction(new TischControlAction() {
+			@Override
+			public void performAction() {
+				List<SpielObjekt> neue = new ArrayList<>();
+				for (SpielObjekt o : ausgewaehlteObjekte) {
+					neue.add(kopiereObjekt(o));
+					o.setAusgewaehlt(false);
+				}
+				ausgewaehlteObjekte.clear();
+				ausgewaehlteObjekte.addAll(neue);
+				for (SpielObjekt o : ausgewaehlteObjekte) {
+					o.setAusgewaehlt(true);
+				}
+			}
+		});
+		tcsAuswahlMehrere.add(copyOs);
+
+		// Delete All
+		TischControl delOs = new TischControl("Entf", 127, "Lösche Objekte");
+		delOs.setControlAction(new TischControlAction() {
+			@Override
+			public void performAction() {
+				for (int i = ausgewaehlteObjekte.size() - 1; i >= 0; i--) {
+					entferneObjekt(ausgewaehlteObjekte.get(i));
+				}
+			}
+		});
+		tcsAuswahlMehrere.add(delOs);
+
+		ctrls.put(TischControlStatus.AUSWAHL_MEHRERE, tcsAuswahlMehrere);
+
+		return ctrls;
 
 	}
 
@@ -139,75 +259,48 @@ public class Tisch implements TischController {
 		for (SpielSichtSchutz s : spielSichtSchutze) {
 			s.drawSpielObjekt(g, bildRotation);
 		}
-		
+
 		// Auswahlrahmen
-//		g.setColor(Color.BLACK);
-//		g.drawRect(auswahlrahmen[0], auswahlrahmen[2], auswahlrahmen[1] - auswahlrahmen[0], auswahlrahmen[3] - auswahlrahmen[2]);
+		if (auswahlrahmen != null) {
+			g.setColor(Color.GRAY);
+			g.drawRect(auswahlrahmen[0], auswahlrahmen[2], auswahlrahmen[1] - auswahlrahmen[0], auswahlrahmen[3] - auswahlrahmen[2]);
+		}
 	}
 
 	public void waehleObjekte(int firstMausX, int firstMausY, int lastMausX, int lastMausY) {
 
 		ausgewaehlteObjekte.clear();
-		
-		// Auswahlrahmen
-		
-		int minXRahmen = firstMausX;
-		int minYRahmen = firstMausY;
-		int maxXRahmen = lastMausX;
-		int maxYRahmen = lastMausY;
-		
-		if(firstMausX > lastMausX) {
-			minXRahmen = lastMausX;
-			maxXRahmen = firstMausX;
-		}
-		if(firstMausY > lastMausY) {
-			minYRahmen = lastMausY;
-			maxYRahmen = firstMausY;
-		}
-		
-		auswahlrahmen[0] = minXRahmen;
-		auswahlrahmen[1] = maxXRahmen;
-		auswahlrahmen[2] = minYRahmen;
-		auswahlrahmen[3] = maxYRahmen;
-		
-		for (int i = 0; i < spielObjekte.size(); i++) {
 
-			if (spielObjekte.get(i).checkRahmenAuswahl(minXRahmen, minYRahmen, maxXRahmen, maxYRahmen)) {
-				spielObjekte.get(i).setAusgewaehlt(true);
-				ausgewaehlteObjekte.add(spielObjekte.get(i));
-			} else {
-				spielObjekte.get(i).setAusgewaehlt(false);
+		if (auswahlrahmen != null) {
+
+			for (int i = 0; i < spielObjekte.size(); i++) {
+
+				if (spielObjekte.get(i).checkRahmenAuswahl(auswahlrahmen[0], auswahlrahmen[2], auswahlrahmen[1], auswahlrahmen[3])) {
+					spielObjekte.get(i).setAusgewaehlt(true);
+					ausgewaehlteObjekte.add(spielObjekte.get(i));
+				} else {
+					spielObjekte.get(i).setAusgewaehlt(false);
+				}
 			}
-		}
 
+			if (ausgewaehlteObjekte.size() == 1) {
+				status = TischControlStatus.AUSWAHL_EINZEL;
+			} else if (ausgewaehlteObjekte.size() >= 1) {
+				status = TischControlStatus.AUSWAHL_MEHRERE;
+			} else {
+				status = TischControlStatus.FREE;
+			}
+
+		}
 	}
 
-	public void waehleObjekt(double d, double e) {
+	public void waehleObjekt(double x, double y) {
 
 		ausgewahltesObjekt = null;
 
-		// while(spielObjekteIterator.hasPrevious()) {
-		// spielObjekteIterator.previous();
-		// }
-		// while (spielObjekteIterator.hasNext()) {
-		// System.out.println(spielObjekteIterator.next().groesse);
-		// }
-		//
-		// for (SpielObjekt o : spielObjekte) {
-		// if (o.checkKlick(d, e)) {
-		// ausgewahltesObjekt = o;
-		// o.setAusgewaehlt(true);
-		//// spielObjekte.remove(o);
-		//// spielObjekte.add(o);
-		// } else {
-		// o.setAusgewaehlt(false);
-		// }
-		// }
-		//
-
 		int ausgewaeltIndex = -1;
 		for (int i = 0; i < spielObjekte.size(); i++) {
-			if (spielObjekte.get(i).checkKlick(d, e)) {
+			if (spielObjekte.get(i).checkKlick(x, y)) {
 				if (ausgewahltesObjekt != null) {
 					ausgewahltesObjekt.setAusgewaehlt(false);
 				}
@@ -218,31 +311,42 @@ public class Tisch implements TischController {
 				spielObjekte.get(i).setAusgewaehlt(false);
 			}
 		}
+
+		// Bringe Ausgewähltes Objekt nach Oben.
 		if (ausgewaeltIndex != -1) {
 			spielObjekte.add(spielObjekte.size() - 1, spielObjekte.remove(ausgewaeltIndex));
+			status = TischControlStatus.AUSWAHL_EINZEL;
+		} else {
+			status = TischControlStatus.FREE;
 		}
 
 	}
 
 	public void rotiere(double winkel) {
+
+		double rotSpeed = Math.PI / 8.0;
+
 		if (ausgewahltesObjekt != null) {
-			ausgewahltesObjekt.rotiere(winkel * Math.PI / 8.0);
+			ausgewahltesObjekt.rotiere(winkel * rotSpeed);
 		}
-		// for (SpielObjekt s : ausgewaehlteObjekte) {
-		// s.rotiere(winkel * Math.PI / 8.0);
-		// }
+
+		for (SpielObjekt o : ausgewaehlteObjekte) {
+			o.rotiere(winkel * rotSpeed);
+		}
+
 	}
 
 	public void verschiebeObjekt(double offX, double offY) {
-		if (ausgewahltesObjekt != null) {
-			ausgewahltesObjekt.verschiebe(offX, offY);
+
+		if (ausgewaehlteObjekte.size() > 0) {
+			for (SpielObjekt s : ausgewaehlteObjekte) {
+				s.verschiebe(offX, offY);
+			}
+		} else {
+			if (ausgewahltesObjekt != null) {
+				ausgewahltesObjekt.verschiebe(offX, offY);
+			}
 		}
-
-		// TODO: Verschiebe mehrere Objekte gleichzeitig
-
-		// for (SpielObjekt s : ausgewaehlteObjekte) {
-		// s.verschiebe(offX, offY);
-		// }
 
 	}
 
@@ -274,27 +378,20 @@ public class Tisch implements TischController {
 		return aenderung;
 	}
 
-	public void aktionRechtsKlickMultiSelect(double x, double y) {
-
-		ausgewaehlteObjekte.clear();
-
-		for (SpielObjekt o : spielObjekte) {
-			if (o.checkKlick(x, y)) {
-				ausgewahltesObjekt = o;
-				ausgewaehlteObjekte.add(o);
-				o.setAusgewaehlt(true);
-			} else {
-				o.setAusgewaehlt(false);
-			}
-		}
-
-		if (ausgewaehlteObjekte.size() != 0) {
-			for (SpielObjekt s : ausgewaehlteObjekte) {
-				s.aktionRechtsKlick();
-			}
-		}
-
-	}
+	/*
+	 * public void aktionRechtsKlickMultiSelect(double x, double y) {
+	 * 
+	 * ausgewaehlteObjekte.clear();
+	 * 
+	 * for (SpielObjekt o : spielObjekte) { if (o.checkKlick(x, y)) {
+	 * ausgewahltesObjekt = o; ausgewaehlteObjekte.add(o); o.setAusgewaehlt(true); }
+	 * else { o.setAusgewaehlt(false); } }
+	 * 
+	 * if (ausgewaehlteObjekte.size() != 0) { for (SpielObjekt s :
+	 * ausgewaehlteObjekte) { s.aktionRechtsKlick(); } }
+	 * 
+	 * }
+	 */
 
 	public void aktionRechtsKlick(double x, double y) {
 
@@ -311,6 +408,9 @@ public class Tisch implements TischController {
 
 		if (ausgewahltesObjekt != null) {
 			ausgewahltesObjekt.aktionRechtsKlick();
+			status = TischControlStatus.AUSWAHL_EINZEL;
+		} else {
+			status = TischControlStatus.FREE;
 		}
 
 	}
@@ -325,11 +425,14 @@ public class Tisch implements TischController {
 		this.view = v;
 	}
 
-	public void entferneObjekt() {
-		if (ausgewahltesObjekt != null) {
-			spielObjekte.remove(ausgewahltesObjekt);
+	public void entferneObjekt(SpielObjekt o) {
+		if (o != null) {
+			spielObjekte.remove(o);
+			ausgewaehlteObjekte.remove(o);
 			ausgewahltesObjekt = null;
+			status = TischControlStatus.FREE;
 		}
+
 		// for (SpielObjekt s : ausgewaehlteObjekte) {
 		// spielObjekte.remove(s);
 		// }
@@ -358,11 +461,13 @@ public class Tisch implements TischController {
 
 	}
 
-	public void objektAuswaehlen(SpielObjekt o) {
-		ausgewahltesObjekt.setAusgewaehlt(false);
-		this.ausgewahltesObjekt = o;
-		o.setAusgewaehlt(true);
-	}
+	/*
+	 * public void objektAuswaehlen(SpielObjekt o) { for (SpielObjekt o2 :
+	 * ausgewaehlteObjekte) { o2.setAusgewaehlt(false); } if (ausgewahltesObjekt !=
+	 * null) { ausgewahltesObjekt.setAusgewaehlt(false); }
+	 * 
+	 * this.ausgewahltesObjekt = o; o.setAusgewaehlt(true); }
+	 */
 
 	public void ObjektNachOben() {
 		if (ausgewahltesObjekt != null) {
@@ -382,18 +487,38 @@ public class Tisch implements TischController {
 		}
 	}
 
-	public void ObjekteMischen() {
+	public void objekteMischen() {
 		Collections.shuffle(spielObjekte);
 	}
 
-	public void kopiereObjekt() {
-		if (ausgewahltesObjekt != null) {
-			SpielObjekt neu = ausgewahltesObjekt.getCopy();
+	/**
+	 * Bringt die ausgewählten Objekte zu einem gebündelten Stapel zusammen. Ändert
+	 * dazu deren Position und Rotation auf die des ersten Elements des Stapels.
+	 */
+	public void objekteStapeln() {
+		if (ausgewaehlteObjekte.size() > 0) {
+			Vektor2D startPos = new Vektor2D(ausgewaehlteObjekte.get(0).getPosition());
+			for (SpielObjekt o : ausgewaehlteObjekte) {
+				o.setPosition(startPos.add(1, 1));
+				o.setAusrichtung(ausgewaehlteObjekte.get(0).getAusrichtung());
+			}
+		}
+	}
+
+	/**
+	 * 
+	 * @param o
+	 * @return das neu erzeuge Objekt. Null, wenn null übergeben wird.
+	 */
+	public SpielObjekt kopiereObjekt(SpielObjekt o) {
+		if (o != null) {
+			SpielObjekt neu = o.getCopy();
 			if (neu != null) {
 				spielObjekte.add(neu);
+				return neu;
 			}
-			objektAuswaehlen(neu);
 		}
+		return null;
 	}
 
 	//////////////////////////
@@ -401,22 +526,66 @@ public class Tisch implements TischController {
 	//////////////////////////
 
 	@Override
-	public void verschiebeAusgewaelteObjekte(double offX, double offY) {
-		verschiebeObjekt(offX, offY);
+	public void handleLeftMouseDrag(double offX, double offY, Vektor2D firstMaus, Vektor2D lastMaus) {
+
+		boolean mouseOn = false;
+		for (SpielObjekt o : ausgewaehlteObjekte) {
+			if (o.checkKlick(firstMaus.getPosX(), firstMaus.getPosY())) {
+				mouseOn = true;
+			}
+		}
+		if (ausgewahltesObjekt != null) {
+			if (ausgewahltesObjekt.checkKlick(lastMaus.getPosX(), lastMaus.getPosY())) {
+				mouseOn = true;
+			}
+		}
+
+		if (mouseOn) {
+			if (ausgewahltesObjekt != null || ausgewaehlteObjekte.size() > 0) {
+				verschiebeObjekt(offX, offY);
+				ignoreMouseRelease = true;
+			}
+		} else {
+
+			ignoreMouseRelease = false;
+
+			// Auswahlrahmen
+
+			int minXRahmen = firstMaus.getPosXInt();
+			int minYRahmen = firstMaus.getPosYInt();
+			int maxXRahmen = lastMaus.getPosXInt();
+			int maxYRahmen = lastMaus.getPosYInt();
+
+			if (firstMaus.getPosXInt() > lastMaus.getPosXInt()) {
+				minXRahmen = lastMaus.getPosXInt();
+				maxXRahmen = firstMaus.getPosXInt();
+			}
+			if (firstMaus.getPosYInt() > lastMaus.getPosYInt()) {
+				minYRahmen = lastMaus.getPosYInt();
+				maxYRahmen = firstMaus.getPosYInt();
+			}
+
+			auswahlrahmen = new int[4];
+			auswahlrahmen[0] = minXRahmen;
+			auswahlrahmen[1] = maxXRahmen;
+			auswahlrahmen[2] = minYRahmen;
+			auswahlrahmen[3] = maxYRahmen;
+		}
+
 	}
 
 	@Override
 	public void handleMausPress(int button, Vektor2D spielMausKoords) {
 
-		if (button == 1) {
-			// t.waehleObjekte(spielMausKoords.getPosX(), spielMausKoords.getPosY());
-			waehleObjekt(spielMausKoords.getPosX(), spielMausKoords.getPosY());
-		} else if (button == 3) {
-			aktionRechtsKlick(spielMausKoords.getPosX(), spielMausKoords.getPosY());
-			// t.aktionRechtsKlickMultiSelect(spielMausKoords.getPosX(),
-			// spielMausKoords.getPosY());
-		}
-
+//		if (!ignoreMouseRelease) {
+			if (button == 1) {
+				waehleObjekt(spielMausKoords.getPosX(), spielMausKoords.getPosY());
+			} else if (button == 3) {
+				aktionRechtsKlick(spielMausKoords.getPosX(), spielMausKoords.getPosY());
+				// t.aktionRechtsKlickMultiSelect(spielMausKoords.getPosX(),
+				// spielMausKoords.getPosY());
+			}
+//		}
 	}
 
 	@Override
@@ -430,10 +599,30 @@ public class Tisch implements TischController {
 	}
 
 	@Override
-	public void handleAuswahlRahmen(int aktButton, Vektor2D firstMaus, Vektor2D lastMaus) {
-		if (Math.abs(firstMaus.getPosX() - lastMaus.getPosX()) > 10 && Math.abs(firstMaus.getPosY() - lastMaus.getPosY()) > 10) {
-			// waehleObjekte(firstMaus.getPosXInt(), firstMaus.getPosYInt(), lastMaus.getPosXInt(), lastMaus.getPosYInt());
+	public void handleMausRelease(int aktButton, Vektor2D firstMaus, Vektor2D lastMaus) {
+
+		if (!ignoreMouseRelease) {
+			if (Math.abs(firstMaus.getPosX() - lastMaus.getPosX()) > 10 && Math.abs(firstMaus.getPosY() - lastMaus.getPosY()) > 10) {
+				waehleObjekte(firstMaus.getPosXInt(), firstMaus.getPosYInt(), lastMaus.getPosXInt(), lastMaus.getPosYInt());
+			} else {
+				waehleObjekt(lastMaus.getPosXInt(), lastMaus.getPosY());
+			}
+
+			auswahlrahmen = null;
 		}
+	}
+
+	@Override
+	public void handleTischKeyControls(KeyEvent arg0) {
+		for (TischControl c : tischCtrls.get(status)) {
+			if (c.getKeyCode() == arg0.getKeyCode()) {
+				c.performAction();
+			}
+		}
+	}
+
+	public List<TischControl> getCurrentTischControls() {
+		return tischCtrls.get(status);
 	}
 
 }

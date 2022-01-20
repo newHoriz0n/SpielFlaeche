@@ -33,7 +33,7 @@ public abstract class SpielObjekt implements Sendbares {
 	protected Vektor2D position;
 	protected Vektor2D groesse;
 	protected Vektor2D center;
-	protected double winkel;
+	protected double winkel; // Ausrichtung
 
 	protected boolean ausgewaehlt;
 	protected boolean mausOver;
@@ -185,13 +185,12 @@ public abstract class SpielObjekt implements Sendbares {
 			}
 		}
 
-		if(minXRahmen < minXObjekt && maxXRahmen > maxXObjekt && minYRahmen < minYObjekt && maxYRahmen > maxYObjekt) {
+		if (minXRahmen < minXObjekt && maxXRahmen > maxXObjekt && minYRahmen < minYObjekt && maxYRahmen > maxYObjekt) {
 			return true;
 		}
-		
+
 		return false;
-		
-		
+
 	}
 
 	public void setAusgewaehlt(boolean b) {
@@ -202,12 +201,24 @@ public abstract class SpielObjekt implements Sendbares {
 		this.winkel += d;
 	}
 
+	public void setAusrichtung(double d) {
+		this.winkel = d;
+	}
+
+	public double getAusrichtung() {
+		return winkel;
+	}
+
 	public void verschiebe(double offX, double offY) {
 		position.add(offX, offY);
 	}
 
 	public void setPosition(Vektor2D position2) {
 		position.set(position2);
+	}
+	
+	public void setPosition(double x, double y) {
+		position.set(x,y);		
 	}
 
 	public String getBezeichnung() {
@@ -222,6 +233,14 @@ public abstract class SpielObjekt implements Sendbares {
 		return position;
 	}
 
+	public int getBreite() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	
+	
+	
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -364,5 +383,6 @@ public abstract class SpielObjekt implements Sendbares {
 		return o;
 
 	}
+
 
 }

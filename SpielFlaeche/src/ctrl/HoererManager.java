@@ -45,7 +45,7 @@ public class HoererManager implements MouseListener, MouseMotionListener, MouseW
 		if (aktButton == 1) {
 			double newOffX = (e.getX() - lastMausX) * Math.cos(vc.getViewRotation()) + (e.getY() - lastMausY) * Math.sin(vc.getViewRotation());
 			double newOffY = (e.getY() - lastMausY) * Math.cos(vc.getViewRotation()) - (e.getX() - lastMausX) * Math.sin(vc.getViewRotation());
-			tc.verschiebeAusgewaelteObjekte(newOffX / vc.getViewZoom(), newOffY / vc.getViewZoom());
+			tc.handleLeftMouseDrag(newOffX / vc.getViewZoom(), newOffY / vc.getViewZoom(), vc.getSpielKoordsVonMaus(firstMausX, firstMausY), vc.getSpielKoordsVonMaus(lastMausX, lastMausY));
 			vc.repaintView();
 		}
 		if (aktButton == 3) {
@@ -108,7 +108,7 @@ public class HoererManager implements MouseListener, MouseMotionListener, MouseW
 	@Override
 	public void mouseReleased(MouseEvent e) {
 		aktButton = -1;
-		tc.handleAuswahlRahmen(aktButton, vc.getSpielKoordsVonMaus(firstMausX, firstMausY), vc.getSpielKoordsVonMaus(lastMausX, lastMausY));
+		tc.handleMausRelease(aktButton, vc.getSpielKoordsVonMaus(firstMausX, firstMausY), vc.getSpielKoordsVonMaus(lastMausX, lastMausY));
 		vc.repaintView();
 	}
 
@@ -151,17 +151,7 @@ public class HoererManager implements MouseListener, MouseMotionListener, MouseW
 		
 		System.out.println(arg0.getKeyCode());
 
-		if (arg0.getKeyCode() == 127) {
-			tc.entferneObjekt();
-		} else if (arg0.getKeyCode() == 33) {
-			tc.ObjektNachOben();
-		} else if (arg0.getKeyCode() == 34) {
-			tc.ObjektNachUnten();
-		} else if (arg0.getKeyCode() == 83) {
-			tc.ObjekteMischen();
-		} else if (arg0.getKeyCode() == 67) {
-			tc.kopiereObjekt();
-		}
+		tc.handleTischKeyControls(arg0);
 		
 		tasteGedruekt[arg0.getKeyCode()] = false;
 		vc.repaintView();
