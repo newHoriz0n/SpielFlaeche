@@ -7,7 +7,7 @@ import math.Vektor2D;
 public interface TischController {
 
 
-	public boolean checkMouseOver(Vektor2D spielkoords);
+	public boolean calcMouseOver(Vektor2D spielkoords);
 
 	public void handleMausPress(int button, Vektor2D spielMausKoords);
 

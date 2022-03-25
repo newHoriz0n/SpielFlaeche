@@ -33,6 +33,8 @@ public interface ViewController {
 	public double getViewZoom();
 	
 	public Vektor2D getSpielKoordsVonMaus(int mausX, int mausY);
+	
+	public void setLightDrawing(boolean light);
 
 
 	

@@ -53,6 +53,8 @@ public class HoererManager implements MouseListener, MouseMotionListener, MouseW
 		}
 		lastMausX = e.getX();
 		lastMausY = e.getY();
+
+		vc.setLightDrawing(true);
 	}
 
 	@Override
@@ -60,7 +62,7 @@ public class HoererManager implements MouseListener, MouseMotionListener, MouseW
 		lastMausX = e.getX();
 		lastMausY = e.getY();
 
-		if (tc.checkMouseOver(vc.getSpielKoordsVonMaus(e.getX(), e.getY()))) {
+		if (tc.calcMouseOver(vc.getSpielKoordsVonMaus(e.getX(), e.getY()))) {		
 			vc.repaintView();
 		}
 
@@ -109,6 +111,8 @@ public class HoererManager implements MouseListener, MouseMotionListener, MouseW
 	public void mouseReleased(MouseEvent e) {
 		aktButton = -1;
 		tc.handleMausRelease(aktButton, vc.getSpielKoordsVonMaus(firstMausX, firstMausY), vc.getSpielKoordsVonMaus(lastMausX, lastMausY));
+
+		vc.setLightDrawing(false);
 		vc.repaintView();
 	}
 

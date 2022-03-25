@@ -112,6 +112,20 @@ public abstract class SpielObjekt implements Sendbares {
 
 	}
 
+	public void drawSpielObjektLight(Graphics2D g, double rotation) {
+
+		g.setColor(Color.BLACK);
+		if (mausOver) {
+			g.setColor(Color.GREEN);
+		}
+		if (ausgewaehlt) {
+			g.setColor(Color.RED);
+		}
+		int[][] polygon = calcPolygon();
+		g.drawPolygon(polygon[0], polygon[1], 4);
+
+	}
+
 	/**
 	 * 
 	 * @return polygon des Objektes, [0]: xs, [1]: ys
@@ -216,9 +230,9 @@ public abstract class SpielObjekt implements Sendbares {
 	public void setPosition(Vektor2D position2) {
 		position.set(position2);
 	}
-	
+
 	public void setPosition(double x, double y) {
-		position.set(x,y);		
+		position.set(x, y);
 	}
 
 	public String getBezeichnung() {
@@ -238,19 +252,13 @@ public abstract class SpielObjekt implements Sendbares {
 		return 0;
 	}
 
-	
-	
-	
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + ((beschreibung == null) ? 0 : beschreibung.hashCode());
 		result = prime * result + ((bezeichnung == null) ? 0 : bezeichnung.hashCode());
+		result = prime * result + objektID;
 		result = prime * result + ((position == null) ? 0 : position.hashCode());
-		long temp;
-		temp = Double.doubleToLongBits(winkel);
-		result = prime * result + (int) (temp ^ (temp >>> 32));
 		return result;
 	}
 
@@ -263,22 +271,17 @@ public abstract class SpielObjekt implements Sendbares {
 		if (getClass() != obj.getClass())
 			return false;
 		SpielObjekt other = (SpielObjekt) obj;
-		if (beschreibung == null) {
-			if (other.beschreibung != null)
-				return false;
-		} else if (!beschreibung.equals(other.beschreibung))
-			return false;
 		if (bezeichnung == null) {
 			if (other.bezeichnung != null)
 				return false;
 		} else if (!bezeichnung.equals(other.bezeichnung))
 			return false;
+		if (objektID != other.objektID)
+			return false;
 		if (position == null) {
 			if (other.position != null)
 				return false;
 		} else if (!position.equals(other.position))
-			return false;
-		if (Double.doubleToLongBits(winkel) != Double.doubleToLongBits(other.winkel))
 			return false;
 		return true;
 	}
@@ -288,7 +291,7 @@ public abstract class SpielObjekt implements Sendbares {
 	 * @param maus
 	 * @return true wenn sich etwas ändert.
 	 */
-	public boolean checkMouseOver(Vektor2D maus) {
+	public boolean calcMouseOver(Vektor2D maus) {
 		boolean aenderung = false;
 		if (checkKlick(maus.getPosX(), maus.getPosY())) {
 			if (mausOver == false) {
@@ -383,6 +386,5 @@ public abstract class SpielObjekt implements Sendbares {
 		return o;
 
 	}
-
 
 }

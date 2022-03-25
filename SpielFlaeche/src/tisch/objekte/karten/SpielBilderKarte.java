@@ -1,5 +1,6 @@
 package tisch.objekte.karten;
 
+import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.geom.AffineTransform;
 import java.awt.image.BufferedImage;
@@ -12,23 +13,22 @@ import io.PBFileReadWriter;
 import math.Vektor2D;
 import tisch.objekte.SpielObjekt;
 
-public class SpielBilderKarte extends SpielKarte{
-
+public class SpielBilderKarte extends SpielKarte {
 
 	protected String bildURLvorne;
 	protected transient BufferedImage bildVorne;
 	protected String bildURLhinten;
 	protected transient BufferedImage bildHinten;
-	
+
 	public SpielBilderKarte(String bezeichnung, Vektor2D position, Vektor2D groesse, String bildURLvorne, String bildURLhinten, boolean offen) {
-		
+
 		super(bezeichnung, position, groesse, offen);
-		
+
 		try {
 			bildVorne = ImageIO.read(new File(bildURLvorne));
 			bildHinten = ImageIO.read(new File(bildURLhinten));
 		} catch (IOException e) {
-			System.out.println("Bildladen fehlgeschlagen");
+			System.out.println("Bildladen fehlgeschlagen: " + bildURLvorne + " / " + bildURLhinten);
 		}
 
 		if (offen) {
@@ -41,16 +41,15 @@ public class SpielBilderKarte extends SpielKarte{
 
 		this.bildURLvorne = bildURLvorne;
 		this.bildURLhinten = bildURLhinten;
-		
+
 	}
-	
+
 	public SpielBilderKarte(SpielBilderKarte s) {
-		
+
 		super(s);
-		
+
 		this.bildURLvorne = s.bildURLvorne;
 		this.bildURLhinten = s.bildURLhinten;
-		
 
 		try {
 			bildVorne = ImageIO.read(new File(bildURLvorne));
@@ -65,13 +64,13 @@ public class SpielBilderKarte extends SpielKarte{
 			bild = bildHinten;
 			bildURL = bildURLhinten;
 		}
-		
+
 	}
-	
+
 	protected void umdrehen() {
-		
+
 		super.umdrehen();
-		
+
 		if (bildVorne == null) {
 			if (bildURLvorne != "") {
 				try {
@@ -101,29 +100,29 @@ public class SpielBilderKarte extends SpielKarte{
 			bildURL = bildURLhinten;
 		}
 	}
-	
+
 	@Override
 	public void drawSpielObjekt(Graphics2D g, double rotation) {
-
+		
 		AffineTransform at = new AffineTransform();
 		at.translate(position.getPosXInt() - center.getPosXInt(), position.getPosYInt() - center.getPosYInt());
 		at.rotate(-winkel, center.getPosX(), center.getPosY());
-		
+
 		g.drawImage(bild, at, null);
 
-		// int[][] polygon = calcPolygon();
-		//
-		// g.setColor(Color.BLACK);
-		// if (mausOver) {
-		// g.setColor(Color.GREEN);
-		// }
-		// if (ausgewaehlt) {
-		// g.setColor(Color.RED);
-		// }
-		// g.drawPolygon(polygon[0], polygon[1], 4);
+		int[][] polygon = calcPolygon();
+
+		g.setColor(Color.BLACK);
+		if (mausOver) {
+			g.setColor(Color.GREEN);
+		}
+		if (ausgewaehlt) {
+			g.setColor(Color.RED);
+		}
+		g.drawPolygon(polygon[0], polygon[1], 4);
 
 	}
-	
+
 	@Override
 	public String toSendString() {
 		return "*,k," + bezeichnung + "," + position.getPosXInt() + "," + position.getPosYInt() + "," + groesse.getPosXInt() + ","
@@ -131,10 +130,10 @@ public class SpielBilderKarte extends SpielKarte{
 				+ "," + offen;
 	}
 
-
 	@Override
 	public SpielObjekt getCopy() {
-		return new SpielBilderKarte(bezeichnung, new Vektor2D(position.getPosX() + 5, position.getPosY() + 5), new Vektor2D(groesse), bildURLvorne, bildURLhinten, offen);
+		return new SpielBilderKarte(bezeichnung, new Vektor2D(position.getPosX() + 5, position.getPosY() + 5), new Vektor2D(groesse), bildURLvorne,
+				bildURLhinten, offen);
 	}
-	
+
 }

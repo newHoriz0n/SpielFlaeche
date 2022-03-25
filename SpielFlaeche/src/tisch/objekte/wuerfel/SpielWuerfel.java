@@ -49,13 +49,13 @@ public abstract class SpielWuerfel extends SpielObjekt {
 
 		@Override
 		public void run() {
-			for (int i = 0; i < 20; i++) {
+			for (int i = 0; i < 40; i++) {
 				aktFlaeche = r.nextInt(flaechenZahl) + 1;
 				for (ChangeListener cl : listeners) {
 					cl.stateChanged(new ChangeEvent(this));
 				}
 				try {
-					Thread.sleep(50);
+					Thread.sleep(20);
 				} catch (InterruptedException e) {
 					e.printStackTrace();
 				}

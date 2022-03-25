@@ -38,6 +38,8 @@ public class PSpielFlaecheView extends JPanel implements ViewController, ChangeL
 	private SpielFlaecheModel m;
 	private Tisch t;
 
+	private boolean lightDrawing;
+	
 	private transient PPMenu menu;
 
 	private transient HoererManager hm;
@@ -134,7 +136,8 @@ public class PSpielFlaecheView extends JPanel implements ViewController, ChangeL
 		g2d.translate(getWidth() / 2, getHeight() / 2);
 		g2d.scale(zoom, zoom);
 		g2d.translate(-getWidth() / 2, -getHeight() / 2);
-		t.drawTisch(g2d, rotation);
+
+		t.drawTisch(g2d, rotation, lightDrawing);
 
 		// MENÜ
 		g2d.translate(getWidth() / 2, getHeight() / 2);
@@ -146,8 +149,12 @@ public class PSpielFlaecheView extends JPanel implements ViewController, ChangeL
 		
 		// TISCH CTRLS
 		drawTischControls(g2d);
-
 	}
+	
+	public void drawObjekt(SpielObjekt o) {
+		t.drawObjekt((Graphics2D)getGraphics(), rotation, o);
+	}
+
 
 	private void drawTischControls(Graphics2D g2d) {
 		g2d.setFont(new Font("Arial", Font.PLAIN, 14));
@@ -219,6 +226,11 @@ public class PSpielFlaecheView extends JPanel implements ViewController, ChangeL
 		this.zoom = zoom;
 		this.zoom = Math.max(0.1, zoom);
 		this.zoom = Math.min(10, zoom);
+	}
+
+	@Override
+	public void setLightDrawing(boolean light) {
+		this.lightDrawing = light;
 	}
 
 }
