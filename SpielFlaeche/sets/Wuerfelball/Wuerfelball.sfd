@@ -1,0 +1,17 @@
+*,b,Spielbrett,lib/Projekte/Wuerfelball/spielfeld.png,0,0
+*,s,r1,0,1000,80,80,40,40,lib/Projekte/Wuerfelball/1_r.png
+*,s,r2,100,1000,80,80,40,40,lib/Projekte/Wuerfelball/2_r.png
+*,s,r3,200,1000,80,80,40,40,lib/Projekte/Wuerfelball/3_r.png
+*,s,rt,300,1000,80,80,40,40,lib/Projekte/Wuerfelball/t_r.png
+*,s,b1,400,1000,80,80,40,40,lib/Projekte/Wuerfelball/1_b.png
+*,s,b2,500,1000,80,80,40,40,lib/Projekte/Wuerfelball/2_b.png
+*,s,b3,600,1000,80,80,40,40,lib/Projekte/Wuerfelball/3_b.png
+*,s,bt,700,1000,80,80,40,40,lib/Projekte/Wuerfelball/t_b.png
+*,s,rm,800,1000,50,50,25,25,lib/Projekte/Wuerfelball/r.gif
+*,s,rm,900,1000,50,50,25,25,lib/Projekte/Wuerfelball/r.gif
+*,s,rm,1000,1000,50,50,25,25,lib/Projekte/Wuerfelball/r.gif
+*,s,bm,1100,1000,50,50,25,25,lib/Projekte/Wuerfelball/b.gif
+*,s,bm,1200,1000,50,50,25,25,lib/Projekte/Wuerfelball/b.gif
+*,s,bm,1300,1000,50,50,25,25,lib/Projekte/Wuerfelball/b.gif
+*,s,ball,1400,1000,50,50,25,25,lib/Projekte/Wuerfelball/s.gif
+*,zw,Würfel weiss,6,1500,1000,50,255,255,255,0,0,0,1,gfx/wuerfel/rot.png

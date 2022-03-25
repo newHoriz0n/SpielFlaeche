@@ -1,0 +1,315 @@
+*,b,Spielerstatusbrett,lib/Projekte/KoH/Material/Bretter/Spielerstatus.png,0,1000
+*,b,Stadtstatusbrett,lib/Projekte/KoH/Material/Bretter/Stadtstatus.png,0,1500
+*,k,Ereignis Angriffswunsch,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ereignisse/Angriffswunsch.png,lib/Projekte/KoH/Material/Karten/Ereignisse/Hinten_Ereignis.png,false
+*,k,Ereignis Angriffswunsch,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ereignisse/Angriffswunsch.png,lib/Projekte/KoH/Material/Karten/Ereignisse/Hinten_Ereignis.png,false
+*,k,Ereignis Angriffswunsch,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ereignisse/Angriffswunsch.png,lib/Projekte/KoH/Material/Karten/Ereignisse/Hinten_Ereignis.png,false
+*,k,Ereignis Angriffswunsch,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ereignisse/Angriffswunsch.png,lib/Projekte/KoH/Material/Karten/Ereignisse/Hinten_Ereignis.png,false
+*,k,Ereignis Angriffswunsch,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ereignisse/Angriffswunsch.png,lib/Projekte/KoH/Material/Karten/Ereignisse/Hinten_Ereignis.png,false
+*,k,Ereignis Bürgerwunsch Abrüstung,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ereignisse/Buergerwunsch_Abruestung.png,lib/Projekte/KoH/Material/Karten/Ereignisse/Hinten_Ereignis.png,false
+*,k,Ereignis Bürgerwunsch Fest,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ereignisse/Buergerwunsch_Fest.png,lib/Projekte/KoH/Material/Karten/Ereignisse/Hinten_Ereignis.png,false
+*,k,Ereignis Bürgerwunsch Fest,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ereignisse/Buergerwunsch_Fest.png,lib/Projekte/KoH/Material/Karten/Ereignisse/Hinten_Ereignis.png,false
+*,k,Ereignis Bürgerwunsch Harmonie,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ereignisse/Buergerwunsch_Harmonie.png,lib/Projekte/KoH/Material/Karten/Ereignisse/Hinten_Ereignis.png,false
+*,k,Ereignis Bürgerwunsch Kirche,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ereignisse/Buergerwunsch_Kirche.png,lib/Projekte/KoH/Material/Karten/Ereignisse/Hinten_Ereignis.png,false
+*,k,Ereignis Erbe gesucht,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ereignisse/Erbe_gesucht.png,lib/Projekte/KoH/Material/Karten/Ereignisse/Hinten_Ereignis.png,false
+*,k,Ereignis Erbe gesucht,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ereignisse/Erbe_gesucht.png,lib/Projekte/KoH/Material/Karten/Ereignisse/Hinten_Ereignis.png,false
+*,k,Ereignis Erbe gesucht,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ereignisse/Erbe_gesucht.png,lib/Projekte/KoH/Material/Karten/Ereignisse/Hinten_Ereignis.png,false
+*,k,Ereignis Erbe gesucht,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ereignisse/Erbe_gesucht.png,lib/Projekte/KoH/Material/Karten/Ereignisse/Hinten_Ereignis.png,false
+*,k,Ereignis Erbe gesucht,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ereignisse/Erbe_gesucht.png,lib/Projekte/KoH/Material/Karten/Ereignisse/Hinten_Ereignis.png,false
+*,k,Ereignis Reisender Händler,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ereignisse/Reisender_Haendler.png,lib/Projekte/KoH/Material/Karten/Ereignisse/Hinten_Ereignis.png,false
+*,k,Ereignis Reisender Händler,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ereignisse/Reisender_Haendler.png,lib/Projekte/KoH/Material/Karten/Ereignisse/Hinten_Ereignis.png,false
+*,k,Ereignis Reisender Händler,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ereignisse/Reisender_Haendler.png,lib/Projekte/KoH/Material/Karten/Ereignisse/Hinten_Ereignis.png,false
+*,k,Ereignis Reisender Händler,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ereignisse/Reisender_Haendler.png,lib/Projekte/KoH/Material/Karten/Ereignisse/Hinten_Ereignis.png,false
+*,k,Ereignis Reisender Händler,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ereignisse/Reisender_Haendler.png,lib/Projekte/KoH/Material/Karten/Ereignisse/Hinten_Ereignis.png,false
+*,k,Ereignis Überfall Feldherr,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ereignisse/Ueberfall_Feldherr.png,lib/Projekte/KoH/Material/Karten/Ereignisse/Hinten_Ereignis.png,false
+*,k,Ereignis Überfall Feldherr,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ereignisse/Ueberfall_Feldherr.png,lib/Projekte/KoH/Material/Karten/Ereignisse/Hinten_Ereignis.png,false
+*,k,Ereignis Überfall Feldherr,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ereignisse/Ueberfall_Feldherr.png,lib/Projekte/KoH/Material/Karten/Ereignisse/Hinten_Ereignis.png,false
+*,k,Ereignis Überfall Feldherr,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ereignisse/Ueberfall_Feldherr.png,lib/Projekte/KoH/Material/Karten/Ereignisse/Hinten_Ereignis.png,false
+*,k,Ereignis Überfall Feldherr,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ereignisse/Ueberfall_Feldherr.png,lib/Projekte/KoH/Material/Karten/Ereignisse/Hinten_Ereignis.png,false
+*,k,Ereignis Überfall Händler,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ereignisse/Ueberfall_Haendler.png,lib/Projekte/KoH/Material/Karten/Ereignisse/Hinten_Ereignis.png,false
+*,k,Ereignis Überfall Händler,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ereignisse/Ueberfall_Haendler.png,lib/Projekte/KoH/Material/Karten/Ereignisse/Hinten_Ereignis.png,false
+*,k,Ereignis Überfall Händler,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ereignisse/Ueberfall_Haendler.png,lib/Projekte/KoH/Material/Karten/Ereignisse/Hinten_Ereignis.png,false
+*,k,Ereignis Überfall Händler,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ereignisse/Ueberfall_Haendler.png,lib/Projekte/KoH/Material/Karten/Ereignisse/Hinten_Ereignis.png,false
+*,k,Ereignis Überfall Händler,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ereignisse/Ueberfall_Haendler.png,lib/Projekte/KoH/Material/Karten/Ereignisse/Hinten_Ereignis.png,false
+*,k,Gebäude Übungsplatz,146,283,210,300,lib/Projekte/KoH/Material/Karten/Gebaeude/Uebungsplatz.png,lib/Projekte/KoH/Material/Karten/Gebaeude/Hinten_Gebaeude.png,false
+*,k,Gebäude Übungsplatz,146,283,210,300,lib/Projekte/KoH/Material/Karten/Gebaeude/Uebungsplatz.png,lib/Projekte/KoH/Material/Karten/Gebaeude/Hinten_Gebaeude.png,false
+*,k,Gebäude Übungsplatz,146,283,210,300,lib/Projekte/KoH/Material/Karten/Gebaeude/Uebungsplatz.png,lib/Projekte/KoH/Material/Karten/Gebaeude/Hinten_Gebaeude.png,false
+*,k,Gebäude Übungsplatz,146,283,210,300,lib/Projekte/KoH/Material/Karten/Gebaeude/Uebungsplatz.png,lib/Projekte/KoH/Material/Karten/Gebaeude/Hinten_Gebaeude.png,false
+*,k,Gebäude Baumeister,146,283,210,300,lib/Projekte/KoH/Material/Karten/Gebaeude/Baumeister.png,lib/Projekte/KoH/Material/Karten/Gebaeude/Hinten_Gebaeude.png,false
+*,k,Gebäude Baumeister,146,283,210,300,lib/Projekte/KoH/Material/Karten/Gebaeude/Baumeister.png,lib/Projekte/KoH/Material/Karten/Gebaeude/Hinten_Gebaeude.png,false
+*,k,Gebäude Baumeister,146,283,210,300,lib/Projekte/KoH/Material/Karten/Gebaeude/Baumeister.png,lib/Projekte/KoH/Material/Karten/Gebaeude/Hinten_Gebaeude.png,false
+*,k,Gebäude Baumeister,146,283,210,300,lib/Projekte/KoH/Material/Karten/Gebaeude/Baumeister.png,lib/Projekte/KoH/Material/Karten/Gebaeude/Hinten_Gebaeude.png,false
+*,k,Gebäude 2ter Stadtring,146,283,210,300,lib/Projekte/KoH/Material/Karten/Gebaeude/Stadtring.png,lib/Projekte/KoH/Material/Karten/Gebaeude/Hinten_Gebaeude.png,false
+*,k,Gebäude 2ter Stadtring,146,283,210,300,lib/Projekte/KoH/Material/Karten/Gebaeude/Stadtring.png,lib/Projekte/KoH/Material/Karten/Gebaeude/Hinten_Gebaeude.png,false
+*,k,Gebäude 2ter Stadtring,146,283,210,300,lib/Projekte/KoH/Material/Karten/Gebaeude/Stadtring.png,lib/Projekte/KoH/Material/Karten/Gebaeude/Hinten_Gebaeude.png,false
+*,k,Gebäude Marktplatz,146,283,210,300,lib/Projekte/KoH/Material/Karten/Gebaeude/Marktplatz.png,lib/Projekte/KoH/Material/Karten/Gebaeude/Hinten_Gebaeude.png,false
+*,k,Gebäude Marktplatz,146,283,210,300,lib/Projekte/KoH/Material/Karten/Gebaeude/Marktplatz.png,lib/Projekte/KoH/Material/Karten/Gebaeude/Hinten_Gebaeude.png,false
+*,k,Gebäude Markthalle,146,283,210,300,lib/Projekte/KoH/Material/Karten/Gebaeude/Markthalle.png,lib/Projekte/KoH/Material/Karten/Gebaeude/Hinten_Gebaeude.png,false
+*,k,Gebäude Turnierplatz,146,283,210,300,lib/Projekte/KoH/Material/Karten/Gebaeude/Turnierplatz.png,lib/Projekte/KoH/Material/Karten/Gebaeude/Hinten_Gebaeude.png,false
+*,k,Gebäude Turnierplatz,146,283,210,300,lib/Projekte/KoH/Material/Karten/Gebaeude/Turnierplatz.png,lib/Projekte/KoH/Material/Karten/Gebaeude/Hinten_Gebaeude.png,false
+*,k,Gebäude Turnierplatz,146,283,210,300,lib/Projekte/KoH/Material/Karten/Gebaeude/Turnierplatz.png,lib/Projekte/KoH/Material/Karten/Gebaeude/Hinten_Gebaeude.png,false
+*,k,Gebäude Kapelle,146,283,210,300,lib/Projekte/KoH/Material/Karten/Gebaeude/Kapelle.png,lib/Projekte/KoH/Material/Karten/Gebaeude/Hinten_Gebaeude.png,false
+*,k,Gebäude Kapelle,146,283,210,300,lib/Projekte/KoH/Material/Karten/Gebaeude/Kapelle.png,lib/Projekte/KoH/Material/Karten/Gebaeude/Hinten_Gebaeude.png,false
+*,k,Gebäude Kapelle,146,283,210,300,lib/Projekte/KoH/Material/Karten/Gebaeude/Kapelle.png,lib/Projekte/KoH/Material/Karten/Gebaeude/Hinten_Gebaeude.png,false
+*,k,Gebäude Kirche,146,283,210,300,lib/Projekte/KoH/Material/Karten/Gebaeude/Kirche.png,lib/Projekte/KoH/Material/Karten/Gebaeude/Hinten_Gebaeude.png,false
+*,k,Gebäude Kirche,146,283,210,300,lib/Projekte/KoH/Material/Karten/Gebaeude/Kirche.png,lib/Projekte/KoH/Material/Karten/Gebaeude/Hinten_Gebaeude.png,false
+*,k,Gebäude Kathedrale,146,283,210,300,lib/Projekte/KoH/Material/Karten/Gebaeude/Kathedrale.png,lib/Projekte/KoH/Material/Karten/Gebaeude/Hinten_Gebaeude.png,false
+*,k,Gebäude Steuereintreiber,146,283,210,300,lib/Projekte/KoH/Material/Karten/Gebaeude/Steuereintreiber.png,lib/Projekte/KoH/Material/Karten/Gebaeude/Hinten_Gebaeude.png,false
+*,k,Gebäude Steuereintreiber,146,283,210,300,lib/Projekte/KoH/Material/Karten/Gebaeude/Steuereintreiber.png,lib/Projekte/KoH/Material/Karten/Gebaeude/Hinten_Gebaeude.png,false
+*,k,Ressource Mensch,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Mensch.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Mensch,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Mensch.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Mensch,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Mensch.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Mensch,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Mensch.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Mensch,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Mensch.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Mensch,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Mensch.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Mensch,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Mensch.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Mensch,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Mensch.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Mensch,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Mensch.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Mensch,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Mensch.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Mensch,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Mensch.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Mensch,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Mensch.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Mensch,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Mensch.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Mensch,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Mensch.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Mensch,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Mensch.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Nahrung,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Nahrung.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Nahrung,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Nahrung.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Nahrung,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Nahrung.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Nahrung,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Nahrung.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Nahrung,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Nahrung.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Nahrung,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Nahrung.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Nahrung,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Nahrung.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Nahrung,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Nahrung.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Nahrung,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Nahrung.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Nahrung,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Nahrung.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Nahrung,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Nahrung.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Nahrung,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Nahrung.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Nahrung,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Nahrung.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Nahrung,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Nahrung.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Nahrung,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Nahrung.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Nahrung,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Nahrung.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Nahrung,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Nahrung.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Holz,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Holz.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Holz,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Holz.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Holz,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Holz.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Holz,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Holz.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Holz,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Holz.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Holz,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Holz.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Holz,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Holz.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Holz,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Holz.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Eisen,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Eisen.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Eisen,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Eisen.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Eisen,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Eisen.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Eisen,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Eisen.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Eisen,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Eisen.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Eisen,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Eisen.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Eisen,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Eisen.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Eisen,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Eisen.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Stein,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Stein.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Stein,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Stein.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Stein,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Stein.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Stein,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Stein.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Stein,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Stein.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Stein,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Stein.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Stein,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Stein.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Stein,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Stein.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Leder,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Leder.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Leder,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Leder.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Leder,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Leder.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Leder,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Leder.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Leder,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Leder.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Leder,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Leder.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Leder,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Leder.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Leder,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Leder.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Leder,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Leder.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Leder,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Leder.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Marmor,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Marmor.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Marmor,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Marmor.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Marmor,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Marmor.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Marmor,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Marmor.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Marmor,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Marmor.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Wachs,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Wachs.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Wachs,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Wachs.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Wachs,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Wachs.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Wachs,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Wachs.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Wachs,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Wachs.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Lehm,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Lehm.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Lehm,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Lehm.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Lehm,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Lehm.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Lehm,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Lehm.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Lehm,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Lehm.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Wolle,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Wolle.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Wolle,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Wolle.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Wolle,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Wolle.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Wolle,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Wolle.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Wolle,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Wolle.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Pferde,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Pferde.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Pferde,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Pferde.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Pferde,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Pferde.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Pferde,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Pferde.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Pferde,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Pferde.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Gold,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Gold.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Gold,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Gold.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Gold,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Gold.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Gold,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Gold.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Gold,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Gold.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Gold,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Gold.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Gold,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Gold.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Gold,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Gold.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Gold,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Gold.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Gold,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Gold.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Gold,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Gold.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Gold,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Gold.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Gold,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Gold.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Gold,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Gold.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Gold,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Gold.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Gold,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Gold.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Gold,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Gold.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Gold,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Gold.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Gold,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Gold.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Ressource Gold,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Gold.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Händler,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Haendler.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Händler,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Haendler.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Händler,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Haendler.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Händler,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Haendler.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Händler,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Haendler.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Händler,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Haendler.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Händler,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Haendler.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Händler,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Haendler.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Händler,146,283,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Haendler.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,false
+*,k,Feldherr,146,283,210,300,lib/Projekte/KoH/Material/Karten/Truppen/Feldherr.png,lib/Projekte/KoH/Material/Karten/Truppen/Hinten_Truppen.png,false
+*,k,Feldherr,146,283,210,300,lib/Projekte/KoH/Material/Karten/Truppen/Feldherr.png,lib/Projekte/KoH/Material/Karten/Truppen/Hinten_Truppen.png,false
+*,k,Feldherr,146,283,210,300,lib/Projekte/KoH/Material/Karten/Truppen/Feldherr.png,lib/Projekte/KoH/Material/Karten/Truppen/Hinten_Truppen.png,false
+*,k,Feldherr,146,283,210,300,lib/Projekte/KoH/Material/Karten/Truppen/Feldherr.png,lib/Projekte/KoH/Material/Karten/Truppen/Hinten_Truppen.png,false
+*,k,Feldherr,146,283,210,300,lib/Projekte/KoH/Material/Karten/Truppen/Feldherr.png,lib/Projekte/KoH/Material/Karten/Truppen/Hinten_Truppen.png,false
+*,k,Feldherr,146,283,210,300,lib/Projekte/KoH/Material/Karten/Truppen/Feldherr.png,lib/Projekte/KoH/Material/Karten/Truppen/Hinten_Truppen.png,false
+*,k,Feldherr,146,283,210,300,lib/Projekte/KoH/Material/Karten/Truppen/Feldherr.png,lib/Projekte/KoH/Material/Karten/Truppen/Hinten_Truppen.png,false
+*,k,Feldherr,146,283,210,300,lib/Projekte/KoH/Material/Karten/Truppen/Feldherr.png,lib/Projekte/KoH/Material/Karten/Truppen/Hinten_Truppen.png,false
+*,k,Feldherr,146,283,210,300,lib/Projekte/KoH/Material/Karten/Truppen/Feldherr.png,lib/Projekte/KoH/Material/Karten/Truppen/Hinten_Truppen.png,false
+*,k,Feldherr,146,283,210,300,lib/Projekte/KoH/Material/Karten/Truppen/Feldherr.png,lib/Projekte/KoH/Material/Karten/Truppen/Hinten_Truppen.png,false
+*,k,Truppe Ritter,146,283,210,300,lib/Projekte/KoH/Material/Karten/Truppen/Ritter.png,lib/Projekte/KoH/Material/Karten/Truppen/Hinten_Truppen.png,false
+*,k,Truppe Ritter,146,283,210,300,lib/Projekte/KoH/Material/Karten/Truppen/Ritter.png,lib/Projekte/KoH/Material/Karten/Truppen/Hinten_Truppen.png,false
+*,k,Truppe Ritter,146,283,210,300,lib/Projekte/KoH/Material/Karten/Truppen/Ritter.png,lib/Projekte/KoH/Material/Karten/Truppen/Hinten_Truppen.png,false
+*,k,Truppe Ritter,146,283,210,300,lib/Projekte/KoH/Material/Karten/Truppen/Ritter.png,lib/Projekte/KoH/Material/Karten/Truppen/Hinten_Truppen.png,false
+*,k,Truppe Ritter,146,283,210,300,lib/Projekte/KoH/Material/Karten/Truppen/Ritter.png,lib/Projekte/KoH/Material/Karten/Truppen/Hinten_Truppen.png,false
+*,k,Truppe Ritter,146,283,210,300,lib/Projekte/KoH/Material/Karten/Truppen/Ritter.png,lib/Projekte/KoH/Material/Karten/Truppen/Hinten_Truppen.png,false
+*,k,Truppe Ritter,146,283,210,300,lib/Projekte/KoH/Material/Karten/Truppen/Ritter.png,lib/Projekte/KoH/Material/Karten/Truppen/Hinten_Truppen.png,false
+*,k,Truppe Ritter,146,283,210,300,lib/Projekte/KoH/Material/Karten/Truppen/Ritter.png,lib/Projekte/KoH/Material/Karten/Truppen/Hinten_Truppen.png,false
+*,k,Truppe Ritter,146,283,210,300,lib/Projekte/KoH/Material/Karten/Truppen/Ritter.png,lib/Projekte/KoH/Material/Karten/Truppen/Hinten_Truppen.png,false
+*,k,Truppe Ritter,146,283,210,300,lib/Projekte/KoH/Material/Karten/Truppen/Ritter.png,lib/Projekte/KoH/Material/Karten/Truppen/Hinten_Truppen.png,false
+*,k,Truppe Ritter,146,283,210,300,lib/Projekte/KoH/Material/Karten/Truppen/Ritter.png,lib/Projekte/KoH/Material/Karten/Truppen/Hinten_Truppen.png,false
+*,k,Truppe Ritter,146,283,210,300,lib/Projekte/KoH/Material/Karten/Truppen/Ritter.png,lib/Projekte/KoH/Material/Karten/Truppen/Hinten_Truppen.png,false
+*,k,Truppe Ritter,146,283,210,300,lib/Projekte/KoH/Material/Karten/Truppen/Ritter.png,lib/Projekte/KoH/Material/Karten/Truppen/Hinten_Truppen.png,false
+*,k,Truppe Ritter,146,283,210,300,lib/Projekte/KoH/Material/Karten/Truppen/Ritter.png,lib/Projekte/KoH/Material/Karten/Truppen/Hinten_Truppen.png,false
+*,k,Truppe Ritter,146,283,210,300,lib/Projekte/KoH/Material/Karten/Truppen/Ritter.png,lib/Projekte/KoH/Material/Karten/Truppen/Hinten_Truppen.png,false
+*,k,Truppe Schwertkämpfer,146,283,210,300,lib/Projekte/KoH/Material/Karten/Truppen/Schwertkaempfer.png,lib/Projekte/KoH/Material/Karten/Truppen/Hinten_Truppen.png,false
+*,k,Truppe Schwertkämpfer,146,283,210,300,lib/Projekte/KoH/Material/Karten/Truppen/Schwertkaempfer.png,lib/Projekte/KoH/Material/Karten/Truppen/Hinten_Truppen.png,false
+*,k,Truppe Schwertkämpfer,146,283,210,300,lib/Projekte/KoH/Material/Karten/Truppen/Schwertkaempfer.png,lib/Projekte/KoH/Material/Karten/Truppen/Hinten_Truppen.png,false
+*,k,Truppe Schwertkämpfer,146,283,210,300,lib/Projekte/KoH/Material/Karten/Truppen/Schwertkaempfer.png,lib/Projekte/KoH/Material/Karten/Truppen/Hinten_Truppen.png,false
+*,k,Truppe Schwertkämpfer,146,283,210,300,lib/Projekte/KoH/Material/Karten/Truppen/Schwertkaempfer.png,lib/Projekte/KoH/Material/Karten/Truppen/Hinten_Truppen.png,false
+*,k,Truppe Schwertkämpfer,146,283,210,300,lib/Projekte/KoH/Material/Karten/Truppen/Schwertkaempfer.png,lib/Projekte/KoH/Material/Karten/Truppen/Hinten_Truppen.png,false
+*,k,Truppe Schwertkämpfer,146,283,210,300,lib/Projekte/KoH/Material/Karten/Truppen/Schwertkaempfer.png,lib/Projekte/KoH/Material/Karten/Truppen/Hinten_Truppen.png,false
+*,k,Truppe Schwertkämpfer,146,283,210,300,lib/Projekte/KoH/Material/Karten/Truppen/Schwertkaempfer.png,lib/Projekte/KoH/Material/Karten/Truppen/Hinten_Truppen.png,false
+*,k,Truppe Schwertkämpfer,146,283,210,300,lib/Projekte/KoH/Material/Karten/Truppen/Schwertkaempfer.png,lib/Projekte/KoH/Material/Karten/Truppen/Hinten_Truppen.png,false
+*,k,Truppe Schwertkämpfer,146,283,210,300,lib/Projekte/KoH/Material/Karten/Truppen/Schwertkaempfer.png,lib/Projekte/KoH/Material/Karten/Truppen/Hinten_Truppen.png,false
+*,k,Truppe Schwertkämpfer,146,283,210,300,lib/Projekte/KoH/Material/Karten/Truppen/Schwertkaempfer.png,lib/Projekte/KoH/Material/Karten/Truppen/Hinten_Truppen.png,false
+*,k,Truppe Schwertkämpfer,146,283,210,300,lib/Projekte/KoH/Material/Karten/Truppen/Schwertkaempfer.png,lib/Projekte/KoH/Material/Karten/Truppen/Hinten_Truppen.png,false
+*,k,Truppe Schwertkämpfer,146,283,210,300,lib/Projekte/KoH/Material/Karten/Truppen/Schwertkaempfer.png,lib/Projekte/KoH/Material/Karten/Truppen/Hinten_Truppen.png,false
+*,k,Truppe Schwertkämpfer,146,283,210,300,lib/Projekte/KoH/Material/Karten/Truppen/Schwertkaempfer.png,lib/Projekte/KoH/Material/Karten/Truppen/Hinten_Truppen.png,false
+*,k,Truppe Schwertkämpfer,146,283,210,300,lib/Projekte/KoH/Material/Karten/Truppen/Schwertkaempfer.png,lib/Projekte/KoH/Material/Karten/Truppen/Hinten_Truppen.png,false
+*,k,Truppe Bogenschütze,146,283,210,300,lib/Projekte/KoH/Material/Karten/Truppen/Bogenschuetze.png,lib/Projekte/KoH/Material/Karten/Truppen/Hinten_Truppen.png,false
+*,k,Truppe Bogenschütze,146,283,210,300,lib/Projekte/KoH/Material/Karten/Truppen/Bogenschuetze.png,lib/Projekte/KoH/Material/Karten/Truppen/Hinten_Truppen.png,false
+*,k,Truppe Bogenschütze,146,283,210,300,lib/Projekte/KoH/Material/Karten/Truppen/Bogenschuetze.png,lib/Projekte/KoH/Material/Karten/Truppen/Hinten_Truppen.png,false
+*,k,Truppe Bogenschütze,146,283,210,300,lib/Projekte/KoH/Material/Karten/Truppen/Bogenschuetze.png,lib/Projekte/KoH/Material/Karten/Truppen/Hinten_Truppen.png,false
+*,k,Truppe Bogenschütze,146,283,210,300,lib/Projekte/KoH/Material/Karten/Truppen/Bogenschuetze.png,lib/Projekte/KoH/Material/Karten/Truppen/Hinten_Truppen.png,false
+*,k,Truppe Bogenschütze,146,283,210,300,lib/Projekte/KoH/Material/Karten/Truppen/Bogenschuetze.png,lib/Projekte/KoH/Material/Karten/Truppen/Hinten_Truppen.png,false
+*,k,Truppe Bogenschütze,146,283,210,300,lib/Projekte/KoH/Material/Karten/Truppen/Bogenschuetze.png,lib/Projekte/KoH/Material/Karten/Truppen/Hinten_Truppen.png,false
+*,k,Truppe Bogenschütze,146,283,210,300,lib/Projekte/KoH/Material/Karten/Truppen/Bogenschuetze.png,lib/Projekte/KoH/Material/Karten/Truppen/Hinten_Truppen.png,false
+*,k,Truppe Bogenschütze,146,283,210,300,lib/Projekte/KoH/Material/Karten/Truppen/Bogenschuetze.png,lib/Projekte/KoH/Material/Karten/Truppen/Hinten_Truppen.png,false
+*,k,Truppe Bogenschütze,146,283,210,300,lib/Projekte/KoH/Material/Karten/Truppen/Bogenschuetze.png,lib/Projekte/KoH/Material/Karten/Truppen/Hinten_Truppen.png,false
+*,k,Truppe Bogenschütze,146,283,210,300,lib/Projekte/KoH/Material/Karten/Truppen/Bogenschuetze.png,lib/Projekte/KoH/Material/Karten/Truppen/Hinten_Truppen.png,false
+*,k,Truppe Bogenschütze,146,283,210,300,lib/Projekte/KoH/Material/Karten/Truppen/Bogenschuetze.png,lib/Projekte/KoH/Material/Karten/Truppen/Hinten_Truppen.png,false
+*,k,Truppe Bogenschütze,146,283,210,300,lib/Projekte/KoH/Material/Karten/Truppen/Bogenschuetze.png,lib/Projekte/KoH/Material/Karten/Truppen/Hinten_Truppen.png,false
+*,k,Truppe Bogenschütze,146,283,210,300,lib/Projekte/KoH/Material/Karten/Truppen/Bogenschuetze.png,lib/Projekte/KoH/Material/Karten/Truppen/Hinten_Truppen.png,false
+*,k,Truppe Bogenschütze,146,283,210,300,lib/Projekte/KoH/Material/Karten/Truppen/Bogenschuetze.png,lib/Projekte/KoH/Material/Karten/Truppen/Hinten_Truppen.png,false
+*,k,Truppe Speerträger,146,283,210,300,lib/Projekte/KoH/Material/Karten/Truppen/Speertraeger.png,lib/Projekte/KoH/Material/Karten/Truppen/Hinten_Truppen.png,false
+*,k,Truppe Speerträger,146,283,210,300,lib/Projekte/KoH/Material/Karten/Truppen/Speertraeger.png,lib/Projekte/KoH/Material/Karten/Truppen/Hinten_Truppen.png,false
+*,k,Truppe Speerträger,146,283,210,300,lib/Projekte/KoH/Material/Karten/Truppen/Speertraeger.png,lib/Projekte/KoH/Material/Karten/Truppen/Hinten_Truppen.png,false
+*,k,Truppe Speerträger,146,283,210,300,lib/Projekte/KoH/Material/Karten/Truppen/Speertraeger.png,lib/Projekte/KoH/Material/Karten/Truppen/Hinten_Truppen.png,false
+*,k,Truppe Speerträger,146,283,210,300,lib/Projekte/KoH/Material/Karten/Truppen/Speertraeger.png,lib/Projekte/KoH/Material/Karten/Truppen/Hinten_Truppen.png,false
+*,k,Truppe Speerträger,146,283,210,300,lib/Projekte/KoH/Material/Karten/Truppen/Speertraeger.png,lib/Projekte/KoH/Material/Karten/Truppen/Hinten_Truppen.png,false
+*,k,Truppe Speerträger,146,283,210,300,lib/Projekte/KoH/Material/Karten/Truppen/Speertraeger.png,lib/Projekte/KoH/Material/Karten/Truppen/Hinten_Truppen.png,false
+*,k,Truppe Speerträger,146,283,210,300,lib/Projekte/KoH/Material/Karten/Truppen/Speertraeger.png,lib/Projekte/KoH/Material/Karten/Truppen/Hinten_Truppen.png,false
+*,k,Truppe Speerträger,146,283,210,300,lib/Projekte/KoH/Material/Karten/Truppen/Speertraeger.png,lib/Projekte/KoH/Material/Karten/Truppen/Hinten_Truppen.png,false
+*,k,Truppe Speerträger,146,283,210,300,lib/Projekte/KoH/Material/Karten/Truppen/Speertraeger.png,lib/Projekte/KoH/Material/Karten/Truppen/Hinten_Truppen.png,false
+*,k,Truppe Speerträger,146,283,210,300,lib/Projekte/KoH/Material/Karten/Truppen/Speertraeger.png,lib/Projekte/KoH/Material/Karten/Truppen/Hinten_Truppen.png,false
+*,k,Truppe Speerträger,146,283,210,300,lib/Projekte/KoH/Material/Karten/Truppen/Speertraeger.png,lib/Projekte/KoH/Material/Karten/Truppen/Hinten_Truppen.png,false
+*,k,Truppe Speerträger,146,283,210,300,lib/Projekte/KoH/Material/Karten/Truppen/Speertraeger.png,lib/Projekte/KoH/Material/Karten/Truppen/Hinten_Truppen.png,false
+*,k,Truppe Speerträger,146,283,210,300,lib/Projekte/KoH/Material/Karten/Truppen/Speertraeger.png,lib/Projekte/KoH/Material/Karten/Truppen/Hinten_Truppen.png,false
+*,k,Truppe Speerträger,145,284,210,300,lib/Projekte/KoH/Material/Karten/Truppen/Speertraeger.png,lib/Projekte/KoH/Material/Karten/Truppen/Hinten_Truppen.png,false
+*,k,Landschaft Wildbestand,1034,314,210,300,lib/Projekte/KoH/Material/Karten/Orte/Landschaften/Wildbestand.png,lib/Projekte/KoH/Material/Karten/Orte/Landschaften/Hinten_Landschaft.png,false
+*,k,Landschaft Wildbestand,1034,314,210,300,lib/Projekte/KoH/Material/Karten/Orte/Landschaften/Wildbestand.png,lib/Projekte/KoH/Material/Karten/Orte/Landschaften/Hinten_Landschaft.png,false
+*,k,Landschaft Wildbestand,1034,314,210,300,lib/Projekte/KoH/Material/Karten/Orte/Landschaften/Wildbestand.png,lib/Projekte/KoH/Material/Karten/Orte/Landschaften/Hinten_Landschaft.png,false
+*,k,Landschaft Wald,1034,314,210,300,lib/Projekte/KoH/Material/Karten/Orte/Landschaften/Wald.png,lib/Projekte/KoH/Material/Karten/Orte/Landschaften/Hinten_Landschaft.png,false
+*,k,Landschaft Wald,1034,314,210,300,lib/Projekte/KoH/Material/Karten/Orte/Landschaften/Wald.png,lib/Projekte/KoH/Material/Karten/Orte/Landschaften/Hinten_Landschaft.png,false
+*,k,Landschaft Wald,1034,314,210,300,lib/Projekte/KoH/Material/Karten/Orte/Landschaften/Wald.png,lib/Projekte/KoH/Material/Karten/Orte/Landschaften/Hinten_Landschaft.png,false
+*,k,Landschaft Wald,1034,314,210,300,lib/Projekte/KoH/Material/Karten/Orte/Landschaften/Wald.png,lib/Projekte/KoH/Material/Karten/Orte/Landschaften/Hinten_Landschaft.png,false
+*,k,Landschaft Wald,1403,1261,210,300,lib/Projekte/KoH/Material/Karten/Orte/Landschaften/Wald.png,lib/Projekte/KoH/Material/Karten/Orte/Landschaften/Hinten_Landschaft.png,true
+*,k,Landschaft Wasser,1034,314,210,300,lib/Projekte/KoH/Material/Karten/Orte/Landschaften/Wasser.png,lib/Projekte/KoH/Material/Karten/Orte/Landschaften/Hinten_Landschaft.png,false
+*,k,Landschaft Wasser,1034,314,210,300,lib/Projekte/KoH/Material/Karten/Orte/Landschaften/Wasser.png,lib/Projekte/KoH/Material/Karten/Orte/Landschaften/Hinten_Landschaft.png,false
+*,k,Landschaft Wasser,1034,314,210,300,lib/Projekte/KoH/Material/Karten/Orte/Landschaften/Wasser.png,lib/Projekte/KoH/Material/Karten/Orte/Landschaften/Hinten_Landschaft.png,false
+*,k,Landschaft Wasser,1034,314,210,300,lib/Projekte/KoH/Material/Karten/Orte/Landschaften/Wasser.png,lib/Projekte/KoH/Material/Karten/Orte/Landschaften/Hinten_Landschaft.png,false
+*,k,Landschaft Wasser,1034,314,210,300,lib/Projekte/KoH/Material/Karten/Orte/Landschaften/Wasser.png,lib/Projekte/KoH/Material/Karten/Orte/Landschaften/Hinten_Landschaft.png,false
+*,k,Landschaft Weideland,1034,314,210,300,lib/Projekte/KoH/Material/Karten/Orte/Landschaften/Weideland.png,lib/Projekte/KoH/Material/Karten/Orte/Landschaften/Hinten_Landschaft.png,false
+*,k,Landschaft Weideland,1034,314,210,300,lib/Projekte/KoH/Material/Karten/Orte/Landschaften/Weideland.png,lib/Projekte/KoH/Material/Karten/Orte/Landschaften/Hinten_Landschaft.png,false
+*,k,Landschaft Weideland,1034,314,210,300,lib/Projekte/KoH/Material/Karten/Orte/Landschaften/Weideland.png,lib/Projekte/KoH/Material/Karten/Orte/Landschaften/Hinten_Landschaft.png,false
+*,k,Landschaft Weideland,1034,314,210,300,lib/Projekte/KoH/Material/Karten/Orte/Landschaften/Weideland.png,lib/Projekte/KoH/Material/Karten/Orte/Landschaften/Hinten_Landschaft.png,false
+*,k,Landschaft Weideland,1903,1261,210,300,lib/Projekte/KoH/Material/Karten/Orte/Landschaften/Weideland.png,lib/Projekte/KoH/Material/Karten/Orte/Landschaften/Hinten_Landschaft.png,true
+*,k,Landschaft Ackerland,1034,314,210,300,lib/Projekte/KoH/Material/Karten/Orte/Landschaften/Ackerland.png,lib/Projekte/KoH/Material/Karten/Orte/Landschaften/Hinten_Landschaft.png,false
+*,k,Landschaft Ackerland,1034,314,210,300,lib/Projekte/KoH/Material/Karten/Orte/Landschaften/Ackerland.png,lib/Projekte/KoH/Material/Karten/Orte/Landschaften/Hinten_Landschaft.png,false
+*,k,Landschaft Ackerland,1034,314,210,300,lib/Projekte/KoH/Material/Karten/Orte/Landschaften/Ackerland.png,lib/Projekte/KoH/Material/Karten/Orte/Landschaften/Hinten_Landschaft.png,false
+*,k,Landschaft Ackerland,1034,314,210,300,lib/Projekte/KoH/Material/Karten/Orte/Landschaften/Ackerland.png,lib/Projekte/KoH/Material/Karten/Orte/Landschaften/Hinten_Landschaft.png,false
+*,k,Landschaft Ackerland,1653,1261,210,300,lib/Projekte/KoH/Material/Karten/Orte/Landschaften/Ackerland.png,lib/Projekte/KoH/Material/Karten/Orte/Landschaften/Hinten_Landschaft.png,true
+*,k,Landschaft Granitgrube,1034,314,210,300,lib/Projekte/KoH/Material/Karten/Orte/Landschaften/Granitgrube.png,lib/Projekte/KoH/Material/Karten/Orte/Landschaften/Hinten_Landschaft.png,false
+*,k,Landschaft Granitgrube,1034,314,210,300,lib/Projekte/KoH/Material/Karten/Orte/Landschaften/Granitgrube.png,lib/Projekte/KoH/Material/Karten/Orte/Landschaften/Hinten_Landschaft.png,false
+*,k,Landschaft Granitgrube,1034,314,210,300,lib/Projekte/KoH/Material/Karten/Orte/Landschaften/Granitgrube.png,lib/Projekte/KoH/Material/Karten/Orte/Landschaften/Hinten_Landschaft.png,false
+*,k,Landschaft Granitgrube,1034,314,210,300,lib/Projekte/KoH/Material/Karten/Orte/Landschaften/Granitgrube.png,lib/Projekte/KoH/Material/Karten/Orte/Landschaften/Hinten_Landschaft.png,false
+*,k,Landschaft Granitgrube,1034,314,210,300,lib/Projekte/KoH/Material/Karten/Orte/Landschaften/Granitgrube.png,lib/Projekte/KoH/Material/Karten/Orte/Landschaften/Hinten_Landschaft.png,false
+*,k,Landschaft Erzgrube,1034,314,210,300,lib/Projekte/KoH/Material/Karten/Orte/Landschaften/Erzgrube.png,lib/Projekte/KoH/Material/Karten/Orte/Landschaften/Hinten_Landschaft.png,false
+*,k,Landschaft Erzgrube,1034,314,210,300,lib/Projekte/KoH/Material/Karten/Orte/Landschaften/Erzgrube.png,lib/Projekte/KoH/Material/Karten/Orte/Landschaften/Hinten_Landschaft.png,false
+*,k,Landschaft Erzgrube,1034,314,210,300,lib/Projekte/KoH/Material/Karten/Orte/Landschaften/Erzgrube.png,lib/Projekte/KoH/Material/Karten/Orte/Landschaften/Hinten_Landschaft.png,false
+*,k,Landschaft Lehmgrube,1034,314,210,300,lib/Projekte/KoH/Material/Karten/Orte/Landschaften/Lehmgrube.png,lib/Projekte/KoH/Material/Karten/Orte/Landschaften/Hinten_Landschaft.png,false
+*,k,Landschaft Lehmgrube,1034,314,210,300,lib/Projekte/KoH/Material/Karten/Orte/Landschaften/Lehmgrube.png,lib/Projekte/KoH/Material/Karten/Orte/Landschaften/Hinten_Landschaft.png,false
+*,k,Landschaft Lehmgrube,1034,314,210,300,lib/Projekte/KoH/Material/Karten/Orte/Landschaften/Lehmgrube.png,lib/Projekte/KoH/Material/Karten/Orte/Landschaften/Hinten_Landschaft.png,false
+*,k,Landschaft Marmorgrube,1034,314,210,300,lib/Projekte/KoH/Material/Karten/Orte/Landschaften/Marmorgrube.png,lib/Projekte/KoH/Material/Karten/Orte/Landschaften/Hinten_Landschaft.png,false
+*,k,Landschaft Marmorgrube,1034,314,210,300,lib/Projekte/KoH/Material/Karten/Orte/Landschaften/Marmorgrube.png,lib/Projekte/KoH/Material/Karten/Orte/Landschaften/Hinten_Landschaft.png,false
+*,k,Landschaft Stadt_1,1389,316,210,300,lib/Projekte/KoH/Material/Karten/Orte/Staedte/Stadt_1.png,lib/Projekte/KoH/Material/Karten/Orte/Staedte/Hinten_Stadt.png,true
+*,k,Landschaft Stadt_2,1034,314,210,300,lib/Projekte/KoH/Material/Karten/Orte/Staedte/Stadt_2.png,lib/Projekte/KoH/Material/Karten/Orte/Staedte/Hinten_Stadt.png,false
+*,k,Landschaft Stadt_3,1034,314,210,300,lib/Projekte/KoH/Material/Karten/Orte/Staedte/Stadt_3.png,lib/Projekte/KoH/Material/Karten/Orte/Staedte/Hinten_Stadt.png,false
+*,k,Landschaft Stadt_4,1034,314,210,300,lib/Projekte/KoH/Material/Karten/Orte/Staedte/Stadt_4.png,lib/Projekte/KoH/Material/Karten/Orte/Staedte/Hinten_Stadt.png,false
+*,k,Landschaft Stadt_5,1034,314,210,300,lib/Projekte/KoH/Material/Karten/Orte/Staedte/Stadt_5.png,lib/Projekte/KoH/Material/Karten/Orte/Staedte/Hinten_Stadt.png,false
+*,k,Landschaft Stadt_6,1034,314,210,300,lib/Projekte/KoH/Material/Karten/Orte/Staedte/Stadt_6.png,lib/Projekte/KoH/Material/Karten/Orte/Staedte/Hinten_Stadt.png,false
+*,k,Landschaft Stadt_7,1034,314,210,300,lib/Projekte/KoH/Material/Karten/Orte/Staedte/Stadt_7.png,lib/Projekte/KoH/Material/Karten/Orte/Staedte/Hinten_Stadt.png,false
+*,k,Landschaft Stadt_8,1034,314,210,300,lib/Projekte/KoH/Material/Karten/Orte/Staedte/Stadt_8.png,lib/Projekte/KoH/Material/Karten/Orte/Staedte/Hinten_Stadt.png,false
+*,k,Landschaft Stadt_9,1034,314,210,300,lib/Projekte/KoH/Material/Karten/Orte/Staedte/Stadt_9.png,lib/Projekte/KoH/Material/Karten/Orte/Staedte/Hinten_Stadt.png,false
+*,k,Landschaft Stadt_10,1034,314,210,300,lib/Projekte/KoH/Material/Karten/Orte/Staedte/Stadt_10.png,lib/Projekte/KoH/Material/Karten/Orte/Staedte/Hinten_Stadt.png,false
+*,s,Marker Bewirtschaftung,1147,1516,30,30,15,15,lib/Projekte/KoH/Material/Marker/BewirtschaftungsMarker.png
+*,s,Marker Bewirtschaftung,1196,1436,30,30,15,15,lib/Projekte/KoH/Material/Marker/BewirtschaftungsMarker.png
+*,s,Marker Bewirtschaftung,1153,1471,30,30,15,15,lib/Projekte/KoH/Material/Marker/BewirtschaftungsMarker.png
+*,s,Marker Bewirtschaftung,1147,1431,30,30,15,15,lib/Projekte/KoH/Material/Marker/BewirtschaftungsMarker.png
+*,s,Marker Bewirtschaftung,1201,1491,30,30,15,15,lib/Projekte/KoH/Material/Marker/BewirtschaftungsMarker.png
+*,s,Marker Bewirtschaftung,1104,1484,30,30,15,15,lib/Projekte/KoH/Material/Marker/BewirtschaftungsMarker.png
+*,s,Marker Stadtstatus,533,1663,30,30,15,15,lib/Projekte/KoH/Material/Marker/StatusMarker.png
+*,s,Marker Stadtstatus,532,1162,30,30,15,15,lib/Projekte/KoH/Material/Marker/StatusMarker.png
+*,s,Marker Spielerstatus,41,1272,30,30,15,15,lib/Projekte/KoH/Material/Marker/StatusMarker.png
+*,s,Marker Stadtstatus,41,1381,30,30,15,15,lib/Projekte/KoH/Material/Marker/StatusMarker.png
+*,k,Händler,1398,1646,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Haendler.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,true
+*,k,Ressource Nahrung,1724,1673,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Nahrung.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,true
+*,k,Ressource Nahrung,1845,1673,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Nahrung.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,true
+*,k,Ressource Nahrung,1933,1673,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Nahrung.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,true
+*,k,Ressource Stein,2005,1666,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Stein.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,true
+*,k,Ressource Stein,2085,1666,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Stein.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,true
+*,k,Ressource Eisen,2145,1666,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Eisen.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,true
+*,k,Ressource Eisen,2224,1668,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Eisen.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,true
+*,k,Ressource Holz,2318,1671,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Holz.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,true
+*,k,Ressource Holz,2402,1670,210,300,lib/Projekte/KoH/Material/Karten/Ressourcen/Holz.png,lib/Projekte/KoH/Material/Karten/Ressourcen/Hinten_Ressourcen.png,true
+*,zw,Würfel 6,6,1169,1092,50,0,150,100,255,255,255,1,gfx/wuerfel/gruen.png
+*,zw,Würfel 10,10,1170,1206,60,100,100,100,255,255,255,1,gfx/wuerfel/grau.png
