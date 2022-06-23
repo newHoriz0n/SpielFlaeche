@@ -21,7 +21,8 @@ import tisch.SpielBrett;
 import tisch.Tisch;
 import tisch.objekte.SpielObjekt;
 
-/** Panel zur graphischen Darstellung der Spielfläche
+/**
+ * Panel zur graphischen Darstellung der Spielfläche
  * 
  * @author paulb
  *
@@ -39,7 +40,8 @@ public class PSpielFlaecheView extends JPanel implements ViewController, ChangeL
 	private Tisch t;
 
 	private boolean lightDrawing;
-	
+	private boolean lightDrawingEnabled = false;
+
 	private transient PPMenu menu;
 
 	private transient HoererManager hm;
@@ -61,7 +63,7 @@ public class PSpielFlaecheView extends JPanel implements ViewController, ChangeL
 
 		for (String key : m.getSpieleSchrank().getSpielSets().keySet()) {
 			Menueintrag l1 = new Menueintrag(key, "");
-			
+
 			Menueintrag set = new Menueintrag(m.getSpieleSchrank().getSpielSets().get(key).getTitel() + "set", "");
 			set.addAktion(new Aktion() {
 
@@ -70,9 +72,9 @@ public class PSpielFlaecheView extends JPanel implements ViewController, ChangeL
 					t.platziereSpielSet(m.getSpieleSchrank().getSpielSets().get(key));
 				}
 			});
-			
+
 			l1.addMenuEintrag(set);
-			
+
 			for (SpielBrett b : m.getSpieleSchrank().getSpielSets().get(key).getBretter()) {
 				if (!l1.containsEintrag(b.getName())) {
 					Menueintrag brett = new Menueintrag(b.getName(), b.getBildURL());
@@ -80,7 +82,7 @@ public class PSpielFlaecheView extends JPanel implements ViewController, ChangeL
 
 						@Override
 						public void performAktion() {
-							
+
 							SpielBrett sb = b.getCopy();
 							sb.setPosition(getSpielKoordsVonMaus(getWidth() / 2, getHeight() / 2));
 							t.platziereSpielBrett(sb);
@@ -89,7 +91,7 @@ public class PSpielFlaecheView extends JPanel implements ViewController, ChangeL
 					l1.addMenuEintrag(brett);
 				}
 			}
-			
+
 			for (SpielObjekt o : m.getSpieleSchrank().getSpielSets().get(key).getObjekte()) {
 				if (!l1.containsEintrag(o.getBezeichnung())) {
 					Menueintrag objekt = new Menueintrag(o.getBezeichnung(), o.getBildURL());
@@ -98,7 +100,7 @@ public class PSpielFlaecheView extends JPanel implements ViewController, ChangeL
 						@Override
 						public void performAktion() {
 							SpielObjekt so = o.getCopy();
-							so.setPosition(getSpielKoordsVonMaus(hm.getMausPos().getPosXInt(),hm.getMausPos().getPosYInt() ));
+							so.setPosition(getSpielKoordsVonMaus(hm.getMausPos().getPosXInt(), hm.getMausPos().getPosYInt()));
 							t.platziereSpielObjekt(so);
 						}
 					});
@@ -109,15 +111,19 @@ public class PSpielFlaecheView extends JPanel implements ViewController, ChangeL
 		}
 
 	}
+
+	public void updateObjektMenu() {
+		createObjektMenu();
+	}
 	
 	public void setHoererManager(HoererManager hm) {
 		this.hm = hm;
-		
+
 		addMouseListener(hm);
 		addMouseMotionListener(hm);
 		addMouseWheelListener(hm);
 	}
-	
+
 	public void paint(Graphics g) {
 
 		if (offset == null) {
@@ -137,7 +143,7 @@ public class PSpielFlaecheView extends JPanel implements ViewController, ChangeL
 		g2d.scale(zoom, zoom);
 		g2d.translate(-getWidth() / 2, -getHeight() / 2);
 
-		t.drawTisch(g2d, rotation, lightDrawing);
+		t.drawTisch(g2d, rotation, (lightDrawing && lightDrawingEnabled));
 
 		// MENÜ
 		g2d.translate(getWidth() / 2, getHeight() / 2);
@@ -146,15 +152,14 @@ public class PSpielFlaecheView extends JPanel implements ViewController, ChangeL
 		g2d.translate(-offset.getPosX() * zoom, -offset.getPosY() * zoom);
 		g2d.rotate(-rotation, getWidth() / 2, getHeight() / 2);
 		menu.drawPPMenu(g2d);
-		
+
 		// TISCH CTRLS
 		drawTischControls(g2d);
 	}
-	
-	public void drawObjekt(SpielObjekt o) {
-		t.drawObjekt((Graphics2D)getGraphics(), rotation, o);
-	}
 
+	public void drawObjekt(SpielObjekt o) {
+		t.drawObjekt((Graphics2D) getGraphics(), rotation, o);
+	}
 
 	private void drawTischControls(Graphics2D g2d) {
 		g2d.setFont(new Font("Arial", Font.PLAIN, 14));
@@ -184,12 +189,10 @@ public class PSpielFlaecheView extends JPanel implements ViewController, ChangeL
 		repaint();
 	}
 
-
 	@Override
 	public boolean checkViewControllerPress(int button, int mausX, int mausY) {
 		return menu.checkKlick(mausX, mausY);
 	}
-
 
 	@Override
 	public Vektor2D getSpielKoordsVonMaus(int mausX, int mausY) {
@@ -202,7 +205,7 @@ public class PSpielFlaecheView extends JPanel implements ViewController, ChangeL
 		return new Vektor2D(drehpunktX + (dx * Math.cos(rotation) + dy * Math.sin(rotation)),
 				drehpunktY + (dy * Math.cos(rotation) - dx * Math.sin(rotation)));
 	}
-	
+
 	@Override
 	public void stateChanged(ChangeEvent ce) {
 		repaint();
@@ -215,7 +218,7 @@ public class PSpielFlaecheView extends JPanel implements ViewController, ChangeL
 	public double getViewZoom() {
 		return zoom;
 	}
-	
+
 	@Override
 	public void repaintView() {
 		repaint();
@@ -231,6 +234,11 @@ public class PSpielFlaecheView extends JPanel implements ViewController, ChangeL
 	@Override
 	public void setLightDrawing(boolean light) {
 		this.lightDrawing = light;
+	}
+
+	@Override
+	public void setLightDrawingEnabled(boolean light) {
+		this.lightDrawingEnabled = light;
 	}
 
 }

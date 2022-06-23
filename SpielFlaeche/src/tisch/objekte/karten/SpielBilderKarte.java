@@ -112,7 +112,7 @@ public class SpielBilderKarte extends SpielKarte {
 
 		int[][] polygon = calcPolygon();
 
-		g.setColor(Color.BLACK);
+//		g.setColor(Color.BLACK);
 		if (mausOver) {
 			g.setColor(Color.GREEN);
 		}

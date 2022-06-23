@@ -1,6 +1,7 @@
 package lib;
 
 import java.awt.Color;
+import java.io.File;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -83,6 +84,11 @@ public class SpieleSchrank {
 
 	public HashMap<String, SpielSet> getSpielSets() {
 		return sets;
+	}
+
+	public void addSpieleSet(SpielSet s) {
+		sets.put(s.getTitel(), s);
+
 	}
 
 }

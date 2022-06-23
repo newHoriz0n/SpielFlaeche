@@ -14,6 +14,7 @@ import exe.FSpielFlaeche;
 
 /**
  * Klasse zum Vereinfachten Lesen und Schreiben von Dateien
+ * 
  * @author paulb
  *
  */
@@ -64,6 +65,17 @@ public class PBFileReadWriter {
 		return files;
 	}
 
+	public static void writeStringToFile(String s, String fileURL) throws IOException {
+		File f = new File(fileURL);
+		f.createNewFile();
+		FileWriter fw = new FileWriter(f, false);
+		BufferedWriter bw = new BufferedWriter(fw);
+
+		bw.write(s);
+
+		bw.close();
+	}
+
 	public static void writeLinesToFile(List<String> lines, String fileURL) throws IOException {
 
 		File f = new File(fileURL);
@@ -93,26 +105,26 @@ public class PBFileReadWriter {
 		return attList;
 
 	}
-	
+
 	/**
-	 * Erwartet 1,2,3
-	 * 			1,2,3
-	 * 			1,2,3 ...
+	 * Erwartet 1,2,3 1,2,3 1,2,3 ...
 	 * 
 	 * @param seperator
 	 * @param URL
 	 * @return
 	 */
 	public static List<String[]> getContentFromFile(String seperator, String url) {
-		
+
 		List<String[]> lineContent = new ArrayList<String[]>();
 		try {
 			BufferedReader reader = new BufferedReader(new FileReader(url));
 			String line;
-			while ((line = reader.readLine()) != null) {			
+
+			while ((line = reader.readLine()) != null) {
 				String[] out = (line.trim()).split(seperator);
 				lineContent.add(out);
 			}
+
 			reader.close();
 			return lineContent;
 		} catch (Exception e) {
@@ -121,7 +133,54 @@ public class PBFileReadWriter {
 			return null;
 		}
 	}
-	
+
+	/**
+	 * Ignoriert Zeilenumbrüche '\n' innerhalb des Inhaltes. Nur '\r\n' wird als neue Zeile ausgewertet.
+	 * @param seperator
+	 * @param url
+	 * @return
+	 */
+	public static List<String[]> getContentFromFileLF(String seperator, String url) {
+
+		char lf = '\n';
+		char cr = '\r';
+
+		boolean crb = false;
+
+		List<String[]> lineContent = new ArrayList<String[]>();
+		try {
+			BufferedReader reader = new BufferedReader(new FileReader(url));
+
+			String line = "";
+			int c = 0;
+			while (c != -1) {
+				c = reader.read();
+				line += (char) c;
+
+				if ((char) c == cr) {
+					crb = true;
+				}
+				if ((char) c == lf) {
+					if (crb) {
+						// System.out.println(line);
+						String[] out = (line.trim()).split(seperator);
+						lineContent.add(out);
+						line = "";
+					}
+					crb = false;
+				}
+
+			}
+			reader.close();
+			return lineContent;
+		} catch (Exception e) {
+			System.err.format("Exception occurred trying to read '%s'.", url);
+			e.printStackTrace();
+			return null;
+		}
+
+	}
+
 	public static String createAbsPfad(String relPfad) {
 
 		String userPfadString = "";
@@ -136,9 +195,9 @@ public class PBFileReadWriter {
 
 		return userPfadString + relPfad;
 	}
-	
+
 	public static String createRelPfad(String absPfad) {
-		
+
 		String userPfadString = "";
 
 		try {
@@ -150,7 +209,7 @@ public class PBFileReadWriter {
 		}
 
 		return absPfad.substring(userPfadString.length());
-		
+
 	}
 
 }

@@ -35,6 +35,8 @@ public interface ViewController {
 	public Vektor2D getSpielKoordsVonMaus(int mausX, int mausY);
 	
 	public void setLightDrawing(boolean light);
+	
+	public void setLightDrawingEnabled(boolean light);
 
 
 	

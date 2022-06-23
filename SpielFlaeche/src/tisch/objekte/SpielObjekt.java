@@ -18,6 +18,7 @@ import io.Sendbares;
 import math.IDverwaltung;
 import math.Vektor2D;
 import tisch.objekte.karten.SpielBilderKarte;
+import tisch.objekte.karten.SpielKarteGen;
 import tisch.objekte.karten.SpielTextKarte;
 import tisch.objekte.wuerfel.SpielBildWuerfel;
 import tisch.objekte.wuerfel.SpielZahlenWuerfel;
@@ -381,6 +382,11 @@ public abstract class SpielObjekt implements Sendbares {
 			o = new SpielTextKarte(info[2], new Vektor2D(Integer.parseInt(info[3]), Integer.parseInt(info[4])),
 					new Vektor2D(Integer.parseInt(info[5]), Integer.parseInt(info[6])), info[7], info[8], Boolean.parseBoolean(info[9]));
 
+		} else if (info[1].equals("kg")) {
+			o = new SpielKarteGen(info[2], new Vektor2D(Integer.parseInt(info[3]), Integer.parseInt(info[4])),
+					new Vektor2D(Integer.parseInt(info[5]), Integer.parseInt(info[6])), Double.parseDouble(info[7]), Boolean.parseBoolean(info[8]),
+					new Color(Integer.parseInt(info[9])), info[10], SpielKarteGen.getTextAbschnitteVonSendString(info[11]), info[12],
+					new Color(Integer.parseInt(info[13])), info[14], SpielKarteGen.getTextAbschnitteVonSendString(info[15]), info[16]);
 		}
 
 		return o;

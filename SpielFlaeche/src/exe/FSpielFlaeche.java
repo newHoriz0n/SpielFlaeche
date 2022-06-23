@@ -1,5 +1,7 @@
 package exe;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
 import java.io.File;
@@ -8,12 +10,17 @@ import java.util.List;
 
 import javax.swing.JFileChooser;
 import javax.swing.JFrame;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
 import ctrl.HoererManager;
 import io.PBFileReadWriter;
+import lib.FCreateSet;
 import model.SpielFlaecheModel;
 import tisch.Tisch;
+import tisch.create.FCreateKarte;
 
 /**
  * Mainklasse der Spielfläche
@@ -27,6 +34,8 @@ public class FSpielFlaeche extends JFrame {
 	 */
 	private static final long serialVersionUID = 1L;
 	private SpielFlaecheModel m;
+	
+	private JMenuBar menuBar = new JMenuBar(); // Window menu bar
 
 	public FSpielFlaeche() {
 
@@ -50,9 +59,6 @@ public class FSpielFlaeche extends JFrame {
 
 		add(psfv);
 		addKeyListener(hm);
-
-		pack();
-		setExtendedState(MAXIMIZED_BOTH);
 
 		addWindowListener(new WindowListener() {
 
@@ -96,6 +102,53 @@ public class FSpielFlaeche extends JFrame {
 
 			}
 		});
+		
+		// MENÜ
+		// Create
+	    JMenu createMenu = new JMenu("Create");
+	    // Karte
+	    JMenuItem createKarte = new JMenuItem("Karte");
+	    createKarte.addActionListener(new ActionListener() {
+	    	
+	    	@Override
+	    	public void actionPerformed(ActionEvent e) {
+	    		FCreateKarte fck = new FCreateKarte(m.getTisch());
+	    		fck.requestFocus();
+	    	}
+	    });
+	    createMenu.add(createKarte);
+	    // Kartendeck
+	    
+	    // View
+	    JMenu viewMenu = new JMenu("View");
+	    
+	    // Sets
+	    JMenu setMenu = new JMenu("Sets"); 
+	    JMenuItem createSet = new JMenuItem("Create Set");
+	    createSet.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				FCreateSet fcs = new FCreateSet(m.getSpieleSchrank());
+				fcs.requestFocus();
+			}
+		});
+	    setMenu.add(createSet);
+	    
+	    
+	    
+	    menuBar.add(setMenu);
+	    menuBar.add(createMenu);
+	    menuBar.add(viewMenu);
+	    
+	    setJMenuBar(menuBar);
+	    
+	    // PACK
+	    
+		pack();
+		setExtendedState(MAXIMIZED_BOTH);
+
+		
 	}
 
 	public static Tisch loadTisch() throws FileNotFoundException {
@@ -112,7 +165,7 @@ public class FSpielFlaeche extends JFrame {
 		File file = chooser.getSelectedFile();
 		if (file != null && file.exists()) {
 
-			List<String[]> tischInfos = PBFileReadWriter.getContentFromFile(",", chooser.getSelectedFile().getPath());
+			List<String[]> tischInfos = PBFileReadWriter.getContentFromFileLF(",", chooser.getSelectedFile().getPath());
 			return new Tisch(tischInfos);
 
 		}
